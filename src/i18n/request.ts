@@ -45,10 +45,17 @@ export default getRequestConfig(async () => {
 
   let messages: Record<string, unknown>;
   try {
+    // Try to load the requested locale
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
     console.error(`Failed to load messages for locale "${locale}":`, error);
-    messages = (await import(`../../messages/${DEFAULT_LANGUAGE}.json`)).default;
+    try {
+      // Fallback to default language
+      messages = (await import(`../../messages/${DEFAULT_LANGUAGE}.json`)).default;
+    } catch (fallbackError) {
+      console.error(`Failed to load fallback messages for locale "${DEFAULT_LANGUAGE}":`, fallbackError);
+      messages = {}; // Last resort fallback
+    }
   }
 
   return {

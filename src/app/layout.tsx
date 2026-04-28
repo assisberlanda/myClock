@@ -38,7 +38,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-gray-50 dark:bg-black text-gray-900 dark:text-gray-100">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <header className="sticky top-0 z-40 border-b border-border-subtle bg-surface-page/95 backdrop-blur">
             <div className="container max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
               <div className="flex items-center">
