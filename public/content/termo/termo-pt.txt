@@ -1,0 +1,81 @@
+# Termos de Uso
+
+**Data da Última Atualização:** Abril de 2026
+
+## 1. Aceitação dos Termos
+
+Ao acessar e utilizar o aplicativo My Clock (o “Aplicativo”), você (“Usuário”) concorda integralmente com estes Termos de Uso.
+
+Caso não concorde com qualquer parte destes termos, recomendamos que não utilize o aplicativo.
+
+---
+
+## 2. Finalidade do Aplicativo
+
+O My Clock foi desenvolvido como uma ferramenta gratuita de apoio para que funcionários possam acompanhar suas horas trabalhadas, overtime, cálculo estimado de pagamento bruto e controle pessoal de jornada.
+
+O objetivo principal é oferecer mais transparência, organização financeira e facilidade na conferência das horas registradas, permitindo ao usuário identificar possíveis divergências e solicitar revisões junto ao RH da empresa quando necessário.
+
+O aplicativo não substitui sistemas oficiais de ponto, folha de pagamento ou gestão interna da empresa.
+
+---
+
+## 3. Aplicativo Não Oficial
+
+O My Clock não é um sistema oficial da empresa e não possui qualquer vínculo institucional com o RH, folha de pagamento, departamento financeiro ou sistema interno de controle de ponto.
+
+Os cálculos apresentados são estimativas baseadas nas regras operacionais normalmente praticadas pela empresa, buscando reproduzir da forma mais fiel possível os critérios utilizados internamente.
+
+Podem existir diferenças decorrentes de acordos internos, ajustes específicos, exceções contratuais, convenções coletivas ou regras não implementadas no aplicativo.
+
+Em caso de divergência, sempre prevalecem as regras oficiais da empresa e a validação deve ser realizada diretamente com o RH responsável.
+
+---
+
+## 4. Responsabilidade do Usuário
+
+O usuário é integralmente responsável pelas informações inseridas no aplicativo, incluindo horários, valores de salário/hora, registros de jornada e demais dados utilizados para cálculo.
+
+O aplicativo serve exclusivamente como ferramenta de apoio e conferência pessoal.
+
+O desenvolvedor não se responsabiliza por decisões tomadas exclusivamente com base nos cálculos apresentados no sistema, nem por divergências entre os valores estimados e os valores efetivamente pagos pela empresa.
+
+---
+
+## 5. Armazenamento de Dados
+
+Todas as informações registradas no My Clock são armazenadas localmente no próprio dispositivo do usuário.
+
+O desenvolvedor não possui acesso aos dados inseridos, não armazena informações em servidores externos e não realiza qualquer monitoramento remoto das informações pessoais do usuário.
+
+O usuário é responsável por manter seus próprios backups e exportações quando necessário.
+
+---
+
+## 6. Propriedade Intelectual
+
+Todo o conteúdo presente no aplicativo, incluindo estrutura, layout, textos, identidade visual, regras implementadas, funcionalidades e código-fonte proprietário, é de propriedade intelectual de Assis Berlanda de Medeiros, salvo quando indicado de forma diferente.
+
+É proibida a reprodução, distribuição ou uso indevido sem autorização prévia.
+
+---
+
+## 7. Alterações no Aplicativo e nos Termos
+
+O desenvolvedor reserva o direito de modificar funcionalidades, regras de cálculo, layout, estrutura do sistema e estes Termos de Uso a qualquer momento, sem aviso prévio.
+
+Novas versões poderão incluir melhorias, correções e adequações necessárias para tornar o aplicativo mais fiel às regras aplicadas pela empresa.
+
+---
+
+## 8. Lei Aplicável
+
+Estes Termos de Uso serão interpretados de acordo com as leis aplicáveis da União Europeia e da Irlanda, especialmente no que se refere à proteção de dados e uso de aplicações digitais.
+
+---
+
+## 9. Contato
+
+Para dúvidas, sugestões ou questões relacionadas a estes Termos de Uso, entre em contato através do e-mail:
+
+**[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)**

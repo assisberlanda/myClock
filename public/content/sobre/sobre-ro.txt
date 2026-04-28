@@ -1,0 +1,63 @@
+# Despre My Clock
+
+Numele meu este Assis Berlanda de Medeiros, sunt reprezentant SIPITU și am dezvoltat My Clock cu scopul de a ajuta angajații în controlul orelor lucrate într-un mod simplu, practic și gratuit.
+
+Ideea a apărut din dificultatea pe care mulți lucrători o întâmpină zilnic în verificarea corectă a orelor introduse în pontaj, monitorizarea orelor suplimentare, validarea plăților și identificarea posibilelor divergențe în statul de plată. De multe ori, când există o eroare, angajatul însuși trebuie să facă acest control manual pentru a solicita o revizuire de la resurse umane (RH).
+
+Având în vedere acest lucru, am creat această aplicație ca un instrument de sprijin pentru controlul personal, organizarea financiară, transparență și o mai mare siguranță în verificarea orelor lucrate.
+
+My Clock permite înregistrarea orelor de intrare, pauză și ieșire, calcularea orelor normale, overtime, totalul săptămânal și valoarea brută estimată de primit, respectând regulile de afaceri practicate de companie cât mai fidel posibil.
+
+## Versiunea aplicației
+
+**Versiunea actuală:** v1.0.0
+**Ultima actualizare:** Aprilie 2026
+
+My Clock este în continuă evoluție pentru a oferi un control tot mai fidel al orelor lucrate și al calculelor practicate de companie.
+
+Noi îmbunătățiri, corecții ale regulilor de overtime, ajustări de calcul și îmbunătățiri ale utilizării vor putea fi adăugate în viitor, pe măsură ce vor fi identificate nevoi reale în viața de zi cu zi a angajaților.
+
+Obiectivul este de a face aplicația tot mai precisă, de încredere și utilă pentru controlul personal al fiecărui lucrător.
+
+## Important: aplicație neoficială a companiei
+
+Această aplicație nu este un sistem oficial al companiei și nu are nicio legătură instituțională cu RH, statul de plată sau sistemul intern de pontaj.
+
+A fost dezvoltată exclusiv ca un instrument independent de sprijin pentru lucrător, în scopul verificării personale și monitorizării individuale.
+
+Calculele prezentate aici sunt estimări bazate pe regulile operaționale practicate în mod normal de companie, încercând să reproducă cât mai fidel criteriile utilizate intern.
+
+Cu toate acestea, pot exista diferențe, excepții specifice, ajustări interne, modificări contractuale sau particularități care nu sunt reflectate în aplicație.
+
+De aceea, în caz de divergențe, îndoieli privind plățile, orele suplimentare, banca de ore sau orice problemă legată de statul de plată, prevalează întotdeauna regulile oficiale ale companiei, iar validarea trebuie făcută direct cu RH-ul responsabil.
+
+Nu îmi asum responsabilitatea pentru utilizarea informațiilor introduse în aplicație și nici pentru deciziile luate exclusiv pe baza calculelor prezentate aici.
+
+Aplicația servește ca instrument de sprijin, nu ca document oficial de plată.
+
+Totuși, dacă sunt identificate erori de calcul sau oportunități de îmbunătățire, aceste ajustări vor putea fi implementate în viitor pentru a face sistemul tot mai fidel regulilor reale aplicate de companie.
+
+## Confidențialitate și protecția datelor (GDPR)
+
+Confidențialitatea utilizatorilor este o prioritate.
+
+În conformitate cu principiile GDPR (General Data Protection Regulation), nu am acces la datele personale introduse de niciun utilizator în aplicație.
+
+Toate informațiile înregistrate — cum ar fi numele, numărul de angajat, orarele, valorile și istoricul înregistrărilor — sunt stocate exclusiv pe dispozitivul utilizatorului, utilizând stocarea locală.
+
+Aceasta înseamnă că:
+
+* nu primesc datele dvs.
+* nu stochez datele dvs. pe servere externe
+* nu partajez informațiile dvs. cu terți
+* nu am acces de la distanță la informațiile dvs. personale
+
+Tot controlul rămâne doar la utilizator.
+
+Aplicația a fost gândită tocmai pentru a oferi mai multă autonomie și siguranță fără a compromite confidențialitatea individuală.
+
+## Suport și contact
+
+Dacă întâmpinați probleme tehnice în funcționarea aplicației, erori în sistem sau sugestii de îmbunătățire, puteți contacta direct prin e-mail:
+
+**berlanda.medeiros@gmail.com**

@@ -1,0 +1,63 @@
+# Maidir le My Clock
+
+Is mise Assis Berlanda de Medeiros, ionadaí de chuid SIPITU, agus d'fhorbair mé My Clock chun cabhrú le fostaithe a n-uaireanta oibre a rialú ar bhealach simplí, praiticiúil agus saor in aisce.
+
+D'eascair an smaoineamh as an deacracht a bhíonn ag go leor oibrithe ó lá go lá na huaireanta a chuirtear isteach sa chóras tinrimh a sheiceáil i gceart, uaireanta ragoibre a rianú, íocaíochtaí a bhailíochtú agus difríochtaí féideartha sa phá-rolla a aithint. Go minic, nuair a bhíonn earráid ann, caithfidh an fostaí féin an rialú seo a dhéanamh de láimh chun athbhreithniú a iarraidh ón AD.
+
+Agus é seo san áireamh, chruthaigh mé an aip seo mar uirlis tacaíochta le haghaidh rialú pearsanta, eagras airgeadais, trédhearcachta agus slándála níos mó agus uaireanta oibre á seiceáil.
+
+Ligeann My Clock duit amanna iontrála, eatraimh agus imeachta a chlárú, gnáthuaireanta, ragoibre, iomlán seachtainiúil agus an luach comhlán measta a bheidh le fáil a ríomh, ag leanúint rialacha gnó na cuideachta chomh dílis agus is féidir.
+
+## Leagan na haipe
+
+**Leagan reatha:** v1.0.0
+**Nuashonrú deireanach:** Aibreán 2026
+
+Tá My Clock ag athrú de shíor chun rialú níos dílse a thairiscint ar na huaireanta oibre agus ar na ríomhanna a dhéanann an chuideachta.
+
+Is féidir feabhsuithe nua, ceartúcháin ar rialacha ragoibre, coigeartuithe ríofa agus feabhsuithe inúsáidteachta a chur leis amach anseo de réir mar a aithnítear riachtanais iarbhír i saol laethúil na bhfostaithe.
+
+Is é an sprioc ná an aip a dhéanamh níos cruinne, níos iontaofa agus níos úsáidí do rialú pearsanta gach oibrí.
+
+## Tábhachtach: aip neamhoifigiúil na cuideachta
+
+Ní córas oifigiúil de chuid na cuideachta an aip seo agus níl aon nasc institiúideach aige le AD, pá-rolla nó córas tinrimh inmheánach.
+
+Forbraíodh é go heisiach mar uirlis neamhspleách tacaíochta don oibrí, chun críocha seiceála pearsanta agus rianaithe aonair.
+
+Is meastacháin iad na ríomhanna a chuirtear i láthair anseo bunaithe ar na rialacha oibriúcháin a chleachtann an chuideachta de ghnáth, ag iarraidh na critéir a úsáidtear go hinmheánach a atáirgeadh chomh gar agus is féidir.
+
+Mar sin féin, d’fhéadfadh go mbeadh difríochtaí, eisceachtaí sonracha, coigeartuithe inmheánacha, athruithe conarthacha nó gnéithe nach léirítear san aip.
+
+Dá bhrí sin, i gcás neamhréireachtaí, amhras faoi íocaíochtaí, uaireanta ragoibre, banc uaireanta nó aon cheist a bhaineann leis an bpá-rolla, bíonn rialacha oifigiúla na cuideachta i réim i gcónaí agus caithfear an bailíochtú a dhéanamh go díreach leis an AD freagrach.
+
+Ní ghlacaim freagracht as úsáid na faisnéise a chuirtear isteach san aip ná as cinntí a dhéantar bunaithe go heisiach ar na ríomhanna a chuirtear i láthair anseo.
+
+Feidhmíonn an aip mar uirlis tacaíochta, seachas mar dhoiciméad íocaíochta oifigiúil.
+
+Ina ainneoin sin, má aithnítear earráidí ríofa nó deiseanna feabhsúcháin, is féidir na coigeartuithe sin a chur i bhfeidhm amach anseo chun an córas a dhéanamh níos dílse do na fíor-rialacha a chuireann an chuideachta i bhfeidhm.
+
+## Príobháideacht agus cosaint sonraí (GDPR)
+
+Is tosaíocht í príobháideacht na n-úsáideoirí.
+
+I gcomhréir le prionsabail an GDPR (General Data Protection Regulation), níl rochtain agam ar na sonraí pearsanta a chuireann aon úsáideoir isteach san aip.
+
+Stóráiltear an fhaisnéis go léir a chláraítear — mar ainm, uimhir fostaí, amanna, luachanna agus stair na dtaifead — go heisiach ar ghléas an úsáideora féin, ag baint úsáide as stóráil áitiúil.
+
+Ciallaíonn sé seo:
+
+* ní fhaighim do chuid sonraí
+* ní stórálaim do chuid sonraí ar fhreastalaithe seachtracha
+* ní roinnim do chuid faisnéise le tríú páirtithe
+* níl rochtain chianda agam ar do chuid faisnéise pearsanta
+
+Fanann an rialú iomlán ag an úsáideoir féin amháin.
+
+Dearadh an aip go beacht chun níos mó uathrialach agus slándála a thairiscint gan cur isteach ar phríobháideacht an duine aonair.
+
+## Tacaíocht agus teagmháil
+
+Má thagann tú ar fhadhbanna teicniúla le feidhmiú na haipe, earráidí sa chóras nó moltaí maidir le feabhsú, is féidir leat teagmháil a dhéanamh go díreach trí ríomhphost:
+
+**berlanda.medeiros@gmail.com**

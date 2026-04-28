@@ -1,0 +1,43 @@
+How hour calculation works in My Clock
+My Clock was developed to reproduce the company's calculation rules as faithfully as possible, allowing each employee to track their hours worked, overtime, and estimated gross pay.
+
+Below is an explanation of how calculations are performed within the app.
+
+1. Shift start time
+Each employee has an official shift start time, which may vary by team or sector.
+Examples: 04:00, 07:30, 13:00, 16:00. This time is the main basis for calculating hours worked.
+
+2. Clock-in rule
+The system always considers: the shift start time or the actual entry time, whichever is later.
+This means:
+- if you arrive before your scheduled time, no extra pay is generated.
+- if you arrive late, the calculation starts from your actual entry time.
+
+3. Clock-out rule
+Upon exit, every minute worked is counted normally. There is no rounding.
+
+4. Unpaid interval (meal break)
+The minimum unpaid break is 30 minutes. The system deducts 30 minutes or the actual break time, whichever is greater.
+
+5. Overtime calculation
+Overtime is calculated on a weekly, not daily, basis. The main basis considers the total hours worked from Monday to Friday.
+
+6. Normal hours
+The first 39 hours worked in the week are considered normal hours.
+
+7. Overtime A (1.5x)
+After completing 39 hours in the week: the next 4 hours are paid at 1.5x.
+
+8. Overtime B (2.0x)
+Everything exceeding 43 weekly hours is paid at 2.0x (double time).
+
+9. Saturday
+Saturday counts as a continuation of the week. Depending on the total accumulated, it can be Overtime A or B.
+
+10. Sunday
+All hours worked on Sunday are paid as Overtime B (2.0x) from the first minute.
+
+11. Final result
+The app shows daily/weekly totals and estimated gross pay.
+
+Important: My Clock is a support tool. The official company system and internal rules always prevail.

@@ -1,0 +1,50 @@
+Conas a oibríonn ríomh na n-uaireanta i My Clock
+Dearadh My Clock chun rialacha ríofa na cuideachta a atáirgeadh chomh dílis agus is féidir, rud a ligeann do gach fostaí súil a choinneáil ar a n-uaireanta oibre, ragoibre agus pá comhlán measta.
+
+Seo thíos míniú ar conas a dhéantar na ríomhanna laistigh den aip.
+
+1. Am tosaithe an tsealaimh
+Tá am tosaithe oifigiúil ag gach fostaí, a d’fhéadfadh a bheith éagsúil ag brath ar an bhfoireann nó ar an earnáil.
+
+Samplaí:
+04:00, 07:30, 13:00, 16:00
+Is é an t-am seo an príomhbhonn chun uaireanta oibre a ríomh.
+
+2. Riail iontrála (clock-in)
+Breithníonn an córas i gcónaí: am tosaithe an tsealaimh nó an t-am iarbhír iontrála, cibé acu is déanaí.
+Ciallaíonn sé seo:
+- má thagann tú roimh do chuid ama, ní ghintear aon phá breise.
+- má thagann tú déanach, tosaíonn an ríomh ó am iarbhír do d’iontráil.
+
+Sampla: Am oifigiúil an tsealaimh: 07:30
+- iontráil ag 07:10 -> comhairtear ó 07:30
+- iontráil ag 07:45 -> comhairtear ó 07:45
+
+3. Riail imeachta (clock-out)
+Ag an am imeachta, déantar gach nóiméad a oibríodh a ríomh de ghnáth. Níl aon slánú ann.
+
+4. Sos béile (meal break)
+Is é 30 nóiméad an t-íosmhéid sosa gan phá. Baineann an córas 30 nóiméad nó an t-am iarbhír sosa, cibé acu is mó.
+
+5. Ríomh an Ragoibre (overtime)
+Ríomhtar an ragoibre go seachtainiúil, ní go laethúil. Is é an bunús ná iomlán na n-uaireanta a oibríodh ó Luan go hAoine.
+
+6. Uaireanta gnáthúla
+Na céad 39 uair an chloig a oibrítear sa tseachtain.
+
+7. Ragoibre A (1.5x)
+Tar éis 39 uair an chloig a chríochnú sa tseachtain: na chéad 4 uair an chloig eile (suas go 43).
+
+8. Ragoibre B (2.0x)
+Gach rud thar 43 uair an chloig sa tseachtain.
+
+9. An Satharn
+Téann an Satharn isteach mar leanúint ar an tseachtain. Má d'oibrigh tú níos mó ná 43 uair an chloig faoin Aoine, ríomhfar an Satharn iomlán mar Ragoibre B de ghnáth.
+
+10. An Domhnach
+Íoctar gach uair an chloig a oibrítear ar an Domhnach mar: Ragoibre B (2.0x) ón gcéad nóiméad.
+
+11. Toradh deiridh
+Taispeánann an aip: uaireanta laethúla, iomlán seachtainiúil, gnáthuaireanta, iomlán Ragoibre A agus B, agus luach comhlán measta.
+
+Tábhachtach: Is uirlis tacaíochta é My Clock. Tá an córas oifigiúil na cuideachta i gcónaí chun tosaigh i gcás neamhréireachta.

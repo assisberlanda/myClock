@@ -1,0 +1,36 @@
+Kaip veikia valandų skaičiavimas „My Clock“
+„My Clock“ buvo sukurta siekiant kuo tiksliau atkartoti įmonės taikomas skaičiavimo taisykles, leidžiančias kiekvienam darbuotojui stebėti savo dirbtas valandas, viršvalandžius ir numatomą bruto atlyginimą.
+
+1. Pamainos pradžios laikas
+Kiekvienas darbuotojas turi oficialų pamainos pradžios laiką (pvz., 07:30).
+
+2. Atvykimo taisyklė (clock-in)
+Sistema visada atsižvelgia į: pamainos pradžios laiką arba faktinį atvykimo laiką, priklausomai nuo to, kas yra vėliau.
+- Jei atvyksite anksčiau, papildomas apmokėjimas negeneruojamas.
+- Jei pavėluosite, skaičiavimas prasideda nuo faktinio atvykimo laiko.
+
+3. Išvykimo taisyklė (clock-out)
+Išeinant skaičiuojama kiekviena dirbta minutė. Apvalinimo nėra.
+
+4. Neapmokama pertrauka (meal break)
+Minimali neapmokama pertrauka yra 30 minučių. Sistema atskaičiuoja 30 minučių arba faktinį pertraukos laiką (žiūrima, kas didesnis).
+
+5. Viršvalandžių skaičiavimas (overtime)
+Viršvalandžiai skaičiuojami už savaitę, o ne už dieną.
+
+6. Normalios valandos
+Pirmosios 39 darbo valandos per savaitę.
+
+7. Overtime A (1.5x)
+Viršijus 39 valandas per savaitę: kitos 4 valandos apmokamos 1,5x tarifu.
+
+8. Overtime B (2.0x)
+Viskas, kas viršija 43 valandas per savaitę, apmokama 2,0x tarifu.
+
+9. Šeštadienis
+Šeštadienis skaičiuojamas kaip savaitės tęsinys. Jei iki penktadienio viršijote 43 valandas, visas šeštadienis bus Overtime B.
+
+10. Sekmadienis
+Visos sekmadienį dirbtos valandos apmokamos kaip Overtime B (2.0x) nuo pirmos minutės.
+
+Svarbu: „My Clock“ yra pagalbinė priemonė. Įmonės oficiali sistema visada turi pirmenybę.

@@ -1,0 +1,36 @@
+Cum funcționează calculul orelor în My Clock
+My Clock a fost dezvoltat pentru a reproduce cât mai fidel regulile de calcul ale companiei.
+
+1. Ora de începere a turei
+Fiecare angajat are o oră oficială de începere (ex: 07:30).
+
+2. Regula de intrare (clock-in)
+Sistemul ia în considerare: ora de începere a turei sau ora reală de intrare, oricare dintre ele este mai târzie.
+- Dacă ajungeți mai devreme, nu se generează plată suplimentară.
+- Dacă întârziați, calculul începe de la ora reală de intrare.
+
+3. Regula de ieșire (clock-out)
+La ieșire, fiecare minut lucrat este contabilizat normal. Nu există rotunjire.
+
+4. Pauza de masă neplătită (meal break)
+Pauza minimă neplătită este de 30 de minute. Sistemul scade 30 de minute sau timpul real al pauzei, oricare este mai mare.
+
+5. Calculul overtime (ore suplimentare)
+Overtime-ul se calculează săptămânal, nu zilnic.
+
+6. Ore normale
+Primele 39 de ore lucrate în săptămână.
+
+7. Overtime A (1.5x)
+După 39 de ore pe săptămână: următoarele 4 ore se plătesc cu 1.5x.
+
+8. Overtime B (2.0x)
+Tot ce depășește 43 de ore pe săptămână se plătește cu 2.0x.
+
+9. Sâmbăta
+Sâmbăta intră ca o continuare a săptămânii.
+
+10. Duminica
+Toate orele lucrate duminica sunt plătite ca Overtime B (2.0x) din primul minut.
+
+Important: My Clock este un instrument de sprijin. Sistemul oficial al companiei prevalează întotdeauna.

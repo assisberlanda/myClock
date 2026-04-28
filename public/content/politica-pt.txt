@@ -1,0 +1,93 @@
+# Política de Privacidade
+
+**Data da Última Atualização:** Abril de 2026
+
+## 1. Introdução
+
+A privacidade dos usuários do My Clock é uma prioridade.
+
+Esta Política de Privacidade descreve como as informações são tratadas dentro do aplicativo e esclarece a forma como os dados pessoais são armazenados e protegidos.
+
+O My Clock foi desenvolvido com foco em privacidade, autonomia do usuário e conformidade com os princípios da GDPR (General Data Protection Regulation).
+
+---
+
+## 2. Dados Utilizados pelo Aplicativo
+
+O aplicativo permite que o usuário registre informações como:
+
+* nome completo
+* número de funcionário (employee number)
+* horário de início do turno
+* valor da hora trabalhada
+* horários de entrada, intervalo e saída
+* histórico semanal de jornadas
+* cálculos de overtime e pagamento bruto estimado
+
+Esses dados são utilizados exclusivamente para o funcionamento interno do próprio aplicativo.
+
+---
+
+## 3. Onde os Dados São Armazenados
+
+Todos os dados inseridos são armazenados exclusivamente no dispositivo do próprio usuário, utilizando armazenamento local (IndexedDB/local storage).
+
+Isso significa que:
+
+* o desenvolvedor não recebe seus dados
+* não existe banco de dados externo
+* não há envio de informações para servidores remotos
+* não existe sincronização automática em nuvem
+* não há compartilhamento com terceiros
+
+Todo o controle permanece exclusivamente com o usuário.
+
+---
+
+## 4. Acesso aos Dados
+
+O desenvolvedor não possui acesso remoto às informações inseridas no aplicativo.
+
+Não há coleta ativa de dados pessoais, monitoramento individual ou visualização de registros privados dos usuários.
+
+As informações permanecem privadas e acessíveis apenas pelo próprio usuário no dispositivo utilizado.
+
+---
+
+## 5. Backup e Responsabilidade do Usuário
+
+Como os dados permanecem apenas no dispositivo local, o usuário é responsável por realizar backups periódicos através das funções de exportação disponibilizadas pelo aplicativo.
+
+Em casos de troca de aparelho, limpeza do navegador, formatação ou perda do dispositivo, os dados podem ser perdidos caso não exista backup prévio.
+
+---
+
+## 6. Cookies e Tecnologias de Terceiros
+
+Atualmente, o My Clock não utiliza cookies de rastreamento, Google Analytics ou ferramentas de monitoramento comportamental.
+
+Caso isso seja implementado futuramente, esta Política de Privacidade será atualizada.
+
+---
+
+## 7. Links Externos
+
+O aplicativo poderá conter links para contato externo, como e-mail de suporte.
+
+O desenvolvedor não se responsabiliza pelas práticas de privacidade de serviços externos acessados fora do aplicativo.
+
+---
+
+## 8. Alterações nesta Política
+
+Esta Política de Privacidade poderá ser atualizada a qualquer momento para refletir melhorias no aplicativo, adequações legais ou mudanças de funcionamento.
+
+A versão mais recente estará sempre disponível dentro do próprio sistema.
+
+---
+
+## 9. Contato
+
+Para dúvidas, sugestões ou questões relacionadas a esta Política de Privacidade, entre em contato através do e-mail:
+
+**[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)**

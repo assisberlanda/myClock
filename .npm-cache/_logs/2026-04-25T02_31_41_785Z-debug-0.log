@@ -1,0 +1,23 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.7.0
+2 info using node@v22.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/berlanda/Documents/Documentos/projetos/My-Clock/.npmrc
+5 silly config load:file:/Users/berlanda/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm exec shadcn@latest add button input card badge form label select toast --yes
+8 verbose argv "exec" "--cache" ".npm-cache" "--" "shadcn@latest" "add" "button" "input" "card" "badge" "form" "label" "select" "toast" "--yes"
+9 verbose logfile logs-max:10 dir:/Users/berlanda/Documents/Documentos/projetos/My-Clock/.npm-cache/_logs/2026-04-25T02_31_41_785Z-
+10 verbose logfile /Users/berlanda/Documents/Documentos/projetos/My-Clock/.npm-cache/_logs/2026-04-25T02_31_41_785Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 http fetch GET 200 https://registry.npmjs.org/shadcn 188ms (cache revalidated)
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+17 verbose cwd /Users/berlanda/Documents/Documentos/projetos/My-Clock
+18 verbose os Darwin 21.6.0
+19 verbose node v22.14.0
+20 verbose npm  v11.7.0
+21 verbose exit 1
+22 verbose code 1

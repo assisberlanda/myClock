@@ -1,0 +1,70 @@
+{
+  "politicaPrivacidade": {
+    "titulo": "Política de Privacidade",
+    "dataAtualizacao": "**Data da Última Atualização:** Abril de 2026",
+    "secao1": {
+      "titulo": "1. Introdução",
+      "paragrafo1": "A privacidade dos usuários do My Clock é uma prioridade.",
+      "paragrafo2": "Esta Política de Privacidade descreve como as informações são tratadas dentro do aplicativo e esclarece a forma como os dados pessoais são armazenados e protegidos.",
+      "paragrafo3": "O My Clock foi desenvolvido com foco em privacidade, autonomia do usuário e conformidade com os princípios da GDPR (General Data Protection Regulation)."
+    },
+    "secao2": {
+      "titulo": "2. Dados Utilizados pelo Aplicativo",
+      "paragrafo1": "O aplicativo permite que o usuário registre informações como:",
+      "listaDados": [
+        "nome completo",
+        "número de funcionário (employee number)",
+        "horário de início do turno",
+        "valor da hora trabalhada",
+        "horários de entrada, intervalo e saída",
+        "histórico semanal de jornadas",
+        "cálculos de overtime e pagamento bruto estimado"
+      ],
+      "paragrafo2": "Esses dados são utilizados exclusivamente para o funcionamento interno do próprio aplicativo."
+    },
+    "secao3": {
+      "titulo": "3. Onde os Dados São Armazenados",
+      "paragrafo1": "Todos os dados inseridos são armazenados exclusivamente no dispositivo do próprio usuário, utilizando armazenamento local (IndexedDB/local storage).",
+      "paragrafo2": "Isso significa que:",
+      "listaGarantias": [
+        "o desenvolvedor não recebe seus dados",
+        "não existe banco de dados externo",
+        "não há envio de informações para servidores remotos",
+        "não existe sincronização automática em nuvem",
+        "não há compartilhamento com terceiros"
+      ],
+      "paragrafo3": "Todo o controle permanece exclusivamente com o usuário."
+    },
+    "secao4": {
+      "titulo": "4. Acesso aos Dados",
+      "paragrafo1": "O desenvolvedor não possui acesso remoto às informações inseridas no aplicativo.",
+      "paragrafo2": "Não há coleta ativa de dados pessoais, monitoramento individual ou visualização de registros privados dos usuários.",
+      "paragrafo3": "As informações permanecem privadas e acessíveis apenas pelo próprio usuário no dispositivo utilizado."
+    },
+    "secao5": {
+      "titulo": "5. Backup e Responsabilidade do Usuário",
+      "paragrafo1": "Como os dados permanecem apenas no dispositivo local, o usuário é responsável por realizar backups periódicos através das funções de exportação disponibilizadas pelo aplicativo.",
+      "paragrafo2": "Em casos de troca de aparelho, limpeza do navegador, formatação ou perda do dispositivo, os dados podem ser perdidos caso não exista backup prévio."
+    },
+    "secao6": {
+      "titulo": "6. Cookies e Tecnologias de Terceiros",
+      "paragrafo1": "Atualmente, o My Clock não utiliza cookies de rastreamento, Google Analytics ou ferramentas de monitoramento comportamental.",
+      "paragrafo2": "Caso isso seja implementado futuramente, esta Política de Privacidade será atualizada."
+    },
+    "secao7": {
+      "titulo": "7. Links Externos",
+      "paragrafo1": "O aplicativo poderá conter links para contato externo, como e-mail de suporte.",
+      "paragrafo2": "O desenvolvedor não se responsabiliza pelas práticas de privacidade de serviços externos acessados fora do aplicativo."
+    },
+    "secao8": {
+      "titulo": "8. Alterações nesta Política",
+      "paragrafo1": "Esta Política de Privacidade poderá ser atualizada a qualquer momento para refletir melhorias no aplicativo, adequações legais ou mudanças de funcionamento.",
+      "paragrafo2": "A versão mais recente estará sempre disponível dentro do próprio sistema."
+    },
+    "secao9": {
+      "titulo": "9. Contato",
+      "paragrafo1": "Para dúvidas, sugestões ou questões relacionadas a esta Política de Privacidade, entre em contato através do e-mail:",
+      "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+    }
+  }
+}

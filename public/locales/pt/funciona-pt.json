@@ -1,0 +1,138 @@
+{
+  "comoFuncionaCalculoHoras": {
+    "titulo": "Como funciona o cálculo das horas no My Clock",
+    "introducao": {
+      "paragrafo1": "O My Clock foi desenvolvido para reproduzir da forma mais fiel possível as regras de cálculo praticadas pela empresa, permitindo que cada funcionário acompanhe suas horas trabalhadas, overtime e pagamento bruto estimado.",
+      "paragrafo2": "Abaixo está a explicação de como os cálculos são realizados dentro do aplicativo."
+    },
+    "secao1": {
+      "titulo": "1. Horário de início do turno",
+      "paragrafo1": "Cada funcionário possui um horário oficial de início de turno, que pode variar conforme a equipe ou setor.",
+      "subtituloExemplos": "Exemplos:",
+      "exemplos": [
+        "04:00",
+        "07:30",
+        "13:00",
+        "16:00"
+      ],
+      "paragrafo2": "Esse horário é a base principal para o cálculo das horas trabalhadas."
+    },
+    "secao2": {
+      "titulo": "2. Regra de entrada (clock-in)",
+      "paragrafo1": "O sistema sempre considera:",
+      "destaque1": "o horário de início do turno ou o horário real de entrada, o que for mais tarde.",
+      "paragrafo2": "Isso significa que:",
+      "regras": [
+        "se você chegar antes do seu horário, não gera pagamento extra",
+        "se você chegar atrasado, o cálculo começa a partir do horário real da sua entrada"
+      ],
+      "subtituloExemplo": "Exemplo",
+      "exemploContexto": "Horário oficial do turno: 07:30",
+      "exemplos": [
+        "entrada às 07:10 → conta a partir de 07:30",
+        "entrada às 07:25 → conta a partir de 07:30",
+        "entrada às 07:30 → conta a partir de 07:30",
+        "entrada às 07:45 → conta a partir de 07:45"
+      ],
+      "paragrafo3": "Ou seja, chegar antes não soma horas extras."
+    },
+    "secao3": {
+      "titulo": "3. Regra de saída (clock-out)",
+      "paragrafo1": "Na saída, cada minuto trabalhado é contabilizado normalmente.",
+      "paragrafo2": "Não existe arredondamento.",
+      "subtituloExemplo": "Exemplo",
+      "exemplos": [
+        "saída às 00:03 → conta até 00:03",
+        "saída às 00:17 → conta até 00:17"
+      ],
+      "paragrafo3": "Cada minuto após o expediente é considerado."
+    },
+    "secao4": {
+      "titulo": "4. Intervalo não remunerado (meal break)",
+      "paragrafo1": "O intervalo mínimo não remunerado é de 30 minutos.",
+      "paragrafo2": "O sistema desconta:",
+      "destaque1": "30 minutos ou o tempo real do intervalo, o que for maior.",
+      "subtituloExemplo": "Exemplo",
+      "exemplos": [
+        "intervalo de 20 minutos → desconta 30 minutos",
+        "intervalo de 30 minutos → desconta 30 minutos",
+        "intervalo de 35 minutos → desconta 35 minutos",
+        "intervalo de 50 minutos → desconta 50 minutos"
+      ],
+      "paragrafo3": "Nunca será descontado menos de 30 minutos."
+    },
+    "secao5": {
+      "titulo": "5. Cálculo do overtime (horas extras)",
+      "paragrafo1": "O overtime é calculado de forma semanal, e não diária.",
+      "paragrafo2": "A base principal considera o total de horas trabalhadas de segunda a sexta-feira."
+    },
+    "secao6": {
+      "titulo": "6. Horas normais",
+      "paragrafo1": "As primeiras:",
+      "destaque1": "39 horas trabalhadas na semana",
+      "paragrafo2": "são consideradas horas normais e pagas com valor normal da sua hora contratual."
+    },
+    "secao7": {
+      "titulo": "7. Overtime A (1.5x)",
+      "paragrafo1": "Depois de completar 39 horas na semana:",
+      "paragrafo2": "as próximas:",
+      "destaque1": "4 horas",
+      "paragrafo3": "serão pagas com adicional de:",
+      "destaque2": "1.5x (uma vez e meia)",
+      "subtituloExemplo": "Exemplo",
+      "exemploContexto": "Se sua hora vale €15:",
+      "exemplos": [
+        "hora normal = €15",
+        "overtime A = €22,50"
+      ]
+    },
+    "secao8": {
+      "titulo": "8. Overtime B (2.0x)",
+      "paragrafo1": "Tudo o que ultrapassar:",
+      "destaque1": "43 horas semanais",
+      "paragrafo2": "será pago com adicional de:",
+      "destaque2": "2.0x (hora dobrada)",
+      "subtituloExemplo": "Exemplo",
+      "exemploContexto": "Se sua hora vale €15:",
+      "exemplos": [
+        "overtime B = €30,00"
+      ]
+    },
+    "secao9": {
+      "titulo": "9. Sábado",
+      "paragrafo1": "O sábado entra como continuação da semana.",
+      "paragrafo2": "Dependendo do total já acumulado de segunda a sexta:",
+      "regras": [
+        "pode entrar como Overtime A",
+        "pode entrar como Overtime B"
+      ],
+      "paragrafo3": "Se até sexta-feira você já ultrapassou 43 horas, normalmente todo o sábado será calculado como Overtime B."
+    },
+    "secao10": {
+      "titulo": "10. Domingo",
+      "paragrafo1": "Todas as horas trabalhadas no domingo são pagas como:",
+      "destaque1": "Overtime B (2.0x)",
+      "paragrafo2": "desde o primeiro minuto.",
+      "paragrafo3": "Não existe hora normal no domingo."
+    },
+    "secao11": {
+      "titulo": "11. Resultado final",
+      "paragrafo1": "O aplicativo mostra automaticamente:",
+      "itens": [
+        "horas trabalhadas por dia",
+        "total semanal",
+        "horas normais",
+        "total de Overtime A",
+        "total de Overtime B",
+        "valor bruto estimado a receber"
+      ],
+      "paragrafo2": "Esses cálculos ajudam no controle pessoal, conferência de folha salarial e solicitação de revisão junto ao RH quando necessário."
+    },
+    "importante": {
+      "titulo": "Importante",
+      "paragrafo1": "O My Clock é uma ferramenta de apoio para conferência pessoal.",
+      "paragrafo2": "Ele busca reproduzir as regras praticadas pela empresa da forma mais fiel possível, porém o sistema oficial da empresa e as regras internas sempre prevalecem em caso de divergência.",
+      "paragrafo3": "Por isso, qualquer diferença de pagamento deve ser validada diretamente com o RH responsável."
+    }
+  }
+}

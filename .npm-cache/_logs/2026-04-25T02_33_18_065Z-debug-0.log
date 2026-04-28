@@ -1,0 +1,61 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.7.0
+2 info using node@v22.14.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/berlanda/Documents/Documentos/projetos/My-Clock/.npmrc
+5 silly config load:file:/Users/berlanda/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install sonner next-themes
+8 verbose argv "install" "sonner" "next-themes"
+9 verbose logfile logs-max:10 dir:/Users/berlanda/Documents/Documentos/projetos/My-Clock/.npm-cache/_logs/2026-04-25T02_33_18_065Z-
+10 verbose logfile /Users/berlanda/Documents/Documentos/projetos/My-Clock/.npm-cache/_logs/2026-04-25T02_33_18_065Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 silly idealTree buildDeps
+15 silly fetch manifest sonner@*
+16 silly packumentCache full:https://registry.npmjs.org/sonner cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/sonner 628ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/sonner set size:undefined disposed:false
+19 silly fetch manifest react@19.2.4
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http cache https://registry.npmjs.org/react 46ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:6625721 disposed:false
+23 silly fetch manifest react-dom@19.2.4
+24 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+25 http cache https://registry.npmjs.org/react-dom 42ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8826021 disposed:false
+27 silly fetch manifest next-themes@*
+28 silly packumentCache full:https://registry.npmjs.org/next-themes cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/next-themes 56ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/next-themes set size:undefined disposed:false
+31 silly placeDep ROOT next-themes@0.4.6 OK for: relogio-ponto@0.1.0 want: *
+32 silly placeDep ROOT sonner@2.0.7 OK for: relogio-ponto@0.1.0 want: *
+33 silly fetch manifest regenerator-runtime@^0.13.7
+34 silly packumentCache full:https://registry.npmjs.org/regenerator-runtime cache-miss
+35 http cache https://registry.npmjs.org/regenerator-runtime 6ms (cache hit)
+36 silly packumentCache full:https://registry.npmjs.org/regenerator-runtime set size:59671 disposed:false
+37 silly placeDep ROOT regenerator-runtime@0.13.11 OK for: canvg@3.0.11 want: ^0.13.7
+38 verbose stack TypeError: Invalid Version: 
+38 verbose stack     at new SemVer (/usr/local/lib/node_modules/npm/node_modules/semver/classes/semver.js:40:13)
+38 verbose stack     at compare (/usr/local/lib/node_modules/npm/node_modules/semver/functions/compare.js:5:32)
+38 verbose stack     at Object.eq (/usr/local/lib/node_modules/npm/node_modules/semver/functions/eq.js:4:29)
+38 verbose stack     at Node.canDedupe (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/node.js:1140:32)
+38 verbose stack     at PlaceDep.pruneDedupable (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:426:14)
+38 verbose stack     at new PlaceDep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:278:14)
+38 verbose stack     at #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:934:18)
+38 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:170:7)
+38 verbose stack     at async Promise.all (index 1)
+38 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:110:5)
+39 error Invalid Version: 
+40 silly unfinished npm timer reify 1777084398712
+41 silly unfinished npm timer reify:loadTrees 1777084398714
+42 silly unfinished npm timer idealTree:buildDeps 1777084399093
+43 silly unfinished npm timer idealTree:node_modules/canvg 1777084400116
+44 verbose cwd /Users/berlanda/Documents/Documentos/projetos/My-Clock
+45 verbose os Darwin 21.6.0
+46 verbose node v22.14.0
+47 verbose npm  v11.7.0
+48 verbose exit 1
+49 verbose code 1
+50 error A complete log of this run can be found in: /Users/berlanda/Documents/Documentos/projetos/My-Clock/.npm-cache/_logs/2026-04-25T02_33_18_065Z-debug-0.log

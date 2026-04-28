@@ -1,0 +1,63 @@
+# Par My Clock
+
+Mani sauc Assis Berlanda de Medeiros, esmu SIPITU pārstāvis un izstrādāju My Clock ar mērķi palīdzēt darbiniekiem vienkāršā, praktiskā un bezmaksas veidā kontrolēt savas nostrādātās stundas.
+
+Ideja radās no grūtībām, ar kurām daudzi darbinieki saskaras ikdienā, lai pareizi pārbaudītu laika uzskaites sistēmā ievadītās stundas, sekotu līdzi virsstundām, apstiprinātu maksājumus un identificētu iespējamās neatbilstības algas sarakstā. Bieži vien, ja rodas kļūda, darbiniekam pašam šī kontrole jāveic manuāli, lai pieprasītu pārskatīšanu personāla daļā (HR).
+
+Domājot par to, es izveidoju šo lietotni kā atbalsta rīku personīgai kontrolei, finanšu organizēšanai, pārredzamībai un lielākai drošībai, pārbaudot nostrādātās stundas.
+
+My Clock ļauj reģistrēt ierašanās, pārtraukuma un aiziešanas laikus, aprēķināt parastās stundas, virsstundas (overtime), nedēļas kopsummu un aprēķināto bruto vērtību, kas jāsaņem, pēc iespējas precīzāk ievērojot uzņēmuma praksē izmantotos biznesa noteikumus.
+
+## Lietotnes versija
+
+**Pašreizējā versija:** v1.0.0
+**Pēdējais atjauninājums:** 2026. gada aprīlis
+
+My Clock pastāvīgi pilnveidojas, lai piedāvātu arvien precīzāku nostrādāto stundu un uzņēmuma veikto aprēķinu kontroli.
+
+Nākotnē var tikt pievienoti jauni uzlabojumi, virsstundu noteikumu labojumi, aprēķinu pielāgojumi un lietojamības uzlabojumi, tiklīdz tiks identificētas reālas vajadzības darbinieku ikdienā.
+
+Mērķis ir padarīt lietotni arvien precīzāku, uzticamāku un noderīgāku katra darbinieka personīgajai kontrolei.
+
+## Svarīgi: neoficiāla uzņēmuma lietotne
+
+Šī lietotne nav oficiāla uzņēmuma sistēma, un tai nav nekādas institucionālas saistības ar HR, algu sarakstu vai iekšējo laika uzskaites sistēmu.
+
+Tā tika izstrādāta tikai kā neatkarīgs atbalsta rīks darbiniekam personīgai pārbaudei un individuālai uzraudzībai.
+
+Šeit sniegtie aprēķini ir aplēses, kuru pamatā ir uzņēmuma parasti praktizētie darbības noteikumi, cenšoties pēc iespējas precīzāk atspoguļot iekšēji izmantotos kritērijus.
+
+Tomēr var būt atšķirības, specifiski izņēmumi, iekšēji pielāgojumi, līgumiskas izmaiņas vai īpatnības, kas lietotnē nav atspoguļotas.
+
+Tāpēc neatbilstību gadījumā, šaubu gadījumā par maksājumiem, virsstundām, stundu banku vai jebkuru jautājumu, kas saistīts ar algas sarakstu, vienmēr noteicošie ir uzņēmuma oficiālie noteikumi, un apstiprināšana jāveic tieši personāla daļā.
+
+Es neuzņemos atbildību par lietotnē ievadītās informācijas izmantošanu vai lēmumiem, kas pieņemti, pamatojoties tikai uz šeit sniegtajiem aprēķiniem.
+
+Lietotne kalpo kā atbalsta rīks, nevis kā oficiāls maksājuma dokuments.
+
+Tomēr, ja tiek identificētas aprēķinu kļūdas vai uzlabošanas iespējas, šie pielāgojumi var tikt ieviesti nākotnē, lai sistēmu padarītu arvien atbilstošāku reālajiem uzņēmuma piemērotajiem noteikumiem.
+
+## Privātums un datu aizsardzība (VDAR)
+
+Lietotāju privātums ir prioritāte.
+
+Saskaņā ar VDAR (Vispārīgā datu aizsardzības regula) principiem man nav piekļuves personas datiem, kurus lietotājs ievadījis lietotnē.
+
+Visa reģistrētā informācija — piemēram, vārds, darbinieka numurs, darba laiki, vērtības un ierakstu vēsture — tiek glabāta tikai lietotāja ierīcē, izmantojot lokālo krātuvi.
+
+Tas nozīmē, ka:
+
+* es nesaņemu jūsu datus
+* es neglabāju jūsu datus ārējos serveros
+* es nekopīgoju jūsu informāciju ar trešajām personām
+* man nav attālinātas piekļuves jūsu personiskajai informācijai
+
+Visa kontrole paliek tikai pašam lietotājam.
+
+Lietotne tika izstrādāta tieši tāpēc, lai piedāvātu lielāku autonomiju un drošību, neapdraudot individuālo privātumu.
+
+## Atbalsts un kontakti
+
+Ja lietotnes darbībā konstatējat tehniskas problēmas, kļūdas sistēmā vai jums ir ieteikumi uzlabojumiem, varat sazināties tieši pa e-pastu:
+
+**berlanda.medeiros@gmail.com**

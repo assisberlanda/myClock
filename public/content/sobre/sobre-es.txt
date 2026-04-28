@@ -1,0 +1,63 @@
+# Sobre My Clock
+
+Mi nombre es Assis Berlanda de Medeiros, soy representante del SIPITU y desarrollé My Clock con el objetivo de ayudar a los empleados en el control de sus horas trabajadas de forma sencilla, práctica y gratuita.
+
+La idea surgió de la dificultad que muchos trabajadores enfrentan en el día a día para verificar correctamente las horas registradas en el punto, seguir horas extras, validar pagos e identificar posibles divergencias en la nómina. Muchas veces, cuando hay algún error, el propio empleado necesita realizar este control manualmente para solicitar una revisión ante Recursos Humanos (RRHH).
+
+Pensando en ello, creé esta aplicación como una herramienta de apoyo para el control personal, organización financiera, transparencia y mayor seguridad en la verificación de las horas trabajadas.
+
+My Clock permite registrar horarios de entrada, descanso y salida, calcular horas normales, overtime, total semanal y valor bruto estimado a recibir, siguiendo las reglas de negocio practicadas por la empresa de la forma más fiel posible.
+
+## Versión de la aplicación
+
+**Versión actual:** v1.0.0
+**Última actualización:** Abril 2026
+
+My Clock está en constante evolución para ofrecer un control cada vez más fiel de las horas trabajadas y de los cálculos practicados por la empresa.
+
+Nuevas mejoras, correcciones de reglas de overtime, ajustes de cálculo y mejoras en la usabilidad podrán ser añadidos en el futuro a medida que se identifiquen necesidades reales en el día a día de los empleados.
+
+El objetivo es hacer la aplicación cada vez más precisa, confiable y útil para el control personal de cada trabajador.
+
+## Importante: aplicación no oficial de la empresa
+
+Esta aplicación no es un sistema oficial de la empresa y no tiene ningún vínculo institucional con RRHH, nómina o sistema interno de control de asistencia.
+
+Ha sido desarrollada exclusivamente como una herramienta independiente de apoyo al trabajador, con fines de verificación personal y seguimiento individual.
+
+Los cálculos presentados aquí son estimaciones basadas en las reglas operativas normalmente practicadas por la empresa, buscando reproducir de la forma más cercana posible los criterios utilizados internamente.
+
+Sin embargo, pueden existir diferencias, excepciones específicas, ajustes internos, cambios contractuales o particularidades que no estén reflejadas en la aplicación.
+
+Por ello, en caso de divergencias, dudas sobre pagos, horas extras, banco de horas o cualquier cuestión relacionada con la nómina, siempre prevalecen las reglas oficiales de la empresa y la validación debe realizarse directamente con el RRHH responsable.
+
+No me responsabilizo por el uso de la información ingresada en la aplicación ni por decisiones tomadas exclusivamente con base en los cálculos presentados aquí.
+
+La app sirve como herramienta de apoyo, y no como documento oficial de pago.
+
+Aun así, si se identifican errores de cálculo o oportunidades de mejora, estos ajustes podrán implementarse en el futuro para hacer el sistema cada vez más fiel a las reglas reales aplicadas por la empresa.
+
+## Privacidad y protección de datos (GDPR)
+
+La privacidad de los usuarios es una prioridad.
+
+En cumplimiento con los principios de la GDPR (General Data Protection Regulation), no tengo acceso a los datos personales ingresados por ningún usuario en la aplicación.
+
+Toda la información registrada —como nombre, número de empleado, horarios, valores e historial de registros— se almacena exclusivamente en el propio dispositivo del usuario, utilizando almacenamiento local.
+
+Esto significa que:
+
+* no recibo sus datos
+* no almaceno sus datos en servidores externos
+* no comparto su información con terceros
+* no tengo acceso remoto a su información personal
+
+Todo el control permanece únicamente en el propio usuario.
+
+La aplicación fue pensada precisamente para ofrecer más autonomía y seguridad sin comprometer la privacidad individual.
+
+## Soporte y contacto
+
+Si encuentra problemas técnicos en el funcionamiento de la aplicación, errores en el sistema o sugerencias de mejora, puede ponerse en contacto directamente por correo electrónico:
+
+**berlanda.medeiros@gmail.com**

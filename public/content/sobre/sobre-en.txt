@@ -1,0 +1,63 @@
+# About My Clock
+
+My name is Assis Berlanda de Medeiros, I am a representative of SIPITU and I developed My Clock with the objective of helping employees control their hours worked in a simple, practical, and free way.
+
+The idea arose from the difficulty that many workers face daily to correctly check the hours entered in the time clock, track overtime, validate payments and identify possible discrepancies in the payroll. Often, when there is an error, the employee himself needs to perform this control manually to request a review from HR.
+
+With this in mind, I created this app as a support tool for personal control, financial organization, transparency and greater security when checking hours worked.
+
+My Clock allows you to register entry, break and exit times, calculate normal hours, overtime, weekly total and estimated gross value to be received, following the company's business rules as faithfully as possible.
+
+## App version
+
+**Current version:** v1.0.0
+**Last update:** April 2026
+
+My Clock is constantly evolving to offer an increasingly faithful control of hours worked and calculations practiced by the company.
+
+New improvements, overtime rule corrections, calculation adjustments and usability enhancements may be added in the future as real needs are identified in the daily lives of employees.
+
+The goal is to make the app increasingly accurate, reliable and useful for each worker's personal control.
+
+## Important: unofficial company app
+
+This app is not an official company system and has no institutional link with HR, payroll or internal time clock system.
+
+It was developed exclusively as an independent support tool for the worker, for personal checking and individual monitoring purposes.
+
+The calculations presented here are estimates based on the operational rules normally practiced by the company, seeking to reproduce the criteria used internally as closely as possible.
+
+However, there may be differences, specific exceptions, internal adjustments, contractual changes or particularities that are not reflected in the app.
+
+Therefore, in case of discrepancies, doubts about payments, overtime, time bank or any issue related to the payroll, the company's official rules always prevail and validation must be done directly with the responsible HR.
+
+I am not responsible for the use of the information entered in the app or for decisions made exclusively based on the calculations presented here.
+
+The app serves as a support tool, and not as an official payment document.
+
+Even so, if calculation errors or improvement opportunities are identified, these adjustments may be implemented in the future to make the system increasingly faithful to the real rules applied by the company.
+
+## Privacy and data protection (GDPR)
+
+User privacy is a priority.
+
+In compliance with the principles of the GDPR (General Data Protection Regulation), I do not have access to the personal data entered by any user in the app.
+
+All registered information — such as name, employee number, times, values and history of records — is stored exclusively on the user's own device, using local storage.
+
+This means that:
+
+* I do not receive your data
+* I do not store your data on external servers
+* I do not share your information with third parties
+* I do not have remote access to your personal information
+
+All control remains only with the user himself.
+
+The app was designed precisely to offer more autonomy and security without compromising individual privacy.
+
+## Support and contact
+
+If you find technical problems in the app's functioning, system errors or suggestions for improvement, you can contact us directly by email:
+
+**berlanda.medeiros@gmail.com**

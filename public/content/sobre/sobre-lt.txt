@@ -1,0 +1,63 @@
+# Apie „My Clock“
+
+Mano vardas Assis Berlanda de Medeiros, esu SIPITU atstovas ir sukūriau „My Clock“, kad padėčiau darbuotojams paprastai, praktiškai ir nemokamai kontroliuoti savo darbo valandas.
+
+Idėja kilo dėl sunkumų, su kuriais kasdien susiduria daugelis darbuotojų, norėdami teisingai patikrinti darbo laiko apskaitos žiniaraštyje įrašytas valandas, stebėti viršvalandžius, patvirtinti mokėjimus ir nustatyti galimus neatitikimus darbo užmokesčio žiniaraštyje. Dažnai, atsiradus klaidai, pats darbuotojas turi šią kontrolę atlikti rankiniu būdu, kad galėtų kreiptis į personalo skyrių dėl peržiūros.
+
+Atsižvelgdamas į tai, sukūriau šią programėlę kaip pagalbinę priemonę asmeninei kontrolei, finansiniam organizavimui, skaidrumui ir didesniam saugumui tikrinant dirbtas valandas.
+
+„My Clock“ leidžia fiksuoti atvykimo, pertraukos ir išvykimo laiką, skaičiuoti normalias valandas, viršvalandžius, savaitės sumą ir numatomą gautiną bruto sumą, kuo tiksliau laikantis įmonėje taikomų verslo taisyklių.
+
+## Programėlės versija
+
+**Dabartinė versija:** v1.0.0
+**Paskutinis atnaujinimas:** 2026 m. balandžio mėn.
+
+„My Clock“ nuolat tobulinama, kad būtų užtikrinta vis tikslesnė dirbtų valandų kontrolė ir įmonėje taikomų skaičiavimų atitiktis.
+
+Ateityje, nustačius realius darbuotojų poreikius, gali būti pridėti nauji patobulinimai, viršvalandžių taisyklių taisymai, skaičiavimo koregavimai ir patogumo naudoti patobulinimai.
+
+Tikslas – padaryti programėlę vis tikslesnę, patikimesnę ir naudingesnę kiekvieno darbuotojo asmeninei kontrolei.
+
+## Svarbu: neoficiali įmonės programėlė
+
+Ši programėlė nėra oficiali įmonės sistema ir neturi jokio institucinio ryšio su personalo skyriumi, darbo užmokesčio apskaita ar vidine laiko apskaitos sistema.
+
+Ji buvo sukurta išskirtinai kaip nepriklausoma pagalbinė priemonė darbuotojui, skirta asmeniniam patikrinimui ir individualiam stebėjimui.
+
+Čia pateikti skaičiavimai yra įvertinimai, pagrįsti įmonėje paprastai taikomomis veiklos taisyklėmis, siekiant kuo tiksliau atkartoti viduje naudojamus kriterijus.
+
+Tačiau gali būti skirtumų, specifinių išimčių, vidinių koregavimų, sutartinių pakeitimų ar ypatumų, kurie programėlėje nėra atspindėti.
+
+Todėl, atsiradus neatitikimams, kilus abejonių dėl mokėjimų, viršvalandžių, valandų banko ar bet kokio su darbo užmokesčiu susijusio klausimo, visada viršenybę turi oficialios įmonės taisyklės, o patvirtinimas turi būti atliekamas tiesiogiai su atsakingu personalo skyriumi.
+
+Aš neatsakau už programėlėje įvestos informacijos naudojimą ar sprendimus, priimtus remiantis tik čia pateiktais skaičiavimais.
+
+Programėlė tarnauja kaip pagalbinė priemonė, o ne kaip oficialus mokėjimo dokumentas.
+
+Nepaisant to, nustačius skaičiavimo klaidų ar tobulinimo galimybių, šie pakeitimai gali būti įgyvendinti ateityje, kad sistema vis labiau atitiktų tikrąsias įmonės taikomas taisykles.
+
+## Privatumas ir duomenų apsauga (BDAR)
+
+Vartotojų privatumas yra prioritetas.
+
+Laikydamasis BDAR (Bendrojo duomenų apsaugos reglamento) principų, aš neturiu prieigos prie asmens duomenų, kuriuos bet kuris vartotojas įveda programėlėje.
+
+Visa užregistruota informacija – tokia kaip vardas, darbuotojo numeris, laikas, vertės ir įrašų istorija – saugoma išskirtinai paties vartotojo įrenginyje, naudojant vietinę saugyklą.
+
+Tai reiškia, kad:
+
+* aš negaunu jūsų duomenų
+* aš nesaugau jūsų duomenų išoriniuose serveriuose
+* aš nesidalinu jūsų informacija su trečiosiomis šalimis
+* aš neturiu nuotolinės prieigos prie jūsų asmeninės informacijos
+
+Visa kontrolė išlieka tik pačiam vartotojui.
+
+Programėlė buvo sukurta būtent tam, kad suteiktų daugiau autonomijos ir saugumo, nepažeidžiant asmens privatumo.
+
+## Palaikymas ir kontaktai
+
+Jei susidūrėte su techninėmis problemomis dėl programėlės veikimo, sistemos klaidomis ar turite pasiūlymų tobulinimui, galite susisiekti tiesiogiai el. paštu:
+
+**berlanda.medeiros@gmail.com**

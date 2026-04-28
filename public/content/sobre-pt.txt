@@ -1,0 +1,54 @@
+# Sobre o My Clock
+
+## Quem sou
+
+Meu nome é Assis Berlanda de Medeiros, sou representante do SIPITU e desenvolvi o My Clock com o objetivo de ajudar os funcionários no controle das suas horas trabalhadas de forma simples, prática e gratuita.
+
+## Por que criei o My Clock
+
+A ideia surgiu da dificuldade que muitos trabalhadores enfrentam no dia a dia para conferir corretamente as horas lançadas no ponto, acompanhar horas extras, validar pagamentos e identificar possíveis divergências na folha salarial.
+
+Muitas vezes, quando há algum erro, o próprio funcionário precisa fazer esse controle manualmente para solicitar uma revisão junto ao RH.
+
+Pensando nisso, criei este aplicativo como uma ferramenta de apoio para controle pessoal, organização financeira, transparência e maior segurança na conferência das horas trabalhadas.
+
+O My Clock permite registrar horários de entrada, intervalo e saída, calcular horas normais, overtime, total semanal e valor bruto estimado a receber, seguindo as regras de negócio praticadas pela empresa da forma mais fiel possível.
+
+## Versão do aplicativo
+
+**Versão atual:** My Clock v1.0.0
+**Última atualização:** Abril de 2026
+
+O My Clock está em constante evolução para oferecer um controle cada vez mais fiel das horas trabalhadas e dos cálculos praticados pela empresa.
+
+Novas melhorias, correções de regras de overtime, ajustes de cálculo e aprimoramentos poderão ser adicionados futuramente conforme forem identificadas necessidades reais no dia a dia dos funcionários.
+
+## Importante: aplicativo não oficial
+
+O My Clock não é um sistema oficial da empresa e não possui qualquer vínculo institucional com o RH, folha de pagamento ou sistema interno de ponto.
+
+Ele foi desenvolvido exclusivamente como uma ferramenta independente de apoio ao trabalhador, com finalidade de conferência pessoal e acompanhamento individual.
+
+Os cálculos apresentados são estimativas baseadas nas regras normalmente praticadas pela empresa, buscando reproduzir da forma mais fiel possível os critérios utilizados internamente.
+
+Em caso de divergências, sempre prevalecem as regras oficiais da empresa e a validação deve ser feita diretamente com o RH responsável.
+
+## Privacidade e proteção de dados
+
+A privacidade dos usuários é uma prioridade.
+
+Todas as informações registradas no aplicativo são armazenadas exclusivamente no próprio dispositivo do usuário, utilizando armazenamento local.
+
+Eu não tenho acesso aos dados pessoais inseridos no sistema, não armazeno informações em servidores externos e não compartilho dados com terceiros.
+
+O controle permanece totalmente com o próprio usuário.
+
+Mais detalhes podem ser consultados na página de Política de Privacidade.
+
+## Suporte e contato
+
+Caso você encontre problemas técnicos no funcionamento do aplicativo, erros no sistema ou sugestões de melhoria, pode entrar em contato diretamente pelo e-mail:
+
+**[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)**
+
+Feedbacks são importantes para melhorar continuamente o My Clock e torná-lo cada vez mais útil para todos os trabalhadores.

@@ -1,0 +1,36 @@
+Cómo funciona el cálculo de horas en My Clock
+My Clock fue desarrollado para reproducir de la forma más fiel posible las reglas de cálculo de la empresa.
+
+1. Horario de inicio del turno
+Cada empleado tiene un horario oficial (ej: 07:30).
+
+2. Regla de entrada (clock-in)
+El sistema siempre considera: el horario de inicio del turno o el horario real de entrada, lo que sea más tarde.
+- Llegar antes no genera pago extra.
+- Si llega tarde, el cálculo comienza desde la entrada real.
+
+3. Regla de salida (clock-out)
+En la salida, cada minuto trabajado se contabiliza normalmente. No hay redondeo.
+
+4. Intervalo no remunerado (meal break)
+El mínimo es de 30 minutos. El sistema descuenta 30 minutos o el tiempo real, lo que sea mayor.
+
+5. Cálculo de overtime (horas extras)
+Se calcula de forma semanal.
+
+6. Horas normales
+Las primeras 39 horas semanales.
+
+7. Overtime A (1.5x)
+Después de las 39 horas: las siguientes 4 horas se pagan a 1.5x.
+
+8. Overtime B (2.0x)
+Todo lo que supere las 43 horas semanales se paga a 2.0x.
+
+9. Sábado
+El sábado cuenta como continuación de la semana.
+
+10. Domingo
+Todas las horas del domingo se pagan como Overtime B (2.0x) desde el primer minuto.
+
+Importante: My Clock es una herramienta de apoyo. El sistema oficial de la empresa prevalece siempre.
