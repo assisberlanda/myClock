@@ -28,13 +28,14 @@ function detectLanguageFromAcceptLanguage(
 }
 
 export default getRequestConfig(async () => {
-  const cookieStore = cookies();
-  const requestHeaders = headers();
+  const cookieStore = await cookies();
+  const requestHeaders = await headers();
 
-  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value;
+  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value ?? null;
   const acceptLanguage = requestHeaders.get("accept-language");
 
-  const browserLocale = detectLanguageFromAcceptLanguage(acceptLanguage);
+  const browserLocale =
+    detectLanguageFromAcceptLanguage(acceptLanguage);
 
   const locale =
     cookieLocale && APP_LANGUAGE_SET.has(cookieLocale)
@@ -48,7 +49,6 @@ export default getRequestConfig(async () => {
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch {
-    // fallback seguro (garante que nunca quebra build)
     messages = (await import(`../../messages/${DEFAULT_LANGUAGE}.json`)).default;
   }
 
