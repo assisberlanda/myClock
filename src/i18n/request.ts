@@ -1,10 +1,10 @@
-import { getRequestConfig } from 'next-intl/server';
-import { cookies, headers } from 'next/headers';
-import { APP_I18N_LANGUAGES, DEFAULT_LANGUAGE } from '@/shared/i18n/config';
+import { getRequestConfig } from "next-intl/server";
+import { cookies, headers } from "next/headers";
+import { APP_I18N_LANGUAGES, DEFAULT_LANGUAGE } from "@/shared/i18n/config";
 
-const APP_LANGUAGE_SET = new Set<string>(APP_I18N_LANGUAGES);
+const APP_LANGUAGE_SET = new Set(APP_I18N_LANGUAGES);
 
-function detectLanguageFromAcceptLanguage(acceptLanguageHeader: string | null): string {
+function detectLanguageFromAcceptLanguage(acceptLanguageHeader: string | null) {
   if (!acceptLanguageHeader) return DEFAULT_LANGUAGE;
 
   const candidates = acceptLanguageHeader
@@ -14,21 +14,30 @@ function detectLanguageFromAcceptLanguage(acceptLanguageHeader: string | null): 
 
   for (const candidate of candidates) {
     if (APP_LANGUAGE_SET.has(candidate)) return candidate;
-    const baseLanguage = candidate.split("-")[0];
-    if (baseLanguage && APP_LANGUAGE_SET.has(baseLanguage)) return baseLanguage;
+
+    const base = candidate.split("-")[0];
+    if (base && APP_LANGUAGE_SET.has(base)) return base;
   }
 
   return DEFAULT_LANGUAGE;
 }
 
 export default getRequestConfig(async () => {
-  const cookieStore = await cookies();
-  const requestHeaders = await headers();
-  const cookieLocale = cookieStore.get('NEXT_LOCALE')?.value;
-  const browserLocale = detectLanguageFromAcceptLanguage(requestHeaders.get("accept-language"));
-  const locale = cookieLocale && APP_LANGUAGE_SET.has(cookieLocale) ? cookieLocale : browserLocale;
+  const cookieStore = cookies();
+  const requestHeaders = headers();
 
-  let messages: Record<string, unknown>;
+  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value;
+  const acceptLanguage = requestHeaders.get("accept-language");
+
+  const browserLocale = detectLanguageFromAcceptLanguage(acceptLanguage);
+
+  const locale =
+    cookieLocale && APP_LANGUAGE_SET.has(cookieLocale)
+      ? cookieLocale
+      : browserLocale;
+
+  let messages: Record<string, unknown> = {};
+
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch {
