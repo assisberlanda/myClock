@@ -5,7 +5,7 @@ import {
   DEFAULT_LANGUAGE,
 } from "@/shared/i18n/config";
 
-const APP_LANGUAGE_SET = new Set<string>(APP_I18N_LANGUAGES as string[]);
+const APP_LANGUAGE_SET = new Set<string>(APP_I18N_LANGUAGES);
 
 function detectLanguageFromAcceptLanguage(
   acceptLanguageHeader: string | null
