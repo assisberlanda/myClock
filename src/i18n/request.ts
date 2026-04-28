@@ -7,23 +7,30 @@ import {
 
 const APP_LANGUAGE_SET = new Set<string>(APP_I18N_LANGUAGES);
 
-function detectLanguageFromAcceptLanguage(
-  acceptLanguageHeader: string | null
+function detectLanguage(
+  cookieLocale: string | undefined,
+  acceptLanguage: string | null
 ): string {
-  if (!acceptLanguageHeader) return DEFAULT_LANGUAGE;
-
-  const candidates = acceptLanguageHeader
-    .split(",")
-    .map((part) => part.split(";")[0]?.trim().toLowerCase())
-    .filter(Boolean);
-
-  for (const candidate of candidates) {
-    if (APP_LANGUAGE_SET.has(candidate)) return candidate;
-
-    const base = candidate.split("-")[0];
-    if (base && APP_LANGUAGE_SET.has(base)) return base;
+  // 1. Priority: Cookie set by middleware or our API
+  if (cookieLocale && APP_LANGUAGE_SET.has(cookieLocale)) {
+    return cookieLocale;
   }
 
+  // 2. Priority: Accept-Language header
+  if (acceptLanguage) {
+    const candidates = acceptLanguage
+      .split(",")
+      .map((part) => part.split(";")[0]?.trim().toLowerCase())
+      .filter(Boolean);
+
+    for (const candidate of candidates) {
+      if (APP_LANGUAGE_SET.has(candidate)) return candidate;
+      const base = candidate.split("-")[0];
+      if (base && APP_LANGUAGE_SET.has(base)) return base;
+    }
+  }
+
+  // 3. Fallback
   return DEFAULT_LANGUAGE;
 }
 
@@ -31,24 +38,16 @@ export default getRequestConfig(async () => {
   const cookieStore = await cookies();
   const requestHeaders = await headers();
 
-  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value ?? null;
+  const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value;
   const acceptLanguage = requestHeaders.get("accept-language");
 
-  const browserLocale =
-    detectLanguageFromAcceptLanguage(acceptLanguage);
-
-  const locale =
-    cookieLocale && APP_LANGUAGE_SET.has(cookieLocale)
-      ? cookieLocale
-      : APP_LANGUAGE_SET.has(browserLocale)
-      ? browserLocale
-      : DEFAULT_LANGUAGE;
+  const locale = detectLanguage(cookieLocale, acceptLanguage);
 
   let messages: Record<string, unknown>;
-
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch {
+  } catch (error) {
+    console.error(`Failed to load messages for locale "${locale}":`, error);
     messages = (await import(`../../messages/${DEFAULT_LANGUAGE}.json`)).default;
   }
 
