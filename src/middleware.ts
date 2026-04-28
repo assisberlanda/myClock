@@ -1,0 +1,27 @@
+import createMiddleware from "next-intl/middleware";
+import { APP_I18N_LANGUAGES, DEFAULT_LANGUAGE } from "./shared/i18n/config";
+
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: APP_I18N_LANGUAGES,
+
+  // Used when no locale matches
+  defaultLocale: DEFAULT_LANGUAGE,
+
+  // If this is set to 'never', the locale won't be prefixed in the URL
+  // e.g. /en/about -> /about
+  localePrefix: "never",
+});
+
+export const config = {
+  // Match only internationalized pathnames
+  matcher: [
+    // Match all pathnames except for
+    // - API routes
+    // - _next (internal paths)
+    // - _static (inside /public)
+    // - _vercel (internal paths)
+    // - all files (e.g. favicon.ico, logo.png)
+    "/((?!api|_next|_static|_vercel|[\\w-]+\\.\\w+).*)",
+  ],
+};
