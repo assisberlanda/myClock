@@ -1,10 +1,15 @@
 import { getRequestConfig } from "next-intl/server";
 import { cookies, headers } from "next/headers";
-import { APP_I18N_LANGUAGES, DEFAULT_LANGUAGE } from "@/shared/i18n/config";
+import {
+  APP_I18N_LANGUAGES,
+  DEFAULT_LANGUAGE,
+} from "@/shared/i18n/config";
 
-const APP_LANGUAGE_SET = new Set(APP_I18N_LANGUAGES);
+const APP_LANGUAGE_SET = new Set<string>(APP_I18N_LANGUAGES as string[]);
 
-function detectLanguageFromAcceptLanguage(acceptLanguageHeader: string | null) {
+function detectLanguageFromAcceptLanguage(
+  acceptLanguageHeader: string | null
+): string {
   if (!acceptLanguageHeader) return DEFAULT_LANGUAGE;
 
   const candidates = acceptLanguageHeader
@@ -34,13 +39,16 @@ export default getRequestConfig(async () => {
   const locale =
     cookieLocale && APP_LANGUAGE_SET.has(cookieLocale)
       ? cookieLocale
-      : browserLocale;
+      : APP_LANGUAGE_SET.has(browserLocale)
+      ? browserLocale
+      : DEFAULT_LANGUAGE;
 
-  let messages: Record<string, unknown> = {};
+  let messages: Record<string, unknown>;
 
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch {
+    // fallback seguro (garante que nunca quebra build)
     messages = (await import(`../../messages/${DEFAULT_LANGUAGE}.json`)).default;
   }
 
