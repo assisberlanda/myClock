@@ -1,5 +1,7 @@
 import createMiddleware from "next-intl/middleware";
-import { APP_I18N_LANGUAGES, DEFAULT_LANGUAGE } from "@/shared/i18n/config";
+
+const APP_I18N_LANGUAGES = ["en", "pt", "ga", "lt", "ru", "uk", "ro", "es", "bg", "lv", "ur"] as const;
+const DEFAULT_LANGUAGE = "en";
 
 const intlMiddleware = createMiddleware({
   locales: APP_I18N_LANGUAGES,
