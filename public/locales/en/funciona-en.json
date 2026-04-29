@@ -1,0 +1,138 @@
+{
+    "comoFuncionaCalculoHoras": {
+        "titulo": "How time calculation works on My Clock",
+        "introducao": {
+            "paragrafo1": "My Clock was developed to reproduce as faithfully as possible the calculation rules practiced by the company, allowing each employee to monitor their hours worked, overtime and estimated gross pay.",
+            "paragrafo2": "Below is the explanation of how calculations are performed within the application."
+        },
+        "secao1": {
+            "titulo": "1. Shift start time",
+            "paragrafo1": "Each employee has an official shift start time, which may vary depending on the team or sector.",
+            "subtituloExemplos": "Examples:",
+            "exemplos": [
+                "04:00",
+                "07:30",
+                "13:00",
+                "16:00"
+            ],
+            "paragrafo2": "This schedule is the main basis for calculating hours worked."
+        },
+        "secao2": {
+            "titulo": "2. Clock-in rule",
+            "paragrafo1": "The system always considers:",
+            "destaque1": "the shift start time or actual entry time, whichever is later.",
+            "paragrafo2": "This means that:",
+            "regras": [
+                "If you arrive before your scheduled time, there will be no extra payment",
+                "If you arrive late, the calculation starts from the actual time of your entry"
+            ],
+            "subtituloExemplo": "Example",
+            "exemploContexto": "Official shift time: 07:30",
+            "exemplos": [
+                "entry at 07:10 → account from 07:30",
+                "entry at 07:25 → account from 07:30",
+                "entry at 07:30 → bill from 07:30",
+                "entry at 07:45 → account from 07:45"
+            ],
+            "paragrafo3": "In other words, arriving early does not add up to overtime."
+        },
+        "secao3": {
+            "titulo": "3. Clock-out rule",
+            "paragrafo1": "Upon departure, each minute worked is counted normally.",
+            "paragrafo2": "There is no rounding.",
+            "subtituloExemplo": "Example",
+            "exemplos": [
+                "departure at 00:03 → counts up to 00:03",
+                "departure at 00:17 → counts up to 00:17"
+            ],
+            "paragrafo3": "Every minute after work is considered."
+        },
+        "secao4": {
+            "titulo": "4. Unpaid break (meal break)",
+            "paragrafo1": "The minimum unpaid break is 30 minutes.",
+            "paragrafo2": "The system discounts:",
+            "destaque1": "30 minutes or the actual break time, whichever is longer.",
+            "subtituloExemplo": "Example",
+            "exemplos": [
+                "20 minute break → deduct 30 minutes",
+                "30 minute break → deduct 30 minutes",
+                "35 minute break → deduct 35 minutes",
+                "50 minute break → deduct 50 minutes"
+            ],
+            "paragrafo3": "Less than 30 minutes will never be discounted."
+        },
+        "secao5": {
+            "titulo": "5. Calculation of overtime (overtime)",
+            "paragrafo1": "Overtime is calculated weekly, not daily.",
+            "paragrafo2": "The main base considers the total hours worked from Monday to Friday."
+        },
+        "secao6": {
+            "titulo": "6. Normal hours",
+            "paragrafo1": "The first ones:",
+            "destaque1": "39 hours worked per week",
+            "paragrafo2": "They are considered normal hours and paid at the normal contractual hourly rate."
+        },
+        "secao7": {
+            "titulo": "7. Overtime A (1.5x)",
+            "paragrafo1": "After completing 39 hours a week:",
+            "paragrafo2": "next ones:",
+            "destaque1": "4 hours",
+            "paragrafo3": "will be paid with an additional amount of:",
+            "destaque2": "1.5x (one and a half times)",
+            "subtituloExemplo": "Example",
+            "exemploContexto": "If your hour is worth €15:",
+            "exemplos": [
+                "normal hour = €15",
+                "overtime A = €22.50"
+            ]
+        },
+        "secao8": {
+            "titulo": "8. Overtime B (2.0x)",
+            "paragrafo1": "Everything that exceeds:",
+            "destaque1": "43 hours per week",
+            "paragrafo2": "will be paid with an additional amount of:",
+            "destaque2": "2.0x (doubled hour)",
+            "subtituloExemplo": "Example",
+            "exemploContexto": "If your hour is worth €15:",
+            "exemplos": [
+                "overtime B = €30.00"
+            ]
+        },
+        "secao9": {
+            "titulo": "9. Saturday",
+            "paragrafo1": "Saturday enters as a continuation of the week.",
+            "paragrafo2": "Depending on the total already accumulated from Monday to Friday:",
+            "regras": [
+                "can enter as Overtime A",
+                "can enter as Overtime B"
+            ],
+            "paragrafo3": "If by Friday you have already exceeded 43 hours, normally the entire Saturday will be calculated as Overtime B."
+        },
+        "secao10": {
+            "titulo": "10. Sunday",
+            "paragrafo1": "All hours worked on Sunday are paid as:",
+            "destaque1": "Overtime B (2.0x)",
+            "paragrafo2": "from the first minute.",
+            "paragrafo3": "There is no normal time on Sunday."
+        },
+        "secao11": {
+            "titulo": "11. Final result",
+            "paragrafo1": "The application automatically shows:",
+            "itens": [
+                "hours worked per day",
+                "weekly total",
+                "normal hours",
+                "total Overtime A",
+                "total Overtime B",
+                "estimated gross amount receivable"
+            ],
+            "paragrafo2": "These calculations help with personal control, payroll checking and requesting a review from HR when necessary."
+        },
+        "importante": {
+            "titulo": "Important",
+            "paragrafo1": "My Clock is a support tool for personal conferencing.",
+            "paragrafo2": "It seeks to reproduce the rules practiced by the company as faithfully as possible, however the company's official system and internal rules always prevail in case of divergence.",
+            "paragrafo3": "Therefore, any difference in payment must be validated directly with the responsible HR."
+        }
+    }
+}
