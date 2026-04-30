@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "Apie My Clock",
+        "quemSou": {
+            "titulo": "Kas aš esu",
+            "conteudo": "Mano vardas Assis Berlanda de Medeiros, esu SIPITU atstovas ir sukūriau My Clock su tikslu padėti darbuotojams paprastai, praktiškai ir nemokamai sekti savo dirbtas valandas."
+        },
+        "porQueCriei": {
+            "titulo": "Kodėl sukūriau My Clock",
+            "conteudo": "Idėja kilo iš sunkumų, su kuriais kasdien susiduria daugelis darbuotojų tikrindami teisingai į sistemą įvestas darbo valandas, sekdami viršvalandžius, tikrindami atlyginimus ir nustatydami galimus neatitikimus algalapyje.\n\nDažnai, kai įvyksta klaida, pats darbuotojas turi tai tikrinti rankiniu būdu, kad galėtų paprašyti HR peržiūros.\n\nAtsižvelgdamas į tai, sukūriau šią programą kaip asmeninę pagalbos priemonę finansų kontrolei, organizacijai, skaidrumui ir didesniam saugumui tikrinant dirbtas valandas.\n\nMy Clock leidžia registruoti atvykimo, pertraukos ir išvykimo laikus, skaičiuoti įprastas valandas, viršvalandžius, bendrą savaitės laiką ir apskaičiuotą bruto atlyginimą, laikantis įmonės taikomų taisyklių kuo tiksliau."
+        },
+        "versao": {
+            "titulo": "Programos versija",
+            "conteudo": "**Dabartinė versija:** My Clock v1.0.0\n**Paskutinis atnaujinimas:** 2026 m. balandis\n\nMy Clock nuolat tobulinama, kad galėtų dar tiksliau atspindėti dirbtas valandas ir įmonės taikomus skaičiavimus.\n\nAteityje gali būti pridėta naujų patobulinimų, viršvalandžių taisyklių korekcijų, skaičiavimo pakeitimų ir kitų patobulinimų, atsižvelgiant į realius darbuotojų poreikius."
+        },
+        "importante": {
+            "titulo": "Svarbu: neoficiali programa",
+            "conteudo": "My Clock nėra oficiali įmonės sistema ir neturi jokio institucinio ryšio su HR, atlyginimų apskaita ar vidine darbo laiko sistema.\n\nJi sukurta išimtinai kaip nepriklausoma pagalbinė priemonė darbuotojui asmeninei kontrolei ir sekimui.\n\nPateikiami skaičiavimai yra tik apytiksliai, paremti įmonėje paprastai taikomomis taisyklėmis, siekiant kuo tiksliau atkartoti vidinius kriterijus.\n\nEsant neatitikimams, visada galioja oficialios įmonės taisyklės, o patikra turi būti atliekama tiesiogiai su atsakingu HR skyriumi."
+        },
+        "privacidade": {
+            "titulo": "Privatumas ir duomenų apsauga",
+            "conteudo": "Vartotojų privatumas yra prioritetas.\n\nVisa programoje įrašyta informacija saugoma tik vartotojo įrenginyje, naudojant vietinę saugyklą.\n\nAš neturiu prieigos prie įvestų asmens duomenų, nesaugau informacijos išoriniuose serveriuose ir nesidalinu duomenimis su trečiosiomis šalimis.\n\nVisa kontrolė lieka pačiam vartotojui.\n\nDaugiau informacijos galima rasti Privatumo politikos puslapyje."
+        },
+        "suporte": {
+            "titulo": "Pagalba ir kontaktai",
+            "conteudo": "Jei susiduriate su techninėmis problemomis programoje, sistemos klaidomis ar turite pasiūlymų, galite susisiekti tiesiogiai el. paštu:\n\n[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)\n\nAtsiliepimai yra svarbūs, kad My Clock būtų nuolat tobulinama ir dar naudingesnė visiems darbuotojams."
+        }
+    }
+}

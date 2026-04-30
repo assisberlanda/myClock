@@ -1,0 +1,68 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Politica de Confidențialitate",
+        "dataAtualizacao": "**Data ultimei actualizări:** Aprilie 2026",
+        "secao1": {
+            "titulo": "1. Introducere",
+            "paragrafo1": "Confidențialitatea utilizatorilor My Clock este o prioritate.",
+            "paragrafo2": "Această politică explică modul în care sunt gestionate datele.",
+            "paragrafo3": "Aplicația respectă principiile GDPR."
+        },
+        "secao2": {
+            "titulo": "2. Date utilizate",
+            "paragrafo1": "Utilizatorul poate introduce:",
+            "listaDados": [
+                "nume complet",
+                "număr angajat",
+                "ora turei",
+                "tarif orar",
+                "intrări și ieșiri",
+                "istoric săptămânal",
+                "calcule salariu și overtime"
+            ],
+            "paragrafo2": "Datele sunt folosite doar local."
+        },
+        "secao3": {
+            "titulo": "3. Unde sunt stocate datele",
+            "paragrafo1": "Toate datele sunt stocate pe dispozitiv.",
+            "paragrafo2": "Nu există servere externe.",
+            "listaGarantias": [
+                "fără trimitere de date",
+                "fără cloud",
+                "fără terți"
+            ],
+            "paragrafo3": "Utilizatorul controlează totul."
+        },
+        "secao4": {
+            "titulo": "4. Acces la date",
+            "paragrafo1": "Dezvoltatorul nu are acces la date.",
+            "paragrafo2": "Nu există monitorizare.",
+            "paragrafo3": "Totul rămâne local."
+        },
+        "secao5": {
+            "titulo": "5. Backup",
+            "paragrafo1": "Utilizatorul este responsabil pentru backup.",
+            "paragrafo2": "Datele pot fi pierdute la schimbarea dispozitivului."
+        },
+        "secao6": {
+            "titulo": "6. Cookie-uri",
+            "paragrafo1": "Nu sunt folosite cookie-uri.",
+            "paragrafo2": "Dacă se schimbă, politica va fi actualizată."
+        },
+        "secao7": {
+            "titulo": "7. Linkuri externe",
+            "paragrafo1": "Pot exista linkuri de contact.",
+            "paragrafo2": "Nu suntem responsabili pentru servicii externe."
+        },
+        "secao8": {
+            "titulo": "8. Modificări",
+            "paragrafo1": "Politica poate fi modificată oricând.",
+            "paragrafo2": "Versiunea actualizată va fi în aplicație."
+        },
+        "secao9": {
+            "titulo": "9. Contact",
+            "paragrafo1": "Contact:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Termeni de utilizare",
+        "dataUltimaAtualizacao": "**Data ultimei actualizări:** aprilie 2026",
+        "secao1": {
+            "titulo": "1. Acceptarea termenilor",
+            "paragrafo1": "Prin accesarea și utilizarea aplicației My Clock (denumită „Aplicația”), ești de acord în totalitate cu acești Termeni de utilizare.",
+            "paragrafo2": "Dacă nu ești de acord cu oricare parte a acestor termeni, îți recomandăm să nu folosești aplicația."
+        },
+        "secao2": {
+            "titulo": "2. Scopul aplicației",
+            "paragrafo1": "My Clock a fost dezvoltat ca un instrument gratuit de suport pentru ca angajații să își poată urmări orele lucrate, overtime-ul, estimarea salariului brut și gestionarea personală a programului de lucru.",
+            "paragrafo2": "Scopul principal este de a oferi mai multă transparență, organizare financiară și ușurință în verificarea orelor înregistrate, permițând utilizatorului să identifice eventuale diferențe și să solicite revizuiri la departamentul HR.",
+            "paragrafo3": "Aplicația nu înlocuiește sistemele oficiale de pontaj, salarizare sau management intern al companiei."
+        },
+        "secao3": {
+            "titulo": "3. Aplicație neoficială",
+            "paragrafo1": "My Clock nu este un sistem oficial al companiei și nu are nicio legătură instituțională cu HR-ul, salarizarea, departamentul financiar sau sistemul intern de pontaj.",
+            "paragrafo2": "Calculele prezentate sunt estimări bazate pe regulile operaționale utilizate în mod obișnuit de companie, încercând să reproducă cât mai fidel criteriile interne.",
+            "paragrafo3": "Pot exista diferențe cauzate de acorduri interne, ajustări specifice, excepții contractuale, convenții colective sau reguli care nu sunt implementate în aplicație.",
+            "paragrafo4": "În caz de divergență, regulile oficiale ale companiei au întotdeauna prioritate, iar verificarea trebuie făcută direct cu departamentul HR."
+        },
+        "secao4": {
+            "titulo": "4. Responsabilitatea utilizatorului",
+            "paragrafo1": "Utilizatorul este pe deplin responsabil pentru informațiile introduse în aplicație, inclusiv orele, valorile salariale, înregistrările de lucru și alte date utilizate pentru calcul.",
+            "paragrafo2": "Aplicația este doar un instrument de suport și verificare personală.",
+            "paragrafo3": "Dezvoltatorul nu este responsabil pentru deciziile luate exclusiv pe baza calculelor din aplicație și nici pentru diferențele dintre valorile estimate și cele plătite efectiv de companie."
+        },
+        "secao5": {
+            "titulo": "5. Stocarea datelor",
+            "paragrafo1": "Toate informațiile introduse în My Clock sunt stocate local pe dispozitivul utilizatorului.",
+            "paragrafo2": "Dezvoltatorul nu are acces la datele introduse, nu stochează informații pe servere externe și nu monitorizează de la distanță datele utilizatorilor.",
+            "paragrafo3": "Utilizatorul este responsabil pentru realizarea backup-urilor și exporturilor atunci când este necesar."
+        },
+        "secao6": {
+            "titulo": "6. Proprietate intelectuală",
+            "paragrafo1": "Tot conținutul aplicației, inclusiv structura, designul, textele, identitatea vizuală, regulile implementate, funcționalitățile și codul sursă, este proprietatea intelectuală a lui Assis Berlanda de Medeiros, cu excepția cazurilor menționate altfel.",
+            "paragrafo2": "Reproducerea, distribuirea sau utilizarea neautorizată este interzisă."
+        },
+        "secao7": {
+            "titulo": "7. Modificări ale aplicației și termenilor",
+            "paragrafo1": "Dezvoltatorul își rezervă dreptul de a modifica funcționalitățile, regulile de calcul, designul, structura sistemului și acești Termeni de utilizare în orice moment, fără notificare prealabilă.",
+            "paragrafo2": "Noile versiuni pot include îmbunătățiri, corecții și ajustări necesare pentru a alinia aplicația mai bine cu regulile companiei."
+        },
+        "secao8": {
+            "titulo": "8. Legea aplicabilă",
+            "paragrafo1": "Acești Termeni de utilizare vor fi interpretați în conformitate cu legile aplicabile ale Uniunii Europene și ale Irlandei, în special în ceea ce privește protecția datelor și utilizarea aplicațiilor digitale."
+        },
+        "secao9": {
+            "titulo": "9. Contact",
+            "paragrafo1": "Pentru întrebări, sugestii sau aspecte legate de acești Termeni de utilizare, contactați:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

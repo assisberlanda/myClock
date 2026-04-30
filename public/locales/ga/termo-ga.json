@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Téarmaí Úsáide",
+        "dataUltimaAtualizacao": "**Dáta an nuashonraithe deireanaigh:** Aibreán 2026",
+        "secao1": {
+            "titulo": "1. Glacadh leis na Téarmaí",
+            "paragrafo1": "Trí rochtain a fháil agus úsáid a bhaint as an aip My Clock (“an Aip”), aontaíonn tú (“Úsáideoir”) go hiomlán leis na Téarmaí Úsáide seo.",
+            "paragrafo2": "Mura n-aontaíonn tú le haon chuid de na téarmaí seo, moltar duit gan an aip a úsáid."
+        },
+        "secao2": {
+            "titulo": "2. Cuspóir na hAipe",
+            "paragrafo1": "Forbraíodh My Clock mar uirlis tacaíochta saor in aisce ionas gur féidir le fostaithe a gcuid uaireanta oibre, am breise, ríomh measta pá iomláin agus rialú pearsanta a gcuid shifts a leanúint.",
+            "paragrafo2": "Is é an príomhchuspóir níos mó trédhearcachta, eagrú airgeadais agus éascaíocht a thabhairt sa seiceáil ar na huaireanta taifeadta, ag ligean don úsáideoir difríochtaí féideartha a aithint agus athbhreithniú a iarraidh leis an roinn acmhainní daonna nuair is gá.",
+            "paragrafo3": "Ní chuireann an aip seo in ionad córais oifigiúla ama, párolla ná bainistíocht inmheánach na cuideachta."
+        },
+        "secao3": {
+            "titulo": "3. Aip Neamhoifigiúil",
+            "paragrafo1": "Ní córas oifigiúil na cuideachta é My Clock agus níl aon cheangal institiúideach aige leis an roinn acmhainní daonna, párolla, airgeadas ná córas inmheánach ama.",
+            "paragrafo2": "Is meastacháin iad na ríomhanna a thaispeántar, bunaithe ar na rialacha oibríochta a úsáidtear de ghnáth sa chuideachta, ag iarraidh na critéir inmheánacha a atáirgeadh chomh cruinn agus is féidir.",
+            "paragrafo3": "D’fhéadfadh difríochtaí a bheith ann mar gheall ar chomhaontuithe inmheánacha, coigeartuithe sonracha, eisceachtaí conartha, comhaontuithe comhchoiteanna nó rialacha nach bhfuil curtha i bhfeidhm san aip.",
+            "paragrafo4": "I gcás difríochta, is iad rialacha oifigiúla na cuideachta a bhíonn i réim i gcónaí agus caithfear an bailíochtú a dhéanamh go díreach leis an roinn acmhainní daonna freagrach."
+        },
+        "secao4": {
+            "titulo": "4. Freagracht an Úsáideora",
+            "paragrafo1": "Tá an t-úsáideoir freagrach go hiomlán as an bhfaisnéis a iontráiltear san aip, lena n-áirítear uaireanta, luach pá in aghaidh na huaire, taifid shifts agus sonraí eile a úsáidtear don ríomh.",
+            "paragrafo2": "Úsáidtear an aip go heisiach mar uirlis tacaíochta agus seiceála pearsanta.",
+            "paragrafo3": "Níl an forbróir freagrach as cinntí a dhéantar bunaithe go hiomlán ar na ríomhanna a thaispeántar sa chóras, ná as difríochtaí idir na luachanna measta agus na luachanna iarbhír a íocann an chuideachta."
+        },
+        "secao5": {
+            "titulo": "5. Stóráil Sonraí",
+            "paragrafo1": "Stóráiltear gach faisnéis a thaifeadtar i My Clock go háitiúil ar ghléas an úsáideora féin.",
+            "paragrafo2": "Níl rochtain ag an bhforbróir ar na sonraí a iontráiltear, ní stóráiltear faisnéis ar fhreastalaithe seachtracha agus ní dhéantar monatóireacht iargúlta ar fhaisnéis phearsanta an úsáideora.",
+            "paragrafo3": "Tá an t-úsáideoir freagrach as cúltacaí agus easpórtálacha féin a choinneáil nuair is gá."
+        },
+        "secao6": {
+            "titulo": "6. Maoin Intleachtúil",
+            "paragrafo1": "Is maoin intleachtúil le Assis Berlanda de Medeiros é an t-ábhar ar fad san aip, lena n-áirítear struchtúr, leagan amach, téacsanna, dearadh amhairc, rialacha curtha i bhfeidhm, feidhmiúlachtaí agus cód foinse dílsithe, mura luaitear a mhalairt.",
+            "paragrafo2": "Tá cosc ar atáirgeadh, dáileadh nó úsáid mhícheart gan údarú roimh ré."
+        },
+        "secao7": {
+            "titulo": "7. Athruithe ar an Aip agus ar na Téarmaí",
+            "paragrafo1": "Forchoimeádann an forbróir an ceart feidhmiúlachtaí, rialacha ríofa, leagan amach, struchtúr an chórais agus na Téarmaí Úsáide seo a athrú am ar bith gan fógra roimh ré.",
+            "paragrafo2": "D’fhéadfadh leaganacha nua feabhsuithe, ceartúcháin agus coigeartuithe a áireamh chun an aip a dhéanamh níos cruinne do rialacha na cuideachta."
+        },
+        "secao8": {
+            "titulo": "8. Dlí Infheidhme",
+            "paragrafo1": "Léireofar na Téarmaí Úsáide seo de réir dhlíthe infheidhme an Aontais Eorpaigh agus na hÉireann, go háirithe maidir le cosaint sonraí agus úsáid feidhmchlár digiteach."
+        },
+        "secao9": {
+            "titulo": "9. Teagmháil",
+            "paragrafo1": "Le haghaidh ceisteanna, moltaí nó ábhair a bhaineann leis na Téarmaí Úsáide seo, déan teagmháil trí ríomhphost:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

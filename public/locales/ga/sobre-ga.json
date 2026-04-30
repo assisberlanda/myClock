@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "Maidir le My Clock",
+        "quemSou": {
+            "titulo": "Cé mise",
+            "conteudo": "Is mise Assis Berlanda de Medeiros, ionadaí SIPITU mé, agus d’fhorbair mé My Clock leis an sprioc cabhrú le fostaithe a gcuid uaireanta oibre a rialú ar bhealach simplí, praiticiúil agus saor in aisce."
+        },
+        "porQueCriei": {
+            "titulo": "Cén fáth ar chruthaigh mé My Clock",
+            "conteudo": "Tháinig an smaoineamh ó na deacrachtaí a bhíonn ag go leor oibrithe ó lá go lá agus iad ag seiceáil go cruinn na huaireanta a thaifeadtar sa chóras, ag leanúint am breise, ag bailíochtú íocaíochtaí agus ag aithint difríochtaí féideartha sa phárolla.\n\nGo minic, nuair a tharlaíonn earráid, caithfidh an fostaí féin an rialú seo a dhéanamh de láimh chun athbhreithniú a iarraidh leis an roinn acmhainní daonna.\n\nAg smaoineamh air sin, chruthaigh mé an aip seo mar uirlis tacaíochta do rialú pearsanta, eagrú airgeadais, trédhearcacht agus níos mó slándála i seiceáil na n-uaireanta oibre.\n\nLigeann My Clock duit amanna iontrála, sos agus imeachta a thaifeadadh, gnáthuaireanta, am breise, iomlán seachtainiúil agus íocaíocht bhrúite mheasta a ríomh, ag leanúint rialacha gnó na cuideachta chomh dílis agus is féidir."
+        },
+        "versao": {
+            "titulo": "Leagan an aip",
+            "conteudo": "**Leagan reatha:** My Clock v1.0.0\n**Nuashonrú deireanach:** Aibreán 2026\n\nTá My Clock i bhforbairt leanúnach chun rialú níos cruinne a thairiscint ar na huaireanta oibre agus ar na ríomhanna a úsáideann an chuideachta.\n\nFéadfar feabhsuithe nua, ceartúcháin ar rialacha am breise, coigeartuithe ríofa agus feabhsuithe eile a chur leis amach anseo de réir mar a aithnítear riachtanais fhíora i saol laethúil na bhfostaithe."
+        },
+        "importante": {
+            "titulo": "Tábhachtach: aip neamhoifigiúil",
+            "conteudo": "Ní córas oifigiúil na cuideachta é My Clock agus níl aon cheangal institiúideach aige leis an roinn acmhainní daonna, párolla ná córas inmheánach ama.\n\nForbraíodh é go heisiach mar uirlis neamhspleách tacaíochta don oibrí, le haghaidh seiceáil phearsanta agus rianú aonair.\n\nIs meastacháin iad na ríomhanna a chuirtear ar fáil, bunaithe ar na rialacha a úsáidtear de ghnáth sa chuideachta, ag iarraidh na critéir inmheánacha a atáirgeadh chomh cruinn agus is féidir.\n\nI gcás difríochtaí, is iad rialacha oifigiúla na cuideachta a bhíonn i réim i gcónaí agus caithfear an bailíochtú a dhéanamh go díreach leis an roinn acmhainní daonna freagrach."
+        },
+        "privacidade": {
+            "titulo": "Príobháideacht agus cosaint sonraí",
+            "conteudo": "Is tosaíocht í príobháideacht úsáideoirí.\n\nStóráiltear gach faisnéis a thaifeadtar san aip go heisiach ar ghléas an úsáideora féin, ag úsáid stórála áitiúla.\n\nNíl rochtain agam ar na sonraí pearsanta a iontráiltear sa chóras, ní stórálaim faisnéis ar fhreastalaithe seachtracha agus ní roinnim sonraí le tríú páirtithe.\n\nFanann an smacht go hiomlán leis an úsáideoir féin.\n\nIs féidir tuilleadh sonraí a fháil ar leathanach an Pholasaí Príobháideachta."
+        },
+        "suporte": {
+            "titulo": "Tacaíocht agus teagmháil",
+            "conteudo": "Má thagann tú ar fhadhbanna teicniúla san aip, earráidí córais nó má tá moltaí feabhsúcháin agat, is féidir leat teagmháil dhíreach a dhéanamh trí ríomhphost:\n\n[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)\n\nTá aiseolas tábhachtach chun My Clock a fheabhsú go leanúnach agus chun é a dhéanamh níos úsáidí do gach oibrí."
+        }
+    }
+}

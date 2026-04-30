@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "About My Clock",
+        "quemSou": {
+            "titulo": "Who am I",
+            "conteudo": "My name is Assis Berlanda de Medeiros, I am a representative of SIPITU and I developed My Clock with the aim of helping employees control their hours worked in a simple, practical and free way."
+        },
+        "porQueCriei": {
+            "titulo": "Why I created My Clock",
+            "conteudo": "The idea arose from the difficulty that many workers face on a daily basis in correctly checking the hours recorded at the time, monitoring overtime, validating payments and identifying possible discrepancies in the payroll.\n\n"
+        },
+        "versao": {
+            "titulo": "Application version",
+            "conteudo": "**Current version:** My Clock v1.0.0\n"
+        },
+        "importante": {
+            "titulo": "Important: Unofficial app",
+            "conteudo": "My Clock is not an official company system and has no institutional link with HR, payroll or internal timekeeping systems.\n\n"
+        },
+        "privacidade": {
+            "titulo": "Privacy and data protection",
+            "conteudo": "User privacy is a priority.\n\n"
+        },
+        "suporte": {
+            "titulo": "Support and contact",
+            "conteudo": "If you encounter technical problems with the application, system errors or suggestions for improvement, you can contact us directly via email:\n\n"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.
+├── about
+│   └── page.tsx
+├── api
+│   └── locale
+│       └── route.ts
+├── app
+│   └── [locale]
+│       ├── layout.tsx
+│       └── page.tsx
+├── clock
+│   └── page.tsx
+├── globals.css
+├── history
+│   ├── page.tsx
+│   ├── page.tsx.bak
+│   └── page.tsx.bak2
+├── how-it-works
+│   └── page.tsx
+├── icon.png
+├── layout.tsx
+├── privacy-policy
+│   └── page.tsx
+├── settings
+│   └── page.tsx
+├── src
+│   └── app
+│       └── [locale]
+│           └── layout.tsx
+├── terms-of-use
+│   └── page.tsx
+└── tree.txt
+
+15 directories, 17 files

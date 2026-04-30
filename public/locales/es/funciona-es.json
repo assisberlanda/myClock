@@ -1,0 +1,138 @@
+{
+    "comoFuncionaCalculoHoras": {
+        "titulo": "Cómo funciona el cálculo de horas en My Clock",
+        "introducao": {
+            "paragrafo1": "My Clock fue desarrollado para reproducir de la forma más fiel posible las reglas de cálculo aplicadas por la empresa, permitiendo que cada empleado pueda seguir sus horas trabajadas, horas extras y el pago bruto estimado.",
+            "paragrafo2": "A continuación se explica cómo se realizan los cálculos dentro de la aplicación."
+        },
+        "secao1": {
+            "titulo": "1. Horario de inicio del turno",
+            "paragrafo1": "Cada empleado tiene un horario oficial de inicio de turno, que puede variar según el equipo o el sector.",
+            "subtituloExemplos": "Ejemplos:",
+            "exemplos": [
+                "04:00",
+                "07:30",
+                "13:00",
+                "16:00"
+            ],
+            "paragrafo2": "Este horario es la base principal para el cálculo de las horas trabajadas."
+        },
+        "secao2": {
+            "titulo": "2. Regla de entrada (clock-in)",
+            "paragrafo1": "El sistema siempre considera:",
+            "destaque1": "el horario de inicio del turno o la hora real de entrada, lo que ocurra más tarde.",
+            "paragrafo2": "Esto significa que:",
+            "regras": [
+                "si llegas antes de tu horario, no se genera pago extra",
+                "si llegas tarde, el cálculo comienza desde tu hora real de entrada"
+            ],
+            "subtituloExemplo": "Ejemplo",
+            "exemploContexto": "Horario oficial del turno: 07:30",
+            "exemplos": [
+                "entrada a las 07:10 → cuenta desde las 07:30",
+                "entrada a las 07:25 → cuenta desde las 07:30",
+                "entrada a las 07:30 → cuenta desde las 07:30",
+                "entrada a las 07:45 → cuenta desde las 07:45"
+            ],
+            "paragrafo3": "Es decir, llegar antes no suma horas extras."
+        },
+        "secao3": {
+            "titulo": "3. Regla de salida (clock-out)",
+            "paragrafo1": "Al salir, cada minuto trabajado se contabiliza normalmente.",
+            "paragrafo2": "No existe redondeo.",
+            "subtituloExemplo": "Ejemplo",
+            "exemplos": [
+                "salida a las 00:03 → cuenta hasta las 00:03",
+                "salida a las 00:17 → cuenta hasta las 00:17"
+            ],
+            "paragrafo3": "Cada minuto después del horario laboral es considerado."
+        },
+        "secao4": {
+            "titulo": "4. Descanso no remunerado (meal break)",
+            "paragrafo1": "El descanso mínimo no remunerado es de 30 minutos.",
+            "paragrafo2": "El sistema descuenta:",
+            "destaque1": "30 minutos o el tiempo real del descanso, lo que sea mayor.",
+            "subtituloExemplo": "Ejemplo",
+            "exemplos": [
+                "descanso de 20 minutos → descuenta 30 minutos",
+                "descanso de 30 minutos → descuenta 30 minutos",
+                "descanso de 35 minutos → descuenta 35 minutos",
+                "descanso de 50 minutos → descuenta 50 minutos"
+            ],
+            "paragrafo3": "Nunca se descontará menos de 30 minutos."
+        },
+        "secao5": {
+            "titulo": "5. Cálculo de horas extras (overtime)",
+            "paragrafo1": "Las horas extras se calculan de forma semanal, no diaria.",
+            "paragrafo2": "La base principal considera el total de horas trabajadas de lunes a viernes."
+        },
+        "secao6": {
+            "titulo": "6. Horas normales",
+            "paragrafo1": "Las primeras:",
+            "destaque1": "39 horas trabajadas por semana",
+            "paragrafo2": "se consideran horas normales y se pagan al valor normal de tu hora contratada."
+        },
+        "secao7": {
+            "titulo": "7. Horas extras A (1.5x)",
+            "paragrafo1": "Después de completar 39 horas en la semana:",
+            "paragrafo2": "las siguientes:",
+            "destaque1": "4 horas",
+            "paragrafo3": "se pagan con un adicional de:",
+            "destaque2": "1.5x (una vez y media)",
+            "subtituloExemplo": "Ejemplo",
+            "exemploContexto": "Si tu hora vale €15:",
+            "exemplos": [
+                "hora normal = €15",
+                "hora extra A = €22,50"
+            ]
+        },
+        "secao8": {
+            "titulo": "7. Horas extras B (2.0x)",
+            "paragrafo1": "Todo lo que supere:",
+            "destaque1": "43 horas semanales",
+            "paragrafo2": "se paga con un adicional de:",
+            "destaque2": "2.0x (doble pago)",
+            "subtituloExemplo": "Ejemplo",
+            "exemploContexto": "Si tu hora vale €15:",
+            "exemplos": [
+                "hora extra B = €30,00"
+            ]
+        },
+        "secao9": {
+            "titulo": "9. Sábado",
+            "paragrafo1": "El sábado se considera una continuación de la semana.",
+            "paragrafo2": "Dependiendo del total acumulado de lunes a viernes:",
+            "regras": [
+                "puede contarse como hora extra A",
+                "puede contarse como hora extra B"
+            ],
+            "paragrafo3": "Si hasta el viernes ya has superado las 43 horas, normalmente todo el sábado se calcula como hora extra B."
+        },
+        "secao10": {
+            "titulo": "10. Domingo",
+            "paragrafo1": "Todas las horas trabajadas el domingo se pagan como:",
+            "destaque1": "hora extra B (2.0x)",
+            "paragrafo2": "desde el primer minuto.",
+            "paragrafo3": "No existen horas normales en domingo."
+        },
+        "secao11": {
+            "titulo": "11. Resultado final",
+            "paragrafo1": "La aplicación muestra automáticamente:",
+            "itens": [
+                "horas trabajadas por día",
+                "total semanal",
+                "horas normales",
+                "total de horas extra A",
+                "total de horas extra B",
+                "valor bruto estimado a recibir"
+            ],
+            "paragrafo2": "Estos cálculos ayudan en el control personal, verificación de nómina y solicitud de revisión con RR. HH. cuando sea necesario."
+        },
+        "importante": {
+            "titulo": "Importante",
+            "paragrafo1": "My Clock es una herramienta de apoyo para verificación personal.",
+            "paragrafo2": "Busca reproducir las reglas aplicadas por la empresa de la forma más fiel posible, pero el sistema oficial y las reglas internas siempre prevalecen en caso de discrepancia.",
+            "paragrafo3": "Por ello, cualquier diferencia de pago debe ser validada directamente con el departamento de RR. HH."
+        }
+    }
+}

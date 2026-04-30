@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "Sobre My Clock",
+        "quemSou": {
+            "titulo": "Quién soy",
+            "conteudo": "Mi nombre es Assis Berlanda de Medeiros, soy representante de SIPITU y desarrollé My Clock con el objetivo de ayudar a los empleados a controlar sus horas trabajadas de forma simple, práctica y gratuita."
+        },
+        "porQueCriei": {
+            "titulo": "Por qué creé My Clock",
+            "conteudo": "La idea surgió de la dificultad que muchos trabajadores enfrentan en el día a día para verificar correctamente las horas registradas, seguir las horas extras, validar pagos e identificar posibles discrepancias en la nómina.\n\nMuchas veces, cuando hay algún error, el propio empleado necesita hacer este control manualmente para solicitar una revisión con RR. HH.\n\nPensando en eso, creé esta aplicación como una herramienta de apoyo para el control personal, organización financiera, transparencia y mayor seguridad en la verificación de las horas trabajadas.\n\nMy Clock permite registrar horarios de entrada, descanso y salida, calcular horas normales, horas extras, total semanal y valor bruto estimado a recibir, siguiendo las reglas de negocio aplicadas por la empresa de la forma más fiel posible."
+        },
+        "versao": {
+            "titulo": "Versión de la aplicación",
+            "conteudo": "**Versión actual:** My Clock v1.0.0\n**Última actualización:** abril de 2026\n\nMy Clock está en constante evolución para ofrecer un control cada vez más fiel de las horas trabajadas y de los cálculos aplicados por la empresa.\n\nNuevas mejoras, correcciones en reglas de horas extras, ajustes de cálculo y optimizaciones podrán añadirse en el futuro según se identifiquen necesidades reales en el día a día de los empleados."
+        },
+        "importante": {
+            "titulo": "Importante: aplicación no oficial",
+            "conteudo": "My Clock no es un sistema oficial de la empresa y no tiene ningún vínculo institucional con RR. HH., nómina o el sistema interno de control de horas.\n\nFue desarrollado exclusivamente como una herramienta independiente de apoyo al trabajador, con fines de verificación personal y seguimiento individual.\n\nLos cálculos presentados son estimaciones basadas en las reglas normalmente aplicadas por la empresa, buscando reproducir de la forma más fiel posible los criterios utilizados internamente.\n\nEn caso de discrepancias, siempre prevalecen las reglas oficiales de la empresa y la validación debe hacerse directamente con el departamento de RR. HH. responsable."
+        },
+        "privacidade": {
+            "titulo": "Privacidad y protección de datos",
+            "conteudo": "La privacidad de los usuarios es una prioridad.\n\nToda la información registrada en la aplicación se almacena exclusivamente en el propio dispositivo del usuario, utilizando almacenamiento local.\n\nNo tengo acceso a los datos personales ingresados en el sistema, no almaceno información en servidores externos ni comparto datos con terceros.\n\nEl control permanece totalmente en manos del propio usuario.\n\nMás detalles pueden consultarse en la página de Política de Privacidad."
+        },
+        "suporte": {
+            "titulo": "Soporte y contacto",
+            "conteudo": "Si encuentras problemas técnicos en el funcionamiento de la aplicación, errores en el sistema o tienes sugerencias de mejora, puedes contactar directamente por correo electrónico:\n\n[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)\n\nLos comentarios son importantes para mejorar continuamente My Clock y hacerlo cada vez más útil para todos los trabajadores."
+        }
+    }
+}

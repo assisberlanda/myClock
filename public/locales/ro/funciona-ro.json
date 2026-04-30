@@ -1,0 +1,138 @@
+{
+    "comoFuncionaCalculoHoras": {
+        "titulo": "Cum funcționează calculul orelor în My Clock",
+        "introducao": {
+            "paragrafo1": "My Clock a fost dezvoltat pentru a reproduce cât mai fidel regulile de calcul utilizate de companie, permițând fiecărui angajat să își urmărească orele lucrate, orele suplimentare și salariul brut estimat.",
+            "paragrafo2": "Mai jos este explicat modul în care sunt efectuate calculele în aplicație."
+        },
+        "secao1": {
+            "titulo": "1. Ora de început a turei",
+            "paragrafo1": "Fiecare angajat are o oră oficială de început a turei, care poate varia în funcție de echipă sau departament.",
+            "subtituloExemplos": "Exemple:",
+            "exemplos": [
+                "04:00",
+                "07:30",
+                "13:00",
+                "16:00"
+            ],
+            "paragrafo2": "Această oră este baza principală pentru calculul orelor lucrate."
+        },
+        "secao2": {
+            "titulo": "2. Regula de intrare (clock-in)",
+            "paragrafo1": "Sistemul ia întotdeauna în considerare:",
+            "destaque1": "ora de început a turei sau ora reală de intrare, oricare este mai târziu.",
+            "paragrafo2": "Asta înseamnă că:",
+            "regras": [
+                "dacă ajungi mai devreme, nu se plătește în plus",
+                "dacă întârzii, calculul începe de la ora reală de intrare"
+            ],
+            "subtituloExemplo": "Exemplu",
+            "exemploContexto": "Ora oficială a turei: 07:30",
+            "exemplos": [
+                "intrare 07:10 → se calculează de la 07:30",
+                "intrare 07:25 → se calculează de la 07:30",
+                "intrare 07:30 → se calculează de la 07:30",
+                "intrare 07:45 → se calculează de la 07:45"
+            ],
+            "paragrafo3": "A ajunge mai devreme nu generează ore suplimentare."
+        },
+        "secao3": {
+            "titulo": "3. Regula de ieșire (clock-out)",
+            "paragrafo1": "La plecare, fiecare minut lucrat este contabilizat exact.",
+            "paragrafo2": "Nu există rotunjire.",
+            "subtituloExemplo": "Exemple",
+            "exemplos": [
+                "ieșire 00:03 → până la 00:03",
+                "ieșire 00:17 → până la 00:17"
+            ],
+            "paragrafo3": "Fiecare minut după program este inclus."
+        },
+        "secao4": {
+            "titulo": "4. Pauză neplătită (meal break)",
+            "paragrafo1": "Pauza minimă neplătită este de 30 de minute.",
+            "paragrafo2": "Sistemul scade:",
+            "destaque1": "30 de minute sau durata reală, oricare este mai mare.",
+            "subtituloExemplo": "Exemple",
+            "exemplos": [
+                "20 min → se scad 30 min",
+                "30 min → se scad 30 min",
+                "35 min → se scad 35 min",
+                "50 min → se scad 50 min"
+            ],
+            "paragrafo3": "Nu se scad niciodată mai puțin de 30 de minute."
+        },
+        "secao5": {
+            "titulo": "5. Calculul orelor suplimentare",
+            "paragrafo1": "Orele suplimentare sunt calculate săptămânal, nu zilnic.",
+            "paragrafo2": "Se iau în considerare orele de luni până vineri."
+        },
+        "secao6": {
+            "titulo": "6. Ore normale",
+            "paragrafo1": "Primele:",
+            "destaque1": "39 de ore pe săptămână",
+            "paragrafo2": "sunt considerate ore normale."
+        },
+        "secao7": {
+            "titulo": "7. Overtime A (1.5x)",
+            "paragrafo1": "După 39 de ore:",
+            "paragrafo2": "următoarele:",
+            "destaque1": "4 ore",
+            "paragrafo3": "se plătesc cu:",
+            "destaque2": "1.5x",
+            "subtituloExemplo": "Exemplu",
+            "exemploContexto": "Dacă ora este €15:",
+            "exemplos": [
+                "normal = €15",
+                "overtime A = €22,50"
+            ]
+        },
+        "secao8": {
+            "titulo": "8. Overtime B (2.0x)",
+            "paragrafo1": "Tot ce depășește:",
+            "destaque1": "43 de ore",
+            "paragrafo2": "se plătește cu:",
+            "destaque2": "2.0x",
+            "subtituloExemplo": "Exemplu",
+            "exemploContexto": "Dacă ora este €15:",
+            "exemplos": [
+                "overtime B = €30,00"
+            ]
+        },
+        "secao9": {
+            "titulo": "9. Sâmbătă",
+            "paragrafo1": "Sâmbăta continuă săptămâna de lucru.",
+            "paragrafo2": "Poate fi:",
+            "regras": [
+                "overtime A",
+                "overtime B"
+            ],
+            "paragrafo3": "Dacă ai depășit 43 de ore, este de obicei overtime B."
+        },
+        "secao10": {
+            "titulo": "10. Duminică",
+            "paragrafo1": "Toate orele de duminică sunt:",
+            "destaque1": "overtime B (2.0x)",
+            "paragrafo2": "din primul minut.",
+            "paragrafo3": "Nu există ore normale duminica."
+        },
+        "secao11": {
+            "titulo": "11. Rezultat final",
+            "paragrafo1": "Aplicația arată automat:",
+            "itens": [
+                "ore zilnice",
+                "total săptămânal",
+                "ore normale",
+                "overtime A",
+                "overtime B",
+                "salariu brut estimat"
+            ],
+            "paragrafo2": "Ajută la verificarea salariului și control personal."
+        },
+        "importante": {
+            "titulo": "Important",
+            "paragrafo1": "My Clock este doar un instrument de suport.",
+            "paragrafo2": "Regulile oficiale ale companiei au prioritate.",
+            "paragrafo3": "Diferențele trebuie verificate cu HR."
+        }
+    }
+}

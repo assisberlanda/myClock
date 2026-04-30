@@ -1,0 +1,70 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Polasaí Príobháideachta",
+        "dataAtualizacao": "**Dáta an nuashonraithe deireanaigh:** Aibreán 2026",
+        "secao1": {
+            "titulo": "1. Réamhrá",
+            "paragrafo1": "Is tosaíocht í príobháideacht úsáideoirí My Clock.",
+            "paragrafo2": "Déanann an Polasaí Príobháideachta seo cur síos ar an gcaoi a láimhseáiltear faisnéis laistigh den aip agus míníonn sé conas a stóráiltear agus a chosnaítear sonraí pearsanta.",
+            "paragrafo3": "Forbraíodh My Clock le fócas ar phríobháideacht, neamhspleáchas an úsáideora agus comhlíonadh phrionsabail an GDPR (Rialachán Ginearálta um Chosaint Sonraí)."
+        },
+        "secao2": {
+            "titulo": "2. Sonraí a úsáideann an aip",
+            "paragrafo1": "Ceadaíonn an aip don úsáideoir faisnéis a thaifeadadh mar seo a leanas:",
+            "listaDados": [
+                "ainm iomlán",
+                "uimhir fhostaí (employee number)",
+                "am tosaithe an tsift",
+                "luach an uaire oibre",
+                "amanna iontrála, sos agus imeachta",
+                "stair sheachtainiúil na n-uaireanta",
+                "ríomhanna am breise agus íocaíocht mheasta iomlán"
+            ],
+            "paragrafo2": "Úsáidtear na sonraí seo go heisiach d’fheidhmiú inmheánach an aip féin."
+        },
+        "secao3": {
+            "titulo": "3. Cá stóráiltear na sonraí",
+            "paragrafo1": "Stóráiltear gach sonraí a iontráiltear go heisiach ar ghléas an úsáideora féin, ag úsáid stórála áitiúla (IndexedDB/local storage).",
+            "paragrafo2": "Ciallaíonn sé seo:",
+            "listaGarantias": [
+                "ní fhaigheann an forbróir do shonraí",
+                "níl bunachar sonraí seachtrach ann",
+                "ní sheoltar faisnéis chuig freastalaithe iargúlta",
+                "níl sioncrónú uathoibríoch sa scamall",
+                "ní roinntear sonraí le tríú páirtithe"
+            ],
+            "paragrafo3": "Fanann an smacht go hiomlán leis an úsáideoir."
+        },
+        "secao4": {
+            "titulo": "4. Rochtain ar shonraí",
+            "paragrafo1": "Níl rochtain iargúlta ag an bhforbróir ar an bhfaisnéis a iontráiltear san aip.",
+            "paragrafo2": "Níl bailiú gníomhach sonraí pearsanta, monatóireacht aonair ná breathnú ar thaifid phríobháideacha úsáideoirí ann.",
+            "paragrafo3": "Fanann an fhaisnéis príobháideach agus ar fáil don úsáideoir amháin ar an ngléas a úsáidtear."
+        },
+        "secao5": {
+            "titulo": "5. Cúltaca agus freagracht an úsáideora",
+            "paragrafo1": "Ós rud é go bhfanann na sonraí ar an ngléas áitiúil amháin, tá an t-úsáideoir freagrach as cúltacaí rialta a dhéanamh trí na feidhmeanna easpórtála a sholáthraíonn an aip.",
+            "paragrafo2": "I gcás athrú gléis, glanta brabhsálaí, formáidithe nó caillteanais gléis, d’fhéadfaí na sonraí a chailleadh mura bhfuil cúltaca ann roimh ré."
+        },
+        "secao6": {
+            "titulo": "6. Fianáin agus teicneolaíochtaí tríú páirtí",
+            "paragrafo1": "Faoi láthair ní úsáideann My Clock fianáin rianaithe, Google Analytics ná uirlisí monatóireachta iompraíochta.",
+            "paragrafo2": "Má chuirtear é seo i bhfeidhm amach anseo, nuashonrófar an Polasaí Príobháideachta seo."
+        },
+        "secao7": {
+            "titulo": "7. Naisc sheachtracha",
+            "paragrafo1": "D’fhéadfadh go mbeadh naisc chuig teagmháil sheachtrach san aip, mar ríomhphost tacaíochta.",
+            "paragrafo2": "Níl an forbróir freagrach as cleachtais phríobháideachta seirbhísí seachtracha a rochtainítear lasmuigh den aip."
+        },
+        "secao8": {
+            "titulo": "8. Athruithe ar an bpolasaí seo",
+            "paragrafo1": "Féadfar an Polasaí Príobháideachta seo a nuashonrú am ar bith chun feabhsuithe ar an aip, ceanglais dhlíthiúla nó athruithe feidhmiúcháin a léiriú.",
+            "paragrafo2": "Beidh an leagan is déanaí ar fáil i gcónaí laistigh den chóras féin."
+        },
+        "secao9": {
+            "titulo": "9. Teagmháil",
+            "paragrafo1": "Le haghaidh ceisteanna, moltaí nó ábhair a bhaineann leis an bPolasaí Príobháideachta seo, déan teagmháil trí ríomhphost:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

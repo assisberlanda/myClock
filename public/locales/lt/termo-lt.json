@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Naudojimosi sąlygos",
+        "dataUltimaAtualizacao": "**Paskutinio atnaujinimo data:** 2026 m. balandis",
+        "secao1": {
+            "titulo": "1. Sąlygų priėmimas",
+            "paragrafo1": "Naudodamiesi My Clock programa („Programa“), jūs („Vartotojas“) pilnai sutinkate su šiomis Naudojimosi sąlygomis.",
+            "paragrafo2": "Jei nesutinkate su bet kuria šių sąlygų dalimi, rekomenduojame programos nenaudoti."
+        },
+        "secao2": {
+            "titulo": "2. Programos paskirtis",
+            "paragrafo1": "My Clock buvo sukurtas kaip nemokama pagalbinė priemonė darbuotojams sekti dirbtas valandas, viršvalandžius, apskaičiuotą bruto atlyginimą ir asmeninę darbo laiko apskaitą.",
+            "paragrafo2": "Pagrindinis tikslas yra suteikti daugiau skaidrumo, finansinės tvarkos ir palengvinti dirbtų valandų tikrinimą, leidžiant vartotojui pastebėti galimus neatitikimus ir prireikus kreiptis į įmonės HR dėl peržiūros.",
+            "paragrafo3": "Programa nepakeičia oficialių darbo laiko, atlyginimų ar vidinės įmonės apskaitos sistemų."
+        },
+        "secao3": {
+            "titulo": "3. Neoficiali programa",
+            "paragrafo1": "My Clock nėra oficiali įmonės sistema ir neturi jokio institucinio ryšio su HR, atlyginimų apskaita, finansų skyriumi ar vidine darbo laiko sistema.",
+            "paragrafo2": "Pateikiami skaičiavimai yra apytiksliai, paremti įmonėje įprastai taikomomis taisyklėmis, siekiant kuo tiksliau atkartoti vidinius kriterijus.",
+            "paragrafo3": "Gali būti skirtumų dėl vidinių susitarimų, specifinių koregavimų, sutarčių išimčių, kolektyvinių sutarčių ar taisyklių, kurios nėra įdiegtos programoje.",
+            "paragrafo4": "Esant neatitikimams, visada galioja oficialios įmonės taisyklės, o patvirtinimas turi būti atliekamas tiesiogiai su atsakingu HR skyriumi."
+        },
+        "secao4": {
+            "titulo": "4. Vartotojo atsakomybė",
+            "paragrafo1": "Vartotojas yra visiškai atsakingas už į programą įvestą informaciją, įskaitant darbo laiką, valandinį atlyginimą, darbo grafikus ir kitus skaičiavimams naudojamus duomenis.",
+            "paragrafo2": "Programa skirta tik asmeninei kontrolei ir informacinei pagalbai.",
+            "paragrafo3": "Kūrėjas neatsako už sprendimus, priimtus remiantis programos pateiktais skaičiavimais, nei už skirtumus tarp apskaičiuotų ir realiai įmonės išmokėtų sumų."
+        },
+        "secao5": {
+            "titulo": "5. Duomenų saugojimas",
+            "paragrafo1": "Visa My Clock įvesta informacija saugoma tik vartotojo įrenginyje.",
+            "paragrafo2": "Kūrėjas neturi prieigos prie įvestų duomenų, nesaugo informacijos išoriniuose serveriuose ir nevykdo jokios nuotolinės vartotojo duomenų stebėsenos.",
+            "paragrafo3": "Vartotojas yra atsakingas už atsarginių kopijų ir eksportų išsaugojimą, kai tai būtina."
+        },
+        "secao6": {
+            "titulo": "6. Intelektinė nuosavybė",
+            "paragrafo1": "Visas programos turinys, įskaitant struktūrą, dizainą, tekstus, vizualinį identitetą, įdiegtas taisykles, funkcionalumą ir nuosavą programinį kodą, yra Assis Berlanda de Medeiros intelektinė nuosavybė, jei nenurodyta kitaip.",
+            "paragrafo2": "Draudžiama kopijuoti, platinti ar neteisėtai naudoti be išankstinio leidimo."
+        },
+        "secao7": {
+            "titulo": "7. Programos ir sąlygų pakeitimai",
+            "paragrafo1": "Kūrėjas pasilieka teisę bet kuriuo metu be išankstinio įspėjimo keisti funkcionalumą, skaičiavimo taisykles, dizainą, struktūrą ir šias Naudojimosi sąlygas.",
+            "paragrafo2": "Naujos versijos gali apimti patobulinimus, pataisymus ir koregavimus, kad programa geriau atitiktų įmonės taikomas taisykles."
+        },
+        "secao8": {
+            "titulo": "8. Taikoma teisė",
+            "paragrafo1": "Šios Naudojimosi sąlygos aiškinamos pagal Europos Sąjungos ir Airijos galiojančius teisės aktus, ypač susijusius su duomenų apsauga ir skaitmeninių programų naudojimu."
+        },
+        "secao9": {
+            "titulo": "9. Kontaktas",
+            "paragrafo1": "Kilus klausimams, pasiūlymams ar su šiomis Naudojimosi sąlygomis susijusiems klausimams, susisiekite el. paštu:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

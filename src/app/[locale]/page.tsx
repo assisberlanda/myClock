@@ -80,11 +80,11 @@ export default function DashboardPage() {
           />
           <SummaryCard
             title={tDashboard("overtimeAShort")}
-            value={`${weeklyReport ? (weeklyReport.totalOvertimeAMinutes / 60).toFixed(1) : "0.0"}h`}
+            value={`${weeklyReport ? (Math.floor((weeklyReport.totalOvertimeAMinutes / 60) * 10) / 10).toFixed(1) : "0.0"}h`}
           />
           <SummaryCard
             title={tDashboard("overtimeBShort")}
-            value={`${weeklyReport ? (weeklyReport.totalOvertimeBMinutes / 60).toFixed(1) : "0.0"}h`}
+            value={`${weeklyReport ? (Math.floor((weeklyReport.totalOvertimeBMinutes / 60) * 10) / 10).toFixed(1) : "0.0"}h`}
           />
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function DashboardPage() {
                   {tDashboard("normalShort")}: {(day.normalMinutes / 60).toFixed(1)}h
                   {(day.overtimeAMinutes > 0 || day.overtimeBMinutes > 0) && (
                     <span className="text-amber-600 ml-2">
-                      {tDashboard("overtimeShort")}: {((day.overtimeAMinutes + day.overtimeBMinutes) / 60).toFixed(1)}h
+                      {tDashboard("overtimeShort")}: {(Math.floor(((day.overtimeAMinutes + day.overtimeBMinutes) / 60) * 10) / 10).toFixed(1)}h
                     </span>
                   )}
                 </p>

@@ -1,0 +1,138 @@
+{
+    "comoFuncionaCalculoHoras": {
+        "titulo": "Conas a oibríonn ríomh uaireanta in My Clock",
+        "introducao": {
+            "paragrafo1": "Forbraíodh My Clock chun rialacha ríomh na cuideachta a mhacasamhlú chomh cruinn agus is féidir, rud a ligeann do gach fostaí a gcuid uaireanta oibre, am breise agus íocaíocht iomlán mheasta a rianú.",
+            "paragrafo2": "Seo thíos míniú ar conas a dhéantar na ríomhanna laistigh den aip."
+        },
+        "secao1": {
+            "titulo": "1. Am tosaithe an tsift",
+            "paragrafo1": "Tá am oifigiúil tosaithe ag gach fostaí, a d’fhéadfadh athrú de réir na foirne nó an rannáin.",
+            "subtituloExemplos": "Samplaí:",
+            "exemplos": [
+                "04:00",
+                "07:30",
+                "13:00",
+                "16:00"
+            ],
+            "paragrafo2": "Is é an t-am seo an bunús príomha don ríomh uaireanta oibre."
+        },
+        "secao2": {
+            "titulo": "2. Riail iontrála (clock-in)",
+            "paragrafo1": "Breithníonn an córas i gcónaí:",
+            "destaque1": "am tosaithe an tsift nó an t-am iarbhír iontrála, cibé acu is déanaí.",
+            "paragrafo2": "Ciallaíonn sé seo:",
+            "regras": [
+                "má thagann tú roimh do chuid ama, ní fhaigheann tú pá breise",
+                "má thagann tú déanach, tosaíonn an ríomh ón am iarbhír iontrála"
+            ],
+            "subtituloExemplo": "Sampla",
+            "exemploContexto": "Am oifigiúil an tsift: 07:30",
+            "exemplos": [
+                "iontráil ag 07:10 → comhaireamh ó 07:30",
+                "iontráil ag 07:25 → comhaireamh ó 07:30",
+                "iontráil ag 07:30 → comhaireamh ó 07:30",
+                "iontráil ag 07:45 → comhaireamh ó 07:45"
+            ],
+            "paragrafo3": "Is é sin le rá, ní chuireann teacht roimh ré uaireanta breise leis."
+        },
+        "secao3": {
+            "titulo": "3. Riail imeachta (clock-out)",
+            "paragrafo1": "Ag imeacht, comhaireann gach nóiméad oibre de ghnáth.",
+            "paragrafo2": "Níl aon bhabhtaíocht ann.",
+            "subtituloExemplo": "Sampla",
+            "exemplos": [
+                "imeacht ag 00:03 → comhaireamh go 00:03",
+                "imeacht ag 00:17 → comhaireamh go 00:17"
+            ],
+            "paragrafo3": "Breithnítear gach nóiméad tar éis an tsift."
+        },
+        "secao4": {
+            "titulo": "4. Sos neamhíoctha (meal break)",
+            "paragrafo1": "Is é 30 nóiméad an sos íosta neamhíoctha.",
+            "paragrafo2": "Asbhaineann an córas:",
+            "destaque1": "30 nóiméad nó an fíor-am sosa, cibé acu is mó.",
+            "subtituloExemplo": "Sampla",
+            "exemplos": [
+                "sos 20 nóiméad → asbhaineann 30 nóiméad",
+                "sos 30 nóiméad → asbhaineann 30 nóiméad",
+                "sos 35 nóiméad → asbhaineann 35 nóiméad",
+                "sos 50 nóiméad → asbhaineann 50 nóiméad"
+            ],
+            "paragrafo3": "Ní asbhainfear riamh níos lú ná 30 nóiméad."
+        },
+        "secao5": {
+            "titulo": "5. Ríomh am breise (overtime)",
+            "paragrafo1": "Ríomhtar am breise ar bhonn seachtainiúil, ní laethúil.",
+            "paragrafo2": "Baineann an bonn le hiomlán na n-uaireanta ó Luan go hAoine."
+        },
+        "secao6": {
+            "titulo": "6. Gnáthuaireanta",
+            "paragrafo1": "Na chéad:",
+            "destaque1": "39 uair oibre sa tseachtain",
+            "paragrafo2": "meastar iad mar ghnáthuaireanta agus íoctar iad ag ráta gnáth do phá in aghaidh na huaire."
+        },
+        "secao7": {
+            "titulo": "7. Am breise A (1.5x)",
+            "paragrafo1": "Tar éis 39 uair a chríochnú sa tseachtain:",
+            "paragrafo2": "na chéad:",
+            "destaque1": "4 huaire",
+            "paragrafo3": "íocfar iad le breisiú de:",
+            "destaque2": "1.5x (uair go leith)",
+            "subtituloExemplo": "Sampla",
+            "exemploContexto": "Más €15 do ráta:",
+            "exemplos": [
+                "gnáthráta = €15",
+                "am breise A = €22.50"
+            ]
+        },
+        "secao8": {
+            "titulo": "8. Am breise B (2.0x)",
+            "paragrafo1": "Gach rud os cionn:",
+            "destaque1": "43 uair sa tseachtain",
+            "paragrafo2": "íocfar é le breisiú de:",
+            "destaque2": "2.0x (dúbailt)",
+            "subtituloExemplo": "Sampla",
+            "exemploContexto": "Más €15 do ráta:",
+            "exemplos": [
+                "am breise B = €30.00"
+            ]
+        },
+        "secao9": {
+            "titulo": "9. Satharn",
+            "paragrafo1": "Meastar an Satharn mar leanúnachas den tseachtain.",
+            "paragrafo2": "Ag brath ar an iomlán ó Luan go hAoine:",
+            "regras": [
+                "d’fhéadfadh sé a bheith mar Am Breise A",
+                "d’fhéadfadh sé a bheith mar Am Breise B"
+            ],
+            "paragrafo3": "Má tá níos mó ná 43 uair carntha agat roimh an Aoine, de ghnáth ríomhtar an Satharn iomlán mar Am Breise B."
+        },
+        "secao10": {
+            "titulo": "10. Domhnach",
+            "paragrafo1": "Íoctar gach uair oibre ar an Domhnach mar:",
+            "destaque1": "Am Breise B (2.0x)",
+            "paragrafo2": "ó chéad nóiméad na hoibre.",
+            "paragrafo3": "Níl gnáthuaireanta ann ar an Domhnach."
+        },
+        "secao11": {
+            "titulo": "11. Toradh deiridh",
+            "paragrafo1": "Taispeánann an aip go huathoibríoch:",
+            "itens": [
+                "uaireanta oibre in aghaidh an lae",
+                "iomlán seachtainiúil",
+                "gnáthuaireanta",
+                "iomlán Am Breise A",
+                "iomlán Am Breise B",
+                "íocaíocht iomlán mheasta"
+            ],
+            "paragrafo2": "Cuidíonn na ríomhanna seo le rialú pearsanta, seiceáil pá agus iarratas ar athbhreithniú le RR. HH. nuair is gá."
+        },
+        "importante": {
+            "titulo": "Tábhachtach",
+            "paragrafo1": "Is uirlis tacaíochta é My Clock le haghaidh seiceáil phearsanta.",
+            "paragrafo2": "Déanann sé iarracht rialacha na cuideachta a mhacasamhlú chomh cruinn agus is féidir, ach tá na rialacha oifigiúla i gcónaí níos tábhachtaí i gcás difríochta.",
+            "paragrafo3": "Mar sin, caithfear aon difríocht i bpá a fhíorú go díreach leis an roinn RR. HH. freagrach."
+        }
+    }
+}

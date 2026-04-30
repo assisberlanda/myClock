@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Terms of Use",
+        "dataUltimaAtualizacao": "**Last Update Date:** April 2026",
+        "secao1": {
+            "titulo": "1. Acceptance of Terms",
+            "paragrafo1": "By accessing and using the My Clock application (the “Application”), you (“User”) fully agree to these Terms of Use.",
+            "paragrafo2": "If you do not agree with any part of these terms, we recommend that you do not use the application."
+        },
+        "secao2": {
+            "titulo": "2. Purpose of the Application",
+            "paragrafo1": "My Clock was developed as a free support tool so that employees can track their hours worked, overtime, estimated gross pay calculation and personal working hours control.",
+            "paragrafo2": "The main objective is to offer more transparency, financial organization and ease in checking recorded hours, allowing the user to identify possible discrepancies and request revisions from the company's HR department when necessary.",
+            "paragrafo3": "The application does not replace the company's official time, payroll or internal management systems."
+        },
+        "secao3": {
+            "titulo": "3. Unofficial Application",
+            "paragrafo1": "My Clock is not an official company system and does not have any institutional link with HR, payroll, finance department or internal time control system.",
+            "paragrafo2": "The calculations presented are estimates based on the operational rules normally practiced by the company, seeking to reproduce as faithfully as possible the criteria used internally.",
+            "paragrafo3": "There may be differences arising from internal agreements, specific adjustments, contractual exceptions, collective agreements or rules not implemented in the application.",
+            "paragrafo4": "In case of divergence, the company's official rules always prevail and validation must be carried out directly with the responsible HR."
+        },
+        "secao4": {
+            "titulo": "4. User Responsibility",
+            "paragrafo1": "The user is fully responsible for the information entered into the application, including schedules, salary/hour values, journey records and other data used for calculation.",
+            "paragrafo2": "The application serves exclusively as a support and personal conference tool.",
+            "paragrafo3": "The developer is not responsible for decisions made exclusively based on the calculations presented in the system, nor for discrepancies between the estimated values ​​and the values ​​actually paid by the company."
+        },
+        "secao5": {
+            "titulo": "5. Data Storage",
+            "paragrafo1": "All information recorded in My Clock is stored locally on the user's own device.",
+            "paragrafo2": "The developer does not have access to the data entered, does not store information on external servers and does not carry out any remote monitoring of the user's personal information.",
+            "paragrafo3": "The user is responsible for maintaining their own backups and exports when necessary."
+        },
+        "secao6": {
+            "titulo": "6. Intellectual Property",
+            "paragrafo1": "All content present in the application, including structure, layout, texts, visual identity, implemented rules, functionalities and proprietary source code, is the intellectual property of Assis Berlanda de Medeiros, unless otherwise indicated.",
+            "paragrafo2": "Reproduction, distribution or misuse without prior authorization is prohibited."
+        },
+        "secao7": {
+            "titulo": "7. Changes to the Application and Terms",
+            "paragrafo1": "The developer reserves the right to modify functionalities, calculation rules, layout, system structure and these Terms of Use at any time, without prior notice.",
+            "paragrafo2": "New versions may include improvements, corrections and adjustments necessary to make the application more faithful to the rules applied by the company."
+        },
+        "secao8": {
+            "titulo": "8. Applicable Law",
+            "paragrafo1": "These Terms of Use will be interpreted in accordance with the applicable laws of the European Union and Ireland, especially with regard to data protection and the use of digital applications."
+        },
+        "secao9": {
+            "titulo": "9. Contact",
+            "paragrafo1": "For questions, suggestions or issues related to these Terms of Use, please contact us via email:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

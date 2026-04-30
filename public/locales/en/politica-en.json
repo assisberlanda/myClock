@@ -1,0 +1,70 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Privacy Policy",
+        "dataAtualizacao": "**Last Update Date:** April 2026",
+        "secao1": {
+            "titulo": "1. Introduction",
+            "paragrafo1": "The privacy of My Clock users is a priority.",
+            "paragrafo2": "This Privacy Policy describes how information is treated within the application and clarifies how personal data is stored and protected.",
+            "paragrafo3": "My Clock was developed with a focus on privacy, user autonomy and compliance with the principles of GDPR (General Data Protection Regulation)."
+        },
+        "secao2": {
+            "titulo": "2. Data Used by the Application",
+            "paragrafo1": "The application allows the user to record information such as:",
+            "listaDados": [
+                "full name",
+                "employee number (employee number)",
+                "shift start time",
+                "value of the hour worked",
+                "entry, break and exit times",
+                "weekly journey history",
+                "overtime calculations and estimated gross pay"
+            ],
+            "paragrafo2": "This data is used exclusively for the internal functioning of the application itself."
+        },
+        "secao3": {
+            "titulo": "3. Where Data is Stored",
+            "paragrafo1": "All data entered is stored exclusively on the user's own device, using local storage (IndexedDB/local storage).",
+            "paragrafo2": "This means that:",
+            "listaGarantias": [
+                "the developer does not receive your data",
+                "there is no external database",
+                "no information is sent to remote servers",
+                "there is no automatic cloud synchronization",
+                "no sharing with third parties"
+            ],
+            "paragrafo3": "All control remains exclusively with the user."
+        },
+        "secao4": {
+            "titulo": "4. Access to Data",
+            "paragrafo1": "The developer does not have remote access to the information entered into the application.",
+            "paragrafo2": "There is no active collection of personal data, individual monitoring or viewing of users' private records.",
+            "paragrafo3": "The information remains private and accessible only by the user on the device used."
+        },
+        "secao5": {
+            "titulo": "5. Backup and User Responsibility",
+            "paragrafo1": "As the data only remains on the local device, the user is responsible for performing periodic backups through the export functions provided by the application.",
+            "paragrafo2": "In cases of changing devices, cleaning the browser, formatting or losing the device, data may be lost if there is no prior backup."
+        },
+        "secao6": {
+            "titulo": "6. Cookies and Third Party Technologies",
+            "paragrafo1": "Currently, My Clock does not use tracking cookies, Google Analytics or behavioral monitoring tools.",
+            "paragrafo2": "If this is implemented in the future, this Privacy Policy will be updated."
+        },
+        "secao7": {
+            "titulo": "7. External Links",
+            "paragrafo1": "The application may contain links to external contact, such as support email.",
+            "paragrafo2": "The developer is not responsible for the privacy practices of external services accessed outside the application."
+        },
+        "secao8": {
+            "titulo": "8. Changes to this Policy",
+            "paragrafo1": "This Privacy Policy may be updated at any time to reflect improvements to the application, legal adjustments or operational changes.",
+            "paragrafo2": "The latest version will always be available within the system itself."
+        },
+        "secao9": {
+            "titulo": "9. Contact",
+            "paragrafo1": "For questions, suggestions or issues related to this Privacy Policy, please contact us via email:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

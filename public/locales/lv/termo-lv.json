@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Naudojimo sąlygos",
+        "dataUltimaAtualizacao": "**Paskutinio atnaujinimo data:** 2026 m. balandis",
+        "secao1": {
+            "titulo": "1. Sutikimas",
+            "paragrafo1": "Naudodamiesi My Clock jūs sutinkate su šiomis sąlygomis.",
+            "paragrafo2": "Jei nesutinkate, nenaudokite programos."
+        },
+        "secao2": {
+            "titulo": "2. Paskirtis",
+            "paragrafo1": "Programa skirta darbo valandų sekimui ir atlygio skaičiavimui.",
+            "paragrafo2": "Tai tik pagalbinis įrankis.",
+            "paragrafo3": "Nepakeičia oficialių sistemų."
+        },
+        "secao3": {
+            "titulo": "3. Neoficiali sistema",
+            "paragrafo1": "Tai nėra oficiali įmonės sistema.",
+            "paragrafo2": "Skaičiavimai yra orientaciniai.",
+            "paragrafo3": "Gali skirtis nuo oficialių duomenų.",
+            "paragrafo4": "HR sprendimai visada turi viršenybę."
+        },
+        "secao4": {
+            "titulo": "4. Atsakomybė",
+            "paragrafo1": "Vartotojas atsakingas už įvestus duomenis.",
+            "paragrafo2": "Programa yra tik pagalbinė.",
+            "paragrafo3": "Kūrėjas neatsako už sprendimus."
+        },
+        "secao5": {
+            "titulo": "5. Duomenų saugojimas",
+            "paragrafo1": "Duomenys saugomi tik įrenginyje.",
+            "paragrafo2": "Nėra serverių ar sekimo.",
+            "paragrafo3": "Vartotojas atsakingas už atsargines kopijas."
+        },
+        "secao6": {
+            "titulo": "6. Autorinės teisės",
+            "paragrafo1": "Visas turinys priklauso kūrėjui.",
+            "paragrafo2": "Draudžiama kopijuoti be leidimo."
+        },
+        "secao7": {
+            "titulo": "7. Pakeitimai",
+            "paragrafo1": "Sąlygos gali būti keičiamos bet kada.",
+            "paragrafo2": "Naujos versijos gali keisti funkcijas."
+        },
+        "secao8": {
+            "titulo": "8. Taikoma teisė",
+            "paragrafo1": "Taikoma ES ir Airijos teisė."
+        },
+        "secao9": {
+            "titulo": "9. Kontaktas",
+            "paragrafo1": "Klausimams:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

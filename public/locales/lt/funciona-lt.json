@@ -1,0 +1,138 @@
+{
+    "comoFuncionaCalculoHoras": {
+        "titulo": "Kaip veikia valandų skaičiavimas My Clock programoje",
+        "introducao": {
+            "paragrafo1": "My Clock sukurtas taip, kad kuo tiksliau atkurtų įmonėje taikomas skaičiavimo taisykles, leidžiant kiekvienam darbuotojui sekti savo dirbtas valandas, viršvalandžius ir apskaičiuotą bruto atlyginimą.",
+            "paragrafo2": "Žemiau pateiktas paaiškinimas, kaip atliekami skaičiavimai programoje."
+        },
+        "secao1": {
+            "titulo": "1. Pamainos pradžios laikas",
+            "paragrafo1": "Kiekvienas darbuotojas turi oficialų pamainos pradžios laiką, kuris gali skirtis priklausomai nuo komandos ar skyriaus.",
+            "subtituloExemplos": "Pavyzdžiai:",
+            "exemplos": [
+                "04:00",
+                "07:30",
+                "13:00",
+                "16:00"
+            ],
+            "paragrafo2": "Šis laikas yra pagrindas dirbtų valandų skaičiavimui."
+        },
+        "secao2": {
+            "titulo": "2. Prisijungimo taisyklė (clock-in)",
+            "paragrafo1": "Sistema visada vertina:",
+            "destaque1": "pamainos pradžios laiką arba realų atvykimo laiką, priklausomai nuo to, kuris yra vėlesnis.",
+            "paragrafo2": "Tai reiškia, kad:",
+            "regras": [
+                "jei atvykstate anksčiau, papildomas atlygis neskaičiuojamas",
+                "jei atvykstate vėliau, skaičiavimas prasideda nuo realaus atvykimo laiko"
+            ],
+            "subtituloExemplo": "Pavyzdys",
+            "exemploContexto": "Oficialus pamainos laikas: 07:30",
+            "exemplos": [
+                "atvykimas 07:10 → skaičiuojama nuo 07:30",
+                "atvykimas 07:25 → skaičiuojama nuo 07:30",
+                "atvykimas 07:30 → skaičiuojama nuo 07:30",
+                "atvykimas 07:45 → skaičiuojama nuo 07:45"
+            ],
+            "paragrafo3": "Tai reiškia, kad atvykimas anksčiau neprideda viršvalandžių."
+        },
+        "secao3": {
+            "titulo": "3. Išėjimo taisyklė (clock-out)",
+            "paragrafo1": "Išėjimo metu kiekviena dirbta minutė skaičiuojama įprastai.",
+            "paragrafo2": "Apvalinimas netaikomas.",
+            "subtituloExemplo": "Pavyzdys",
+            "exemplos": [
+                "išėjimas 00:03 → skaičiuojama iki 00:03",
+                "išėjimas 00:17 → skaičiuojama iki 00:17"
+            ],
+            "paragrafo3": "Skaičiuojama kiekviena minutė po darbo pabaigos."
+        },
+        "secao4": {
+            "titulo": "4. Neapmokama pertrauka (meal break)",
+            "paragrafo1": "Minimali neapmokama pertrauka yra 30 minučių.",
+            "paragrafo2": "Sistema atima:",
+            "destaque1": "30 minučių arba faktinį pertraukos laiką, priklausomai nuo to, kuris yra didesnis.",
+            "subtituloExemplo": "Pavyzdys",
+            "exemplos": [
+                "20 minučių pertrauka → atimama 30 minučių",
+                "30 minučių pertrauka → atimama 30 minučių",
+                "35 minučių pertrauka → atimama 35 minučių",
+                "50 minučių pertrauka → atimama 50 minučių"
+            ],
+            "paragrafo3": "Niekada nebus atimta mažiau nei 30 minučių."
+        },
+        "secao5": {
+            "titulo": "5. Viršvalandžių skaičiavimas",
+            "paragrafo1": "Viršvalandžiai skaičiuojami savaitiniu pagrindu, o ne kasdien.",
+            "paragrafo2": "Pagrindas yra bendras dirbtų valandų skaičius nuo pirmadienio iki penktadienio."
+        },
+        "secao6": {
+            "titulo": "6. Įprastos valandos",
+            "paragrafo1": "Pirmosios:",
+            "destaque1": "39 darbo valandos per savaitę",
+            "paragrafo2": "laikomos įprastomis valandomis ir apmokamos pagal įprastą valandinį tarifą."
+        },
+        "secao7": {
+            "titulo": "7. Viršvalandžiai A (1.5x)",
+            "paragrafo1": "Po 39 valandų per savaitę:",
+            "paragrafo2": "kitos:",
+            "destaque1": "4 valandos",
+            "paragrafo3": "apmokamos su priedu:",
+            "destaque2": "1.5x (pusantro karto)",
+            "subtituloExemplo": "Pavyzdys",
+            "exemploContexto": "Jei valandinis atlygis €15:",
+            "exemplos": [
+                "įprasta valanda = €15",
+                "viršvalandžiai A = €22,50"
+            ]
+        },
+        "secao8": {
+            "titulo": "8. Viršvalandžiai B (2.0x)",
+            "paragrafo1": "Visa, kas viršija:",
+            "destaque1": "43 valandas per savaitę",
+            "paragrafo2": "apmokama su priedu:",
+            "destaque2": "2.0x (dvigubas tarifas)",
+            "subtituloExemplo": "Pavyzdys",
+            "exemploContexto": "Jei valandinis atlygis €15:",
+            "exemplos": [
+                "viršvalandžiai B = €30,00"
+            ]
+        },
+        "secao9": {
+            "titulo": "9. Šeštadienis",
+            "paragrafo1": "Šeštadienis laikomas savaitės tęsiniu.",
+            "paragrafo2": "Priklausomai nuo sukaupto laiko nuo pirmadienio iki penktadienio:",
+            "regras": [
+                "gali būti priskirtas viršvalandžiams A",
+                "gali būti priskirtas viršvalandžiams B"
+            ],
+            "paragrafo3": "Jei iki penktadienio jau viršyta 43 valandos, dažniausiai visas šeštadienis skaičiuojamas kaip viršvalandžiai B."
+        },
+        "secao10": {
+            "titulo": "10. Sekmadienis",
+            "paragrafo1": "Visos sekmadienį dirbtos valandos apmokamos kaip:",
+            "destaque1": "viršvalandžiai B (2.0x)",
+            "paragrafo2": "nuo pirmos minutės.",
+            "paragrafo3": "Sekmadienį įprastų valandų nėra."
+        },
+        "secao11": {
+            "titulo": "11. Galutinis rezultatas",
+            "paragrafo1": "Programa automatiškai rodo:",
+            "itens": [
+                "dirbtas valandas per dieną",
+                "bendrą savaitės laiką",
+                "įprastas valandas",
+                "viršvalandžius A",
+                "viršvalandžius B",
+                "apskaičiuotą bruto atlyginimą"
+            ],
+            "paragrafo2": "Šie skaičiavimai padeda asmeninei kontrolei, atlyginimo tikrinimui ir prireikus kreipimuisi į HR."
+        },
+        "importante": {
+            "titulo": "Svarbu",
+            "paragrafo1": "My Clock yra pagalbinė priemonė asmeninei kontrolei.",
+            "paragrafo2": "Ji stengiasi kuo tiksliau atkurti įmonės taisykles, tačiau oficialios įmonės sistemos ir vidinės taisyklės visada turi pirmenybę esant neatitikimams.",
+            "paragrafo3": "Todėl bet kokie atlyginimo skirtumai turi būti patvirtinti tiesiogiai su atsakingu HR skyriumi."
+        }
+    }
+}

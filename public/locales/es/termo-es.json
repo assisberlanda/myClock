@@ -1,0 +1,55 @@
+{
+    "termosDeUso": {
+        "titulo": "Términos de uso",
+        "dataUltimaAtualizacao": "**Fecha de la última actualización:** abril de 2026",
+        "secao1": {
+            "titulo": "1. Aceptación de los términos",
+            "paragrafo1": "Al acceder y utilizar la aplicación My Clock (la “Aplicación”), usted (“Usuario”) acepta íntegramente estos Términos de uso.",
+            "paragrafo2": "Si no está de acuerdo con alguna parte de estos términos, le recomendamos no utilizar la aplicación."
+        },
+        "secao2": {
+            "titulo": "2. Finalidad de la aplicación",
+            "paragrafo1": "My Clock fue desarrollado como una herramienta gratuita de apoyo para que los empleados puedan seguir sus horas trabajadas, horas extras, cálculo estimado de pago bruto y control personal de jornada.",
+            "paragrafo2": "El objetivo principal es ofrecer más transparencia, organización financiera y facilidad en la verificación de las horas registradas, permitiendo al usuario identificar posibles discrepancias y solicitar revisiones con RR. HH. cuando sea necesario.",
+            "paragrafo3": "La aplicación no sustituye sistemas oficiales de control de horas, nómina o gestión interna de la empresa."
+        },
+        "secao3": {
+            "titulo": "3. Aplicación no oficial",
+            "paragrafo1": "My Clock no es un sistema oficial de la empresa y no tiene ningún vínculo institucional con RR. HH., nómina, departamento financiero o sistema interno de control de horas.",
+            "paragrafo2": "Los cálculos presentados son estimaciones basadas en las reglas operativas normalmente aplicadas por la empresa, buscando reproducir de la forma más fiel posible los criterios utilizados internamente.",
+            "paragrafo3": "Pueden existir diferencias derivadas de acuerdos internos, ajustes específicos, excepciones contractuales, convenios colectivos o reglas no implementadas en la aplicación.",
+            "paragrafo4": "En caso de discrepancia, siempre prevalecen las reglas oficiales de la empresa y la validación debe realizarse directamente con el departamento de RR. HH. responsable."
+        },
+        "secao4": {
+            "titulo": "4. Responsabilidad del usuario",
+            "paragrafo1": "El usuario es totalmente responsable de la información introducida en la aplicación, incluyendo horarios, valores de salario por hora, registros de jornada y demás datos utilizados para el cálculo.",
+            "paragrafo2": "La aplicación sirve exclusivamente como herramienta de apoyo y verificación personal.",
+            "paragrafo3": "El desarrollador no se responsabiliza por decisiones tomadas únicamente con base en los cálculos mostrados en el sistema, ni por diferencias entre los valores estimados y los valores efectivamente pagados por la empresa."
+        },
+        "secao5": {
+            "titulo": "5. Almacenamiento de datos",
+            "paragrafo1": "Toda la información registrada en My Clock se almacena localmente en el propio dispositivo del usuario.",
+            "paragrafo2": "El desarrollador no tiene acceso a los datos introducidos, no almacena información en servidores externos ni realiza ningún tipo de monitoreo remoto de la información personal del usuario.",
+            "paragrafo3": "El usuario es responsable de mantener sus propias copias de seguridad y exportaciones cuando sea necesario."
+        },
+        "secao6": {
+            "titulo": "6. Propiedad intelectual",
+            "paragrafo1": "Todo el contenido presente en la aplicación, incluyendo estructura, diseño, textos, identidad visual, reglas implementadas, funcionalidades y código fuente propietario, es propiedad intelectual de Assis Berlanda de Medeiros, salvo indicación contraria.",
+            "paragrafo2": "Queda prohibida la reproducción, distribución o uso indebido sin autorización previa."
+        },
+        "secao7": {
+            "titulo": "7. Cambios en la aplicación y en los términos",
+            "paragrafo1": "El desarrollador se reserva el derecho de modificar funcionalidades, reglas de cálculo, diseño, estructura del sistema y estos Términos de uso en cualquier momento, sin previo aviso.",
+            "paragrafo2": "Las nuevas versiones podrán incluir mejoras, correcciones y ajustes necesarios para hacer la aplicación más fiel a las reglas aplicadas por la empresa."
+        },
+        "secao8": {
+            "titulo": "8. Ley aplicable",
+            "paragrafo1": "Estos Términos de uso se interpretarán de acuerdo con las leyes aplicables de la Unión Europea e Irlanda, especialmente en lo referente a la protección de datos y el uso de aplicaciones digitales."
+        },
+        "secao9": {
+            "titulo": "9. Contacto",
+            "paragrafo1": "Para dudas, sugerencias o cuestiones relacionadas con estos Términos de uso, contacte a través del correo electrónico:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "Despre My Clock",
+        "quemSou": {
+            "titulo": "Cine sunt",
+            "conteudo": "Sunt Assis Berlanda de Medeiros și am creat My Clock pentru a ajuta angajații să își urmărească orele de lucru."
+        },
+        "porQueCriei": {
+            "titulo": "De ce am creat aplicația",
+            "conteudo": "Mulți angajați au dificultăți în verificarea orelor și salariilor..."
+        },
+        "versao": {
+            "titulo": "Versiune",
+            "conteudo": "My Clock v1.0.0 - Aprilie 2026"
+        },
+        "importante": {
+            "titulo": "Important",
+            "conteudo": "Nu este sistem oficial al companiei."
+        },
+        "privacidade": {
+            "titulo": "Confidențialitate",
+            "conteudo": "Datele sunt stocate local, fără servere."
+        },
+        "suporte": {
+            "titulo": "Suport",
+            "conteudo": "Email: [berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

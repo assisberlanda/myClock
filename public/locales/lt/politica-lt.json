@@ -1,0 +1,70 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Privatumo politika",
+        "dataAtualizacao": "**Paskutinio atnaujinimo data:** 2026 m. balandis",
+        "secao1": {
+            "titulo": "1. Įžanga",
+            "paragrafo1": "My Clock naudotojų privatumas yra prioritetas.",
+            "paragrafo2": "Ši privatumo politika aprašo, kaip informacija tvarkoma programoje, ir paaiškina, kaip saugomi bei apsaugomi asmens duomenys.",
+            "paragrafo3": "My Clock sukurtas laikantis privatumo, vartotojo autonomijos ir GDPR (Bendrojo duomenų apsaugos reglamento) principų."
+        },
+        "secao2": {
+            "titulo": "2. Programoje naudojami duomenys",
+            "paragrafo1": "Programa leidžia vartotojui įrašyti tokią informaciją:",
+            "listaDados": [
+                "pilnas vardas",
+                "darbuotojo numeris (employee number)",
+                "pamainos pradžios laikas",
+                "valandinis atlygis",
+                "atvykimo, pertraukos ir išvykimo laikai",
+                "savaitės darbo istorija",
+                "viršvalandžių ir apskaičiuoto bruto atlygio skaičiavimai"
+            ],
+            "paragrafo2": "Šie duomenys naudojami tik vidiniam programos veikimui."
+        },
+        "secao3": {
+            "titulo": "3. Kur saugomi duomenys",
+            "paragrafo1": "Visi įvesti duomenys saugomi tik vartotojo įrenginyje, naudojant vietinę saugyklą (IndexedDB / local storage).",
+            "paragrafo2": "Tai reiškia, kad:",
+            "listaGarantias": [
+                "kūrėjas negauna jūsų duomenų",
+                "nėra išorinės duomenų bazės",
+                "informacija nesiunčiama į nuotolinius serverius",
+                "nėra automatinio debesijos sinchronizavimo",
+                "duomenys nesidalijami su trečiosiomis šalimis"
+            ],
+            "paragrafo3": "Visa kontrolė lieka išimtinai vartotojo rankose."
+        },
+        "secao4": {
+            "titulo": "4. Prieiga prie duomenų",
+            "paragrafo1": "Kūrėjas neturi nuotolinės prieigos prie programoje įvestos informacijos.",
+            "paragrafo2": "Nevykdomas aktyvus asmens duomenų rinkimas, individualus stebėjimas ar privačių įrašų peržiūra.",
+            "paragrafo3": "Informacija lieka privati ir prieinama tik pačiam vartotojui naudojamame įrenginyje."
+        },
+        "secao5": {
+            "titulo": "5. Atsarginės kopijos ir vartotojo atsakomybė",
+            "paragrafo1": "Kadangi duomenys saugomi tik vietiniame įrenginyje, vartotojas yra atsakingas už periodiškų atsarginių kopijų kūrimą naudojant programoje pateiktas eksportavimo funkcijas.",
+            "paragrafo2": "Pakeitus įrenginį, išvalius naršyklę, suformatavus ar praradus įrenginį, duomenys gali būti prarasti, jei nebuvo padaryta atsarginė kopija."
+        },
+        "secao6": {
+            "titulo": "6. Slapukai ir trečiųjų šalių technologijos",
+            "paragrafo1": "Šiuo metu My Clock nenaudoja sekimo slapukų, Google Analytics ar elgesio stebėjimo įrankių.",
+            "paragrafo2": "Jei tai bus įdiegta ateityje, ši privatumo politika bus atnaujinta."
+        },
+        "secao7": {
+            "titulo": "7. Išorinės nuorodos",
+            "paragrafo1": "Programoje gali būti išorinių nuorodų, pvz., į palaikymo el. paštą.",
+            "paragrafo2": "Kūrėjas neatsako už išorinių paslaugų privatumo praktikas, pasiekiamas už programos ribų."
+        },
+        "secao8": {
+            "titulo": "8. Politikos pakeitimai",
+            "paragrafo1": "Ši privatumo politika gali būti atnaujinama bet kuriuo metu, atsižvelgiant į programos patobulinimus, teisės aktų reikalavimus ar veikimo pokyčius.",
+            "paragrafo2": "Naujausia versija visada bus prieinama pačioje sistemoje."
+        },
+        "secao9": {
+            "titulo": "9. Kontaktai",
+            "paragrafo1": "Jei turite klausimų, pasiūlymų ar su šia privatumo politika susijusių klausimų, susisiekite el. paštu:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

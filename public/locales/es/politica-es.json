@@ -1,0 +1,70 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Política de Privacidad",
+        "dataAtualizacao": "**Fecha de la última actualización:** abril de 2026",
+        "secao1": {
+            "titulo": "1. Introducción",
+            "paragrafo1": "La privacidad de los usuarios de My Clock es una prioridad.",
+            "paragrafo2": "Esta Política de Privacidad describe cómo se manejan las informaciones dentro de la aplicación y aclara la forma en que los datos personales son almacenados y protegidos.",
+            "paragrafo3": "My Clock fue desarrollado con enfoque en la privacidad, autonomía del usuario y cumplimiento de los principios del GDPR (Reglamento General de Protección de Datos)."
+        },
+        "secao2": {
+            "titulo": "2. Datos utilizados por la aplicación",
+            "paragrafo1": "La aplicación permite que el usuario registre información como:",
+            "listaDados": [
+                "nombre completo",
+                "número de empleado (employee number)",
+                "horario de inicio del turno",
+                "valor de la hora trabajada",
+                "horarios de entrada, descanso y salida",
+                "historial semanal de jornadas",
+                "cálculos de horas extras y pago bruto estimado"
+            ],
+            "paragrafo2": "Estos datos se utilizan exclusivamente para el funcionamiento interno de la propia aplicación."
+        },
+        "secao3": {
+            "titulo": "3. Dónde se almacenan los datos",
+            "paragrafo1": "Todos los datos ingresados se almacenan exclusivamente en el dispositivo del propio usuario, utilizando almacenamiento local (IndexedDB/local storage).",
+            "paragrafo2": "Esto significa que:",
+            "listaGarantias": [
+                "el desarrollador no recibe tus datos",
+                "no existe base de datos externa",
+                "no se envía información a servidores remotos",
+                "no existe sincronización automática en la nube",
+                "no hay compartición con terceros"
+            ],
+            "paragrafo3": "Todo el control permanece exclusivamente en manos del usuario."
+        },
+        "secao4": {
+            "titulo": "4. Acceso a los datos",
+            "paragrafo1": "El desarrollador no tiene acceso remoto a la información ingresada en la aplicación.",
+            "paragrafo2": "No existe recolección activa de datos personales, monitoreo individual ni visualización de registros privados de los usuarios.",
+            "paragrafo3": "La información permanece privada y accesible únicamente por el propio usuario en el dispositivo utilizado."
+        },
+        "secao5": {
+            "titulo": "5. Copia de seguridad y responsabilidad del usuario",
+            "paragrafo1": "Como los datos permanecen solo en el dispositivo local, el usuario es responsable de realizar copias de seguridad periódicas mediante las funciones de exportación disponibles en la aplicación.",
+            "paragrafo2": "En casos de cambio de dispositivo, limpieza del navegador, formateo o pérdida del dispositivo, los datos pueden perderse si no existe una copia de seguridad previa."
+        },
+        "secao6": {
+            "titulo": "6. Cookies y tecnologías de terceros",
+            "paragrafo1": "Actualmente, My Clock no utiliza cookies de rastreo, Google Analytics ni herramientas de monitoreo del comportamiento.",
+            "paragrafo2": "Si esto se implementa en el futuro, esta Política de Privacidad será actualizada."
+        },
+        "secao7": {
+            "titulo": "7. Enlaces externos",
+            "paragrafo1": "La aplicación puede contener enlaces de contacto externo, como correo electrónico de soporte.",
+            "paragrafo2": "El desarrollador no se responsabiliza por las prácticas de privacidad de servicios externos accedidos fuera de la aplicación."
+        },
+        "secao8": {
+            "titulo": "8. Cambios en esta política",
+            "paragrafo1": "Esta Política de Privacidad puede ser actualizada en cualquier momento para reflejar mejoras en la aplicación, ajustes legales o cambios en su funcionamiento.",
+            "paragrafo2": "La versión más reciente siempre estará disponible dentro del propio sistema."
+        },
+        "secao9": {
+            "titulo": "9. Contacto",
+            "paragrafo1": "Para dudas, sugerencias o cuestiones relacionadas con esta Política de Privacidad, contacta a través del correo electrónico:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

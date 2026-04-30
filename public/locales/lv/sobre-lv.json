@@ -1,0 +1,29 @@
+{
+    "sobre": {
+        "titulo": "Apie My Clock",
+        "quemSou": {
+            "titulo": "Kas aš esu",
+            "conteudo": "Aš esu Assis Berlanda de Medeiros, SIPITU atstovas, ir sukūriau My Clock, kad padėčiau darbuotojams sekti darbo valandas."
+        },
+        "porQueCriei": {
+            "titulo": "Kodėl sukūriau",
+            "conteudo": "Daugelis darbuotojų susiduria su problemomis tikrinant darbo laiką ir atlyginimą...\n\nŠi programa padeda tai kontroliuoti paprasčiau ir aiškiau."
+        },
+        "versao": {
+            "titulo": "Versija",
+            "conteudo": "**Versija:** My Clock v1.0.0\n**Atnaujinimas:** 2026 m. balandis"
+        },
+        "importante": {
+            "titulo": "Svarbu",
+            "conteudo": "Tai nėra oficiali įmonės sistema.\n\nSkaičiavimai yra tik orientaciniai."
+        },
+        "privacidade": {
+            "titulo": "Privatumas",
+            "conteudo": "Duomenys saugomi tik įrenginyje, be serverių ir be trečiųjų šalių prieigos."
+        },
+        "suporte": {
+            "titulo": "Pagalba",
+            "conteudo": "Kontaktas:\n\n[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}

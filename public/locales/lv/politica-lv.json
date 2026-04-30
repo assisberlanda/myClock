@@ -1,0 +1,69 @@
+{
+    "politicaPrivacidade": {
+        "titulo": "Privatumo politika",
+        "dataAtualizacao": "**Paskutinio atnaujinimo data:** 2026 m. balandis",
+        "secao1": {
+            "titulo": "1. Įvadas",
+            "paragrafo1": "My Clock naudotojų privatumas yra prioritetas.",
+            "paragrafo2": "Ši politika paaiškina, kaip tvarkoma informacija programoje.",
+            "paragrafo3": "My Clock sukurtas laikantis GDPR principų."
+        },
+        "secao2": {
+            "titulo": "2. Naudojami duomenys",
+            "paragrafo1": "Naudotojas gali įvesti:",
+            "listaDados": [
+                "vardą ir pavardę",
+                "darbuotojo numerį",
+                "pamainos laiką",
+                "valandinį įkainį",
+                "atvykimo, pertraukų ir išvykimo laikus",
+                "savaitės darbo istoriją",
+                "viršvalandžių ir atlygio skaičiavimus"
+            ],
+            "paragrafo2": "Duomenys naudojami tik programos viduje."
+        },
+        "secao3": {
+            "titulo": "3. Kur saugomi duomenys",
+            "paragrafo1": "Visi duomenys saugomi tik įrenginyje.",
+            "paragrafo2": "Tai reiškia:",
+            "listaGarantias": [
+                "duomenys nesiunčiami kūrėjui",
+                "nėra išorinių serverių",
+                "nėra debesijos sinchronizacijos",
+                "nėra trečiųjų šalių prieigos"
+            ],
+            "paragrafo3": "Vartotojas visiškai kontroliuoja duomenis."
+        },
+        "secao4": {
+            "titulo": "4. Prieiga prie duomenų",
+            "paragrafo1": "Kūrėjas neturi prieigos prie duomenų.",
+            "paragrafo2": "Nėra jokio sekimo ar stebėjimo.",
+            "paragrafo3": "Viskas lieka įrenginyje."
+        },
+        "secao5": {
+            "titulo": "5. Atsarginės kopijos",
+            "paragrafo1": "Vartotojas atsakingas už duomenų atsargines kopijas.",
+            "paragrafo2": "Duomenys gali būti prarasti keičiant įrenginį."
+        },
+        "secao6": {
+            "titulo": "6. Slapukai ir trečiosios šalys",
+            "paragrafo1": "Nenaudojami slapukai ar sekimo įrankiai.",
+            "paragrafo2": "Jei tai pasikeis, politika bus atnaujinta."
+        },
+        "secao7": {
+            "titulo": "7. Išorinės nuorodos",
+            "paragrafo1": "Gali būti nuorodų į išorinius kontaktus.",
+            "paragrafo2": "Kūrėjas neatsako už jų privatumo politiką."
+        },
+        "secao8": {
+            "titulo": "8. Politikos pakeitimai",
+            "paragrafo1": "Politika gali būti atnaujinta bet kada.",
+            "paragrafo2": "Nauja versija bus programoje."
+        },
+        "secao9": {
+            "titulo": "9. Kontaktas",
+            "paragrafo1": "Klausimams:",
+            "email": "[berlanda.medeiros@gmail.com](mailto:berlanda.medeiros@gmail.com)"
+        }
+    }
+}
