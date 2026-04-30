@@ -22,7 +22,7 @@ export default async function LocaleLayout({
   }
 
   // Providing all messages to the client for the requested locale
-  const messages = await getMessages(locale);
+  const messages = await getMessages({ locale });
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
