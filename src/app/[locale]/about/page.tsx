@@ -108,16 +108,32 @@ export default function AboutPage() {
       }
 
       if (sec.type === 'version') {
+        const infoLines = sec.lines.filter(l => l.trim() && l.includes(':'));
+        const textLines = sec.lines.filter(l => l.trim() && !l.includes(':'));
+
         return (
           <div key={key} className="border-t pt-8 mt-8">
             {titleEl}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {sec.lines.filter(l => l.trim()).map((l, i) => (
-                <div key={i} className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
-                  <p className="text-sm font-bold text-blue-600 dark:text-blue-400">{l.split(':')[0]}</p>
-                  <p className="text-base font-medium">{l.split(':')[1] || (l.includes('Clock') ? APP_FULL_NAME : 'v1.0.0')}</p>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              {infoLines.map((l, i) => {
+                const parts = l.split(':');
+                const keyLabel = parts[0].replace(/\*\*/g, '').trim();
+                const valueLabel = parts.slice(1).join(':').replace(/\*\*/g, '').trim();
+                
+                return (
+                  <div key={i} className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700 shadow-sm">
+                    <p className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">
+                      {keyLabel}
+                    </p>
+                    <p className="text-base font-semibold">
+                      {valueLabel}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="space-y-4">
+              {textLines.map((l, i) => renderLine(l, i))}
             </div>
           </div>
         );

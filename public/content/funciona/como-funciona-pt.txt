@@ -4,8 +4,6 @@ O My Clock foi desenvolvido para reproduzir da forma mais fiel possível as regr
 
 Abaixo está a explicação de como os cálculos são realizados dentro do aplicativo.
 
----
-
 ## 1. Horário de início do turno
 
 Cada funcionário possui um horário oficial de início de turno, que pode variar conforme a equipe ou setor.
@@ -19,20 +17,16 @@ Exemplos:
 
 Esse horário é a base principal para o cálculo das horas trabalhadas.
 
----
-
 ## 2. Regra de entrada (clock-in)
 
-O sistema sempre considera:
-
-**o horário de início do turno ou o horário real de entrada, o que for mais tarde.**
+**O sistema sempre considera: o horário de início do turno ou o horário real de entrada, o que for mais tarde.**
 
 Isso significa que:
 
 * se você chegar antes do seu horário, não gera pagamento extra
 * se você chegar atrasado, o cálculo começa a partir do horário real da sua entrada
 
-### Exemplo
+Exemplo
 
 Horário oficial do turno: 07:30
 
@@ -43,32 +37,26 @@ Horário oficial do turno: 07:30
 
 Ou seja, chegar antes não soma horas extras.
 
----
-
 ## 3. Regra de saída (clock-out)
 
 Na saída, cada minuto trabalhado é contabilizado normalmente.
 
 Não existe arredondamento.
 
-### Exemplo
+Exemplo
 
 * saída às 00:03 → conta até 00:03
 * saída às 00:17 → conta até 00:17
 
 Cada minuto após o expediente é considerado.
 
----
-
 ## 4. Intervalo não remunerado (meal break)
 
 O intervalo mínimo não remunerado é de 30 minutos.
 
-O sistema desconta:
+**O sistema desconta: 30 minutos ou o tempo real do intervalo, o que for maior.**
 
-**30 minutos ou o tempo real do intervalo, o que for maior.**
-
-### Exemplo
+Exemplo
 
 * intervalo de 20 minutos → desconta 30 minutos
 * intervalo de 30 minutos → desconta 30 minutos
@@ -77,25 +65,15 @@ O sistema desconta:
 
 Nunca será descontado menos de 30 minutos.
 
----
-
 ## 5. Cálculo do overtime (horas extras)
 
 O overtime é calculado de forma semanal, e não diária.
 
 A base principal considera o total de horas trabalhadas de segunda a sexta-feira.
 
----
-
 ## 6. Horas normais
 
-As primeiras:
-
-**39 horas trabalhadas na semana**
-
-são consideradas horas normais e pagas com valor normal da sua hora contratual.
-
----
+**As primeiras 39 horas trabalhadas na semana são consideradas horas normais e pagas com valor normal da sua hora contratual.**
 
 ## 7. Overtime A (1.5x)
 
@@ -109,14 +87,12 @@ serão pagas com adicional de:
 
 **1.5x (uma vez e meia)**
 
-### Exemplo
+Exemplo
 
 Se sua hora vale €15:
 
 * hora normal = €15
 * overtime A = €22,50
-
----
 
 ## 8. Overtime B (2.0x)
 
@@ -128,13 +104,11 @@ será pago com adicional de:
 
 **2.0x (hora dobrada)**
 
-### Exemplo
+Exemplo
 
 Se sua hora vale €15:
 
 * overtime B = €30,00
-
----
 
 ## 9. Sábado
 
@@ -147,8 +121,6 @@ Dependendo do total já acumulado de segunda a sexta:
 
 Se até sexta-feira você já ultrapassou 43 horas, normalmente todo o sábado será calculado como Overtime B.
 
----
-
 ## 10. Domingo
 
 Todas as horas trabalhadas no domingo são pagas como:
@@ -158,8 +130,6 @@ Todas as horas trabalhadas no domingo são pagas como:
 desde o primeiro minuto.
 
 Não existe hora normal no domingo.
-
----
 
 ## 11. Resultado final
 
@@ -173,8 +143,6 @@ O aplicativo mostra automaticamente:
 * valor bruto estimado a receber
 
 Esses cálculos ajudam no controle pessoal, conferência de folha salarial e solicitação de revisão junto ao RH quando necessário.
-
----
 
 ## Importante
 
