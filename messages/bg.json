@@ -137,7 +137,10 @@
     "howItWorks": "Как работи",
     "about": "За програмата",
     "language": "Език",
-    "languagePt": "PT",
-    "languageEn": "EN"
+    "languagePt": "Португалски",
+    "languageEn": "Английски",
+    "allRightsReserved": "Всички права запазени.",
+    "termsOfUse": "Условия на използване",
+    "privacyPolicy": "Политика за поверителност"
   }
 }
