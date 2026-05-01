@@ -65,12 +65,32 @@ export default function HistoryPage() {
   const buildMonthOptions = () => {
     const options: { value: string; label: string }[] = [];
     const now = new Date();
+
+    // Detect whether the environment supports the desired locale for Intl
+    const supportsIntl = typeof Intl !== 'undefined' && Intl.DateTimeFormat.supportedLocalesOf([intlLocale]).length > 0;
+
+    // Gaelic fallback month names if Intl is not available/supported
+    const gaMonths = [
+      'Eanáir','Feabhra','Márta','Aibreán','Bealtaine','Meitheamh',
+      'Iúil','Lúnasa','Meán Fómhair','Deireadh Fómhair','Samhain','Nollaig'
+    ];
+
     for (let i = 0; i < 24; i++) {
       const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-      options.push({
-        value: format(d, "yyyy-MM"),
-        label: formatDateLabel(d, intlLocale, { month: "long", year: "numeric" }),
-      });
+      const value = format(d, "yyyy-MM");
+      let label = '';
+      if (supportsIntl) {
+        label = formatDateLabel(d, intlLocale, { month: "long", year: "numeric" });
+      } else if (intlLocale && intlLocale.startsWith('ga')) {
+        const m = d.getMonth();
+        const y = d.getFullYear();
+        label = `${gaMonths[m]} ${y}`;
+      } else {
+        // fallback to en formatting
+        label = formatDateLabel(d, 'en', { month: 'long', year: 'numeric' });
+      }
+
+      options.push({ value, label });
     }
     return options;
   };
@@ -138,8 +158,33 @@ export default function HistoryPage() {
         return b.weekNumber - a.weekNumber;
       });
       setReports(sorted);
-      // If we fetched a full PAGE_SIZE page, there may be more pages. Otherwise we've reached the end.
-      setHasMorePages(sorted.length === PAGE_SIZE);
+
+      // Determine if next page has any reports by checking the next PAGE_SIZE weeks
+      let nextPageHas = false;
+      if (filterMode === 'month') {
+        try {
+          const [year, month] = monthDate.split("-").map(Number);
+          const monthStart = startOfMonth(new Date(year, month - 1, 1));
+          const monthEnd = endOfMonth(monthStart);
+          const nextCursorStart = startOfWeek(subWeeks(monthEnd, ((historyPageOffset + 1) * PAGE_SIZE) + (PAGE_SIZE - 1)), { weekStartsOn: 1 });
+          for (let i = 0; i < PAGE_SIZE; i++) {
+            const checkDate = addWeeks(nextCursorStart, i);
+            // run the use case to see if there's a report for that week
+            const repo = new TimeEntryRepository();
+            const useCase = new CalculateWeeklyPayrollUseCase(repo);
+            // eslint-disable-next-line no-await-in-loop
+            const rpt = await useCase.execute(currentEmployee.id, currentEmployee.hourlyRate, currentEmployee.shiftStartTime, checkDate);
+            if (rpt.entries.length > 0) {
+              nextPageHas = true;
+              break;
+            }
+          }
+        } catch (err) {
+          // ignore and keep nextPageHas false
+        }
+      }
+
+      setHasMorePages(nextPageHas);
     };
 
     fetchReports();
