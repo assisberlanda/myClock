@@ -39,7 +39,11 @@ export default function HistoryPage() {
   const tHistory = useTranslations("History");
   const tDashboard = useTranslations("Dashboard");
   const locale = useLocale();
-  const intlLocale = LANGUAGE_TO_LOCALE[locale as string] ?? locale;
+  // If locale already contains region (e.g., 'ga-IE'), keep it. Otherwise map short code to full tag.
+  const intlLocale = typeof locale === 'string' && locale.includes('-') ? locale : (LANGUAGE_TO_LOCALE[locale as string] ?? locale);
+
+  const PAGE_SIZE = 8;
+  const [hasMorePages, setHasMorePages] = useState(false);
   const { currentEmployee } = useEmployeeStore();
   const [reports, setReports] = useState<WeeklyReport[]>([]);
   const [filterMode, setFilterMode] = useState<FilterMode>("month");
@@ -129,14 +133,17 @@ export default function HistoryPage() {
           cursor = addWeeks(cursor, 1);
         }
       }
-      setReports(generatedReports.sort((a, b) => {
+      const sorted = generatedReports.sort((a, b) => {
         if (a.year !== b.year) return b.year - a.year;
         return b.weekNumber - a.weekNumber;
-      }));
+      });
+      setReports(sorted);
+      // If we fetched a full PAGE_SIZE page, there may be more pages. Otherwise we've reached the end.
+      setHasMorePages(sorted.length === PAGE_SIZE);
     };
 
     fetchReports();
-  }, [currentEmployee, filterMode, weekDate, monthDate, startDate, endDate, historyPageOffset, refreshKey]);
+  }, [currentEmployee, filterMode, weekDate, monthDate, startDate, endDate, historyPageOffset, refreshKey, PAGE_SIZE]);
 
   const getVisibleReport = (report: WeeklyReport): WeeklyReport => {
     if (filterMode === "range") {
@@ -828,11 +835,14 @@ export default function HistoryPage() {
         })}
         <div className="flex justify-end mt-4">
           <nav className="inline-flex items-center text-sm" aria-label={tHistory("filterTitle")}>
-            <Button variant="ghost" size="sm" onClick={() => setHistoryPageOffset(o => Math.max(0, o - 1))} aria-label={tHistory("paginationPrev")}>
+            <Button variant="ghost" size="sm" onClick={() => setHistoryPageOffset(o => Math.max(0, o - 1))} aria-label={tHistory("paginationPrev")} disabled={historyPageOffset === 0}>
               <ChevronLeft className="h-4 w-4" />
             </Button>
             <span className="px-2 text-sm">{historyPageOffset + 1}</span>
-            <Button variant="ghost" size="sm" onClick={() => setHistoryPageOffset(o => o + 1)} aria-label={tHistory("paginationNext")}>
+            <Button variant="ghost" size="sm" onClick={() => {
+              if (!hasMorePages) return;
+              setHistoryPageOffset(o => o + 1);
+            }} aria-label={tHistory("paginationNext")} disabled={!hasMorePages}>
               <ChevronRight className="h-4 w-4" />
             </Button>
           </nav>
