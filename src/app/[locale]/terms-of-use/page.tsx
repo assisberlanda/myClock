@@ -1,32 +1,18 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
+import { loadLegalContent } from "@/shared/i18n/legalContent";
 
 export default function TermsOfUsePage() {
-  const t = useTranslations("Navigation");
   const locale = useLocale();
   const [pageContent, setPageContent] = useState("");
 
   useEffect(() => {
     const loadContent = async () => {
-      try {
-        const fileName = `termo-${locale}`;
-        const response = await fetch(`/content/termo/${fileName}.txt`);
-        if (response.ok) {
-          const content = await response.text();
-          setPageContent(content);
-        } else {
-          const fallbackResponse = await fetch('/content/termo/termo-pt.txt');
-          if (fallbackResponse.ok) {
-            const content = await fallbackResponse.text();
-            setPageContent(content);
-          }
-        }
-      } catch (error) {
-        console.error('Error loading content:', error);
-      }
+      const content = await loadLegalContent(locale, "termo");
+      setPageContent(content);
     };
     loadContent();
   }, [locale]);
@@ -46,7 +32,7 @@ export default function TermsOfUsePage() {
       const trimmed = line.trim();
       if (isHeader(line)) {
         sections.push(currentSection);
-        let title = trimmed.replace(/^#+\s*/, '');
+        const title = trimmed.replace(/^#+\s*/, '');
         const lowerTitle = title.toLowerCase();
         
         let type = 'section';
@@ -149,10 +135,12 @@ export default function TermsOfUsePage() {
     });
   };
 
+  const t = useTranslations("Navigation");
+
   return (
     <div className="container max-w-4xl mx-auto p-4 md:py-10 space-y-8">
       <div className="flex flex-col space-y-2">
-        <h1 className="text-3xl font-extrabold tracking-tight text-foreground">Termos de Uso</h1>
+        <h1 className="text-3xl font-extrabold tracking-tight text-foreground">{t("termsOfUse")}</h1>
         <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
       </div>
       <Card className="border-none shadow-none bg-transparent">

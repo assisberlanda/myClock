@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useState } from "react";
 import { APP_I18N_LANGUAGES } from "@/shared/i18n/config";
 
@@ -9,21 +9,19 @@ export function LanguageSwitcher() {
   const t = useTranslations("Navigation");
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
   const [isUpdating, setIsUpdating] = useState(false);
 
-  const handleLocaleChange = async (nextLocale: string) => {
+  const handleLocaleChange = (nextLocale: string) => {
     if (!nextLocale || nextLocale === locale) return;
 
     setIsUpdating(true);
     try {
-      await fetch("/api/locale", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ locale: nextLocale }),
-      });
-      router.refresh();
+      // Muda a URL para o novo idioma mantendo o mesmo path
+      // O next-intl/navigation cuida de atualizar o cookie NEXT_LOCALE automaticamente
+      router.replace(pathname, { locale: nextLocale });
+    } catch (error) {
+      console.error("Failed to change locale:", error);
     } finally {
       setIsUpdating(false);
     }

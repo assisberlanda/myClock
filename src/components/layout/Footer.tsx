@@ -1,9 +1,12 @@
 "use client";
 
 import { APP_FULL_NAME } from "@/config/version";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Navigation");
+  
   return (
     <footer className="py-8 mt-auto border-t border-border-subtle bg-white dark:bg-black/20">
       <div className="container max-w-6xl mx-auto px-4">
@@ -28,7 +31,7 @@ export default function Footer() {
 
           {/* Copyright - Centered on desktop */}
           <div className="text-[11px] text-muted-foreground/50 text-center md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
-            &copy; 2026 Assis Berlanda de Medeiros. <br className="md:hidden" /> Todos os direitos reservados.
+            &copy; 2026 Assis Berlanda de Medeiros. <br className="md:hidden" /> {t("allRightsReserved") || "Todos os direitos reservados."}
           </div>
 
           {/* Legal Links */}
@@ -37,14 +40,14 @@ export default function Footer() {
               href="/terms-of-use"
               className="text-[11px] font-medium text-muted-foreground/80 hover:text-blue-600 transition-colors underline decoration-muted-foreground/30 underline-offset-4"
             >
-              Termos de Uso
+              {t("termsOfUse") || "Termos de Uso"}
             </Link>
 
             <Link
               href="/privacy-policy"
               className="text-[11px] font-medium text-muted-foreground/80 hover:text-blue-600 transition-colors underline decoration-muted-foreground/30 underline-offset-4"
             >
-              Privacidade
+              {t("privacyPolicy") || "Privacidade"}
             </Link>
           </div>
 

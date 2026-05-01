@@ -1,33 +1,18 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
-import { APP_FULL_NAME } from "@/config/version";
 import { useState, useEffect } from "react";
+import { loadLegalContent } from "@/shared/i18n/legalContent";
 
 export default function AboutPage() {
-  const t = useTranslations("Navigation");
   const locale = useLocale();
   const [aboutContent, setAboutContent] = useState("");
 
   useEffect(() => {
     const loadAboutContent = async () => {
-      try {
-        const fileName = `sobre-${locale}`;
-        const response = await fetch(`/content/sobre/${fileName}.txt`);
-        if (response.ok) {
-          const content = await response.text();
-          setAboutContent(content);
-        } else {
-          const fallbackResponse = await fetch('/content/sobre/sobre-pt.txt');
-          if (fallbackResponse.ok) {
-            const content = await fallbackResponse.text();
-            setAboutContent(content);
-          }
-        }
-      } catch (error) {
-        console.error('Error loading about content:', error);
-      }
+      const content = await loadLegalContent(locale, "sobre");
+      setAboutContent(content);
     };
     loadAboutContent();
   }, [locale]);
@@ -50,7 +35,7 @@ export default function AboutPage() {
       const trimmed = line.trim();
       if (isHeader(line)) {
         sections.push(currentSection);
-        let title = trimmed.replace(/^#+\s*/, '');
+        const title = trimmed.replace(/^#+\s*/, '');
         const lowerTitle = title.toLowerCase();
         
         let type = 'default';

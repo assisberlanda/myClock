@@ -1,32 +1,18 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
+import { loadLegalContent } from "@/shared/i18n/legalContent";
 
 export default function HowItWorksPage() {
-  const t = useTranslations("Navigation");
   const locale = useLocale();
   const [howItWorksContent, setHowItWorksContent] = useState("");
 
   useEffect(() => {
     const loadHowItWorksContent = async () => {
-      try {
-        const fileName = `como-funciona-${locale}`;
-        const response = await fetch(`/content/funciona/${fileName}.txt`);
-        if (response.ok) {
-          const content = await response.text();
-          setHowItWorksContent(content);
-        } else {
-          const fallbackResponse = await fetch('/content/funciona/como-funciona-pt.txt');
-          if (fallbackResponse.ok) {
-            const content = await fallbackResponse.text();
-            setHowItWorksContent(content);
-          }
-        }
-      } catch (error) {
-        console.error('Error loading how it works content:', error);
-      }
+      const content = await loadLegalContent(locale, "funciona");
+      setHowItWorksContent(content);
     };
     loadHowItWorksContent();
   }, [locale]);
@@ -50,7 +36,7 @@ export default function HowItWorksPage() {
       if (isHeader(line)) {
         sections.push(currentSection);
         
-        let title = trimmed.replace(/^#+\s*/, '');
+        const title = trimmed.replace(/^#+\s*/, '');
         const lowerTitle = title.toLowerCase();
         
         let type = 'default';
