@@ -138,6 +138,9 @@
     "about": "Про програму",
     "language": "Мова",
     "languagePt": "PT",
-    "languageEn": "EN"
+    "languageEn": "EN",
+    "allRightsReserved": "Усі права захищено.",
+    "termsOfUse": "Умови використання",
+    "privacyPolicy": "Політика конфіденційності"
   }
 }
