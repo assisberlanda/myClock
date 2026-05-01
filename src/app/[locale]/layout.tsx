@@ -7,6 +7,10 @@ import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { TopNav } from "@/components/layout/TopNav";
 import Footer from "@/components/layout/Footer";
 
+export function generateStaticParams() {
+  return APP_I18N_LANGUAGES.map((locale) => ({ locale }));
+}
+
 export default async function LocaleLayout({
   children,
   params
