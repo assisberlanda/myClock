@@ -56,6 +56,19 @@ export default function HistoryPage() {
     setEndDate(format(new Date(), "yyyy-MM-dd"));
   }, []);
 
+  const buildMonthOptions = () => {
+    const options: { value: string; label: string }[] = [];
+    const now = new Date();
+    for (let i = 0; i < 24; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+      options.push({
+        value: format(d, "yyyy-MM"),
+        label: formatDateLabel(d, locale, { month: "long", year: "numeric" }),
+      });
+    }
+    return options;
+  };
+
   const handleDeleteEntry = async (date: string) => {
     if (!currentEmployee) return;
     
@@ -591,13 +604,15 @@ export default function HistoryPage() {
             {filterMode === "month" && (
               <>
                 <label className="text-sm font-medium">{tHistory("filterMonth")}</label>
-                <input
-                  suppressHydrationWarning
-                  type="month"
+                <select
                   value={monthDate}
                   onChange={(e) => setMonthDate(e.target.value)}
                   className="w-full flex h-9 rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                />
+                >
+                  {buildMonthOptions().map(m => (
+                    <option key={m.value} value={m.value}>{m.label}</option>
+                  ))}
+                </select>
               </>
             )}
 
@@ -638,12 +653,12 @@ export default function HistoryPage() {
                   onChange={importFilteredHistory}
                   disabled={isImportingHistory}
                 />
-                <Button type="button" variant="secondary" disabled={isImportingHistory} className="w-full justify-center" onClick={() => fileInputRef.current?.click()}>
+                <Button type="button" variant="secondary" disabled={isImportingHistory} className="justify-center px-3" onClick={() => fileInputRef.current?.click()}>
                   <Upload className="mr-2 h-4 w-4" />
                   {tHistory("importFilteredJson")}
                 </Button>
 
-                <Button type="button" variant="secondary" onClick={exportFilteredHistory} className="w-full justify-center">
+                <Button type="button" variant="secondary" onClick={exportFilteredHistory} className="justify-center px-3">
                   <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12l4.5 4.5L16.5 12M12 3v13.5" />
                   </svg>
@@ -658,14 +673,6 @@ export default function HistoryPage() {
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-semibold">{tHistory("title")}</h2>
-          <div className="flex gap-2">
-            <Button variant="secondary" size="sm" onClick={() => setHistoryPageOffset(prev => prev + 1)}>
-              <ChevronLeft className="h-4 w-4 mr-1" /> Anterior
-            </Button>
-            <Button variant="secondary" size="sm" onClick={() => setHistoryPageOffset(prev => Math.max(0, prev - 1))}>
-              Próximo <ChevronRight className="h-4 w-4 ml-1" />
-            </Button>
-          </div>
         </div>
         {visibleReports.map((report) => {
           return (
@@ -678,10 +685,10 @@ export default function HistoryPage() {
                   <>
                     <div className="flex flex-wrap gap-2">
                       {report.totalOvertimeAMinutes > 0 && (
-                        <StatusBadge status="warning" label={`Extra A: ${(Math.floor((report.totalOvertimeAMinutes / 60) * 10) / 10).toFixed(1)}h`} />
+                        <StatusBadge status="warning" label={`${tDashboard("overtimeAShort")}: ${(Math.floor((report.totalOvertimeAMinutes / 60) * 10) / 10).toFixed(1)}h`} />
                       )}
                       {report.totalOvertimeBMinutes > 0 && (
-                        <StatusBadge status="success" label={`Extra B: ${(Math.floor((report.totalOvertimeBMinutes / 60) * 10) / 10).toFixed(1)}h`} />
+                        <StatusBadge status="success" label={`${tDashboard("overtimeBShort")}: ${(Math.floor((report.totalOvertimeBMinutes / 60) * 10) / 10).toFixed(1)}h`} />
                       )}
                       {report.totalOvertimeAMinutes === 0 && report.totalOvertimeBMinutes === 0 && (
                         <StatusBadge status="success" label={tHistory("noOvertime")} />
@@ -738,14 +745,14 @@ export default function HistoryPage() {
                                 {report.payroll.find(p => p.date === entry.date) && (
                                   <>
                                     <div className="space-y-0.5">
-                                      <div className="text-muted-foreground text-xs font-semibold">Horas/Dia:</div>
+                                      <div className="text-muted-foreground text-xs font-semibold">{tHistory("hoursPerDay")}</div>
                                       <div className="font-bold text-green-600 dark:text-green-400">
                                         {Math.floor(report.payroll.find(p => p.date === entry.date)!.totalMinutes / 60)}h {report.payroll.find(p => p.date === entry.date)!.totalMinutes % 60}m
                                       </div>
                                     </div>
 
                                     <div className="space-y-0.5">
-                                      <div className="text-muted-foreground text-xs font-semibold">Intervalo:</div>
+                                      <div className="text-muted-foreground text-xs font-semibold">{tHistory("breakDuration")}</div>
                                       <div className="font-bold text-red-600 dark:text-red-400">
                                         {report.payroll.find(p => p.date === entry.date)!.breakMinutes}m
                                       </div>
@@ -817,6 +824,18 @@ export default function HistoryPage() {
             </div>
           );
         })}
+        <div className="flex justify-end mt-4">
+          <nav className="inline-flex items-center text-sm" aria-label={tHistory("filterTitle")}>
+            <Button variant="ghost" size="sm" onClick={() => setHistoryPageOffset(o => Math.max(0, o - 1))} aria-label={tHistory("paginationPrev")}>
+              <ChevronLeft className="h-4 w-4" />
+            </Button>
+            <span className="px-2 text-sm">{historyPageOffset + 1}</span>
+            <Button variant="ghost" size="sm" onClick={() => setHistoryPageOffset(o => o + 1)} aria-label={tHistory("paginationNext")}>
+              <ChevronRight className="h-4 w-4" />
+            </Button>
+          </nav>
+        </div>
+
         {visibleReports.length === 0 && (
           <div className="text-center py-12 border rounded-lg bg-muted/20">
             <p className="text-muted-foreground">{tHistory("noEntries")}</p>
