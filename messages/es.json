@@ -134,6 +134,9 @@
     "about": "Acerca de",
     "language": "Idioma",
     "languagePt": "PT",
-    "languageEn": "EN"
+    "languageEn": "EN",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "termsOfUse": "Términos de Uso",
+    "privacyPolicy": "Política de Privacidad"
   }
 }
