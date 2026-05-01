@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { LANGUAGE_TO_LOCALE } from "@/shared/i18n/config";
 import { useEmployeeStore } from "@/application/store/useEmployeeStore";
 import { ChangeEventHandler, useEffect, useRef, useState } from "react";
 import { TimeEntryRepository } from "@/infrastructure/repositories/TimeEntryRepository";
@@ -38,6 +39,7 @@ export default function HistoryPage() {
   const tHistory = useTranslations("History");
   const tDashboard = useTranslations("Dashboard");
   const locale = useLocale();
+  const intlLocale = LANGUAGE_TO_LOCALE[locale as string] ?? locale;
   const { currentEmployee } = useEmployeeStore();
   const [reports, setReports] = useState<WeeklyReport[]>([]);
   const [filterMode, setFilterMode] = useState<FilterMode>("month");
@@ -63,7 +65,7 @@ export default function HistoryPage() {
       const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
       options.push({
         value: format(d, "yyyy-MM"),
-        label: formatDateLabel(d, locale, { month: "long", year: "numeric" }),
+        label: formatDateLabel(d, intlLocale, { month: "long", year: "numeric" }),
       });
     }
     return options;
@@ -114,7 +116,7 @@ export default function HistoryPage() {
         const monthEnd = endOfMonth(monthStart);
         // Show 8 weeks starting from the offset relative to the selected month
         let cursor = startOfWeek(subWeeks(monthEnd, (historyPageOffset * 8) + 7), { weekStartsOn: 1 });
-        const limit = addWeeks(cursor, 8);
+        const limit = addWeeks(cursor, 7); // 8 weeks window without overlap
         while (!isAfter(cursor, limit)) {
           await includeReport(cursor);
           cursor = addWeeks(cursor, 1);
@@ -180,7 +182,7 @@ export default function HistoryPage() {
     doc.text(`${tHistory("pdfEmployee")}: ${currentEmployee.fullName} (${currentEmployee.employeeNumber})`, 14, 28);
     doc.text(`${tHistory("pdfFilter")}: ${getFilterLabel()}`, 14, 34);
     doc.text(`${tHistory("pdfWeek")}: ${visible.weekNumber}/${visible.year}`, 14, 40);
-    doc.text(`${tHistory("pdfHourlyRate")}: ${formatMoney(currentEmployee.hourlyRate, locale)}`, 14, 46);
+    doc.text(`${tHistory("pdfHourlyRate")}: ${formatMoney(currentEmployee.hourlyRate, intlLocale)}`, 14, 46);
 
     // Summary box
     const ratePerMinute = currentEmployee.hourlyRate / 60;
@@ -205,16 +207,16 @@ export default function HistoryPage() {
     doc.setFontSize(12);
     doc.setFont("helvetica", "bold");
     doc.setTextColor(0, 50, 150);
-    doc.text(`${tHistory("grossPay")}: ${formatMoney(visible.totalGrossPay, locale)}`, 120, 30);
+    doc.text(`${tHistory("grossPay")}: ${formatMoney(visible.totalGrossPay, intlLocale)}`, 120, 30);
     
     doc.setFontSize(9);
     doc.setFont("helvetica", "normal");
     doc.setTextColor(60, 60, 60);
-    doc.text(`${tDashboard("normalHours")}: ${(visible.totalNormalMinutes / 60).toFixed(1)}h - ${formatMoney(normalGross, locale)}`, 120, 37);
-    doc.text(`${tDashboard("overtimeA")}: ${(Math.floor((visible.totalOvertimeAMinutes / 60) * 10) / 10).toFixed(1)}h - ${formatMoney(overtimeAGross, locale)}`, 120, 42);
+    doc.text(`${tDashboard("normalHours")}: ${(visible.totalNormalMinutes / 60).toFixed(1)}h - ${formatMoney(normalGross, intlLocale)}`, 120, 37);
+    doc.text(`${tDashboard("overtimeA")}: ${(Math.floor((visible.totalOvertimeAMinutes / 60) * 10) / 10).toFixed(1)}h - ${formatMoney(overtimeAGross, intlLocale)}`, 120, 42);
     
     doc.setTextColor(0, 100, 0); // Dark Green for Extra B
-    doc.text(`${tDashboard("overtimeB")}: ${(Math.floor((visible.totalOvertimeBMinutes / 60) * 10) / 10).toFixed(1)}h - ${formatMoney(overtimeBGross, locale)}`, 120, 47);
+    doc.text(`${tDashboard("overtimeB")}: ${(Math.floor((visible.totalOvertimeBMinutes / 60) * 10) / 10).toFixed(1)}h - ${formatMoney(overtimeBGross, intlLocale)}`, 120, 47);
 
     doc.setTextColor(0, 0, 0);
     doc.setFontSize(11);
@@ -222,7 +224,7 @@ export default function HistoryPage() {
     const tableData = visible.payroll.map((day) => {
       const entry = visible.entries.find((e) => e.date === day.date);
       return [
-        formatDateLabel(parseISO(day.date), locale, {
+        formatDateLabel(parseISO(day.date), intlLocale, {
           weekday: "short",
           month: "short",
           day: "numeric",
@@ -678,8 +680,8 @@ export default function HistoryPage() {
           return (
             <div key={`${report.year}-${report.weekNumber}`} className="space-y-3">
               <SummaryCard
-                title={tHistory("weekLabel", { weekNumber: report.weekNumber, year: report.year })}
-                value={formatMoney(report.totalGrossPay, locale)}
+                        title={tHistory("weekLabel", { weekNumber: report.weekNumber, year: report.year })}
+                value={formatMoney(report.totalGrossPay, intlLocale)}
                 subtitle={`${tDashboard("normalHours")}: ${(report.totalNormalMinutes / 60).toFixed(1)}h`}
                 actions={
                   <>
@@ -717,7 +719,7 @@ export default function HistoryPage() {
                               <div className="p-3 grid grid-cols-2 md:grid-cols-8 gap-3 items-center text-xs" onClick={(e) => e.stopPropagation()}>
                                 <div className="col-span-2 md:col-span-2">
                                   <div className="font-medium text-sm">
-                                    {formatDateLabel(parseISO(entry.date), locale, {
+                                    {formatDateLabel(parseISO(entry.date), intlLocale, {
                                       weekday: "long",
                                       month: "long",
                                       day: "numeric",
@@ -779,7 +781,7 @@ export default function HistoryPage() {
                                   >
                                     <Trash2 className="h-3.5 w-3.5" />
                                   </Button>
-                                  <div className="font-bold text-sm min-w-[60px] text-right">{formatMoney(day.grossPay, locale)}</div>
+                                  <div className="font-bold text-sm min-w-[60px] text-right">{formatMoney(day.grossPay, intlLocale)}</div>
                                 </div>
                               </div>
 
