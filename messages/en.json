@@ -116,6 +116,10 @@
     "exportSuccessMessage": "Data exported successfully.",
     "exportErrorMessage": "Failed to export data.",
     "exportEmptyMessage": "No history entries in the current filter.",
+    "hoursPerDay": "Hours/day",
+    "breakDuration": "Break",
+    "paginationPrev": "Previous",
+    "paginationNext": "Next",
     "importSuccessMessage": "History imported successfully.",
     "importErrorMessage": "Could not import history.",
     "filterTitle": "Filters",
@@ -136,7 +140,10 @@
     "about": "About",
     "language": "Language",
     "languagePt": "Português",
-    "languageEn": "English"
+    "languageEn": "English",
+    "allRightsReserved": "All rights reserved.",
+    "termsOfUse": "Terms of Use",
+    "privacyPolicy": "Privacy Policy"
   },
   "About": {
     "title": "About My Clock",

@@ -116,6 +116,10 @@
     "exportSuccessMessage": "Dados exportados com sucesso.",
     "exportErrorMessage": "Falha ao exportar dados.",
     "exportEmptyMessage": "Não há histórico no filtro atual para exportar.",
+    "hoursPerDay": "Horas/Dia",
+    "breakDuration": "Intervalo",
+    "paginationPrev": "Anterior",
+    "paginationNext": "Próximo",
     "importSuccessMessage": "Histórico importado com sucesso.",
     "importErrorMessage": "Falha ao importar histórico.",
     "filterTitle": "Filtros",
@@ -136,7 +140,10 @@
     "about": "Sobre",
     "language": "Idioma",
     "languagePt": "Português",
-    "languageEn": "English"
+    "languageEn": "English",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "termsOfUse": "Termos de Uso",
+    "privacyPolicy": "Política de Privacidade"
   },
   "About": {
     "title": "Sobre o My Clock",
