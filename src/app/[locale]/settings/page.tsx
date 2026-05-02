@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 import { useEmployeeStore } from "@/application/store/useEmployeeStore";
 import { Employee } from "@/shared/types";
 import { useEffect, useMemo } from "react";
-import { db, initializeDatabase } from "@/infrastructure/database/db";
+import { useInitializeDatabase } from "@/infrastructure/hooks/useInitializeDatabase";
 import { APP_FULL_NAME, APP_VERSION } from "@/config/version";
 
 type SettingsFormValues = {
@@ -29,6 +29,7 @@ export default function SettingsPage() {
   const t = useTranslations("Navigation");
   const tSettings = useTranslations("Settings");
   const { currentEmployee, setEmployee } = useEmployeeStore();
+  const { ensureInitialized } = useInitializeDatabase();
 
   const settingsSchema = useMemo(
     () =>
@@ -73,7 +74,7 @@ export default function SettingsPage() {
 
   const onSubmit = async (data: SettingsFormValues) => {
     try {
-      await initializeDatabase();
+      const db = await ensureInitialized();
       const hourlyRate = parseHourlyRate(data.hourlyRateInput);
 
       const newEmployee: Employee = {

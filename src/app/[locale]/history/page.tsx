@@ -27,7 +27,7 @@ import { StatusBadge } from "@/components/design-system/StatusBadge";
 import { FormSection } from "@/components/design-system/FormSection";
 import { escapeCsvValue, isDateInHistoryFilter } from "@/shared/utils/historyFilters";
 import { formatDateLabel, formatMoney } from "@/shared/utils/formatters";
-import { db, initializeDatabase } from "@/infrastructure/database/db";
+import { useInitializeDatabase } from "@/infrastructure/hooks/useInitializeDatabase";
 import { Card, CardContent } from "@/components/ui/card";
 import { Download, Upload, Trash2, Edit2, ChevronLeft, ChevronRight } from "lucide-react";
 import { APP_FULL_NAME } from "@/config/version";
@@ -41,6 +41,9 @@ export default function HistoryPage() {
   const locale = useLocale();
   // If locale already contains region (e.g., 'ga-IE'), keep it. Otherwise map short code to full tag.
   const intlLocale = typeof locale === 'string' && locale.includes('-') ? locale : (LANGUAGE_TO_LOCALE[locale as string] ?? locale);
+
+  // Initialize database on client mount
+  const { ensureInitialized } = useInitializeDatabase();
 
   const PAGE_SIZE = 8;
   const [hasMorePages, setHasMorePages] = useState(false);
@@ -371,8 +374,8 @@ export default function HistoryPage() {
     if (!currentEmployee) return;
 
     try {
-      // Initialize database before exporting
-      await initializeDatabase();
+      // Ensure database is fully initialized before exporting
+      await ensureInitialized();
     } catch (error) {
       console.error('Database initialization failed:', error);
       showToast('error', tHistory('exportErrorMessage') || 'Database error');
@@ -473,8 +476,8 @@ export default function HistoryPage() {
     const reader = new FileReader();
     reader.onload = async (event) => {
       try {
-        // Initialize database before importing
-        await initializeDatabase();
+        // Ensure database is fully initialized before importing
+        await ensureInitialized();
         
         const content = JSON.parse(event.target?.result as string);
         let entriesToImport: any[] = [];

@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 import { useEmployeeStore } from "@/application/store/useEmployeeStore";
 import { useEffect, useState, Suspense } from "react";
 import { format, parseISO } from "date-fns";
-import { db, initializeDatabase } from "@/infrastructure/database/db";
+import { useInitializeDatabase } from "@/infrastructure/hooks/useInitializeDatabase";
 import { TimeEntry } from "@/shared/types";
 import { TimeEntryRepository } from "@/infrastructure/repositories/TimeEntryRepository";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,6 +22,7 @@ function ClockPageContent() {
   const locale = useLocale();
   const searchParams = useSearchParams();
   const { currentEmployee } = useEmployeeStore();
+  const { ensureInitialized } = useInitializeDatabase();
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [todayEntry, setTodayEntry] = useState<TimeEntry | null>(null);
   const [activeTab, setActiveTab] = useState<'today' | 'date'>((searchParams.get('tab') as 'today' | 'date') || 'today');
@@ -51,7 +52,7 @@ function ClockPageContent() {
   useEffect(() => {
     const initializeAndLoadData = async () => {
       try {
-        await initializeDatabase();
+        const db = await ensureInitialized();
         if (currentEmployee) {
           const today = format(new Date(), "yyyy-MM-dd");
           db.timeEntries
@@ -77,12 +78,12 @@ function ClockPageContent() {
     };
     
     initializeAndLoadData();
-  }, [currentEmployee, refreshKey]);
+  }, [currentEmployee, refreshKey, ensureInitialized]);
 
   useEffect(() => {
     const loadDateEntry = async () => {
       try {
-        await initializeDatabase();
+        const db = await ensureInitialized();
         if (currentEmployee && selectedDate) {
           db.timeEntries
             .where("[employeeId+date]")
@@ -123,11 +124,12 @@ function ClockPageContent() {
     };
     
     loadDateEntry();
-  }, [currentEmployee, selectedDate, refreshKey]);
+  }, [currentEmployee, selectedDate, refreshKey, ensureInitialized]);
 
   const handleAction = async (action: 'clockIn' | 'breakStart' | 'breakEnd' | 'clockOut') => {
     if (!currentEmployee) return;
 
+    const db = await ensureInitialized();
     const today = format(new Date(), "yyyy-MM-dd");
     const nowHHmm = format(new Date(), "HH:mm");
 
@@ -158,6 +160,7 @@ function ClockPageContent() {
   const handleDateAction = async (action: 'clockIn' | 'breakStart' | 'breakEnd' | 'clockOut', time?: string) => {
     if (!currentEmployee) return;
 
+    const db = await ensureInitialized();
     const entry = { ...(dateEntry || {
       id: crypto.randomUUID(),
       employeeId: currentEmployee.id,
@@ -181,6 +184,7 @@ function ClockPageContent() {
   const handleSaveEdit = async () => {
     if (!editingField || !currentEmployee) return;
 
+    const db = await ensureInitialized();
     const today = format(new Date(), "yyyy-MM-dd");
     let entry = await db.timeEntries
       .where("[employeeId+date]")
@@ -216,6 +220,7 @@ function ClockPageContent() {
   const handleAddEntry = async () => {
     if (!currentEmployee || !dateEntry) return;
     
+    const db = await ensureInitialized();
     try {
       const entryToSave: any = {
         ...dateEntry,
